@@ -20,7 +20,7 @@ $bizlight_sections['bizlight-home-service-pages'] =
 /*creating setting control for bizlight-home-service-page start*/
 $bizlight_repeated_settings_controls['bizlight-home-service-pages'] =
     array(
-        'repeated' => 3,
+        'repeated' => 4,
         'bizlight-home-service-page-icon' => array(
             'setting' =>     array(
                 'default'              => $bizlight_customizer_defaults['bizlight-home-service-page-icon'],

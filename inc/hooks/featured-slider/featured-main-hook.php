@@ -22,6 +22,33 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
         $bizlight_fs_contents_array[1]['bizlight-fs-link'] = '#';
         $bizlight_fs_contents_array[1]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider2.jpg";
 
+        $bizlight_fs_contents_array[2]['bizlight-fs-title'] = __('Es el moneto de mejorar','bizlight');
+        $bizlight_fs_contents_array[2]['bizlight-fs-content'] = __('Unlike other companies, we do not charge hundreds of dollars per theme.','bizlight');
+        $bizlight_fs_contents_array[2]['bizlight-fs-link'] = '#';
+        $bizlight_fs_contents_array[2]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider.jpg";
+
+        $bizlight_fs_contents_array[3]['bizlight-fs-title'] = __('Crea tus aplicaciones','bizlight');
+        $bizlight_fs_contents_array[3]['bizlight-fs-content'] = __('Unlike other companies, we do not charge hundreds of dollars per theme.','bizlight');
+        $bizlight_fs_contents_array[3]['bizlight-fs-link'] = '#';
+        $bizlight_fs_contents_array[3]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider2.jpg";
+
+        $bizlight_fs_contents_array[4]['bizlight-fs-title'] = __('Es el moneto de mejorar 3','bizlight');
+        $bizlight_fs_contents_array[4]['bizlight-fs-content'] = __('Unlike other companies, we do not charge hundreds of dollars per theme.','bizlight');
+        $bizlight_fs_contents_array[4]['bizlight-fs-link'] = '#';
+        $bizlight_fs_contents_array[4]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider.jpg";
+
+        $bizlight_fs_contents_array[5]['bizlight-fs-title'] = __('Crea tus aplicaciones','bizlight');
+        $bizlight_fs_contents_array[5]['bizlight-fs-content'] = __('Unlike other companies, we do not charge hundreds of dollars per theme.','bizlight');
+        $bizlight_fs_contents_array[5]['bizlight-fs-link'] = '#';
+        $bizlight_fs_contents_array[5]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider2.jpg";
+
+        $bizlight_fs_contents_array[6]['bizlight-fs-title'] = __('Es el moneto de mejorar 3','bizlight');
+        $bizlight_fs_contents_array[6]['bizlight-fs-content'] = __('Unlike other companies, we do not charge hundreds of dollars per theme.','bizlight');
+        $bizlight_fs_contents_array[6]['bizlight-fs-link'] = '#';
+        $bizlight_fs_contents_array[6]['bizlight-fs-image'] = get_template_directory_uri()."/assets/img/slider.jpg";
+
+
+
         $bizlight_fs_args = array();
         $repeated = array('bizlight-fs-pages-ids');
         $bizlight_fs_posts = bizlight_get_repeated_all_value( 4 ,$repeated);

@@ -27,12 +27,22 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
         $bizlight_home_service_contents_array[2]['bizlight-home-service-link'] = '#';
         $bizlight_home_service_contents_array[2]['bizlight-home-service-icon'] = 'fa-rocket';
 
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-link'] = '#';
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-icon'] = 'fa-rocket';
+
+        $bizlight_home_service_contents_array[4]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
+        $bizlight_home_service_contents_array[4]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+        $bizlight_home_service_contents_array[4]['bizlight-home-service-link'] = '#';
+        $bizlight_home_service_contents_array[4]['bizlight-home-service-icon'] = 'fa-rocket';
+
         $bizlight_icons_arrays = array();
         $bizlight_home_service_args = array();
 
         $repeated = array('bizlight-home-service-page-icon','bizlight-home-service-pages-ids');
 
-        $bizlight_home_service_posts = bizlight_get_repeated_all_value(3, $repeated);
+        $bizlight_home_service_posts = bizlight_get_repeated_all_value(5, $repeated);
         $bizlight_home_service_posts_ids = array();
         if( null != $bizlight_home_service_posts ) {
             foreach( $bizlight_home_service_posts as $bizlight_home_service_post ) {
@@ -113,12 +123,12 @@ if ( ! function_exists( 'bizlight_home_service' ) ) :
                         $i = 1;
                         $data_delay = 0;
                         foreach( $bizlight_service_arrays as $bizlight_service_array ){
-                            if( 3 < $i){
+                            if( 4 < $i){
                                 break;
                             }
                             $data_wow_delay = 'data-wow-delay='.$data_delay.'s';
                             ?>
-                            <div class="col-md-4 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
+                            <div class="col-md-3 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
                                 <div class="box-inner">
                                     <a href="<?php echo esc_url( $bizlight_service_array['bizlight-home-service-link'] );?>" title="<?php echo esc_attr( $bizlight_service_array['bizlight-home-service-title'] ); ?>">
                                         <div class="icon-container">
