@@ -29,6 +29,7 @@ if( !function_exists('bizlight_file_directory') ){
 
 $bizlight_init_file_path = bizlight_file_directory('inc/init.php');
 require $bizlight_init_file_path;
+require get_template_directory().'/inc/queries.php';
 
 if ( ! function_exists( 'bizlight_setup' ) ) :
 /**
