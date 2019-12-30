@@ -9,7 +9,7 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
      * @return array
      */
     function bizlight_home_service_array(  ){
-
+        
         $bizlight_home_service_contents_array = array();
 
         $bizlight_home_service_contents_array[0]['bizlight-home-service-title'] = __('LOVELY DESIGN', 'bizlight');
@@ -39,7 +39,6 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
 
         $bizlight_icons_arrays = array();
         $bizlight_home_service_args = array();
-
         $repeated = array('bizlight-home-service-page-icon','bizlight-home-service-pages-ids');
 
         $bizlight_home_service_posts = bizlight_get_repeated_all_value(5, $repeated);
@@ -106,6 +105,7 @@ if ( ! function_exists( 'bizlight_home_service' ) ) :
         if( 1 != $bizlight_customizer_all_values['bizlight-home-service-enable'] ){
             return null;
         }
+        
         $bizlight_service_arrays = bizlight_home_service_array(  );
         if( is_array( $bizlight_service_arrays )){
             $bizlight_home_service_title = $bizlight_customizer_all_values['bizlight-home-service-title'];

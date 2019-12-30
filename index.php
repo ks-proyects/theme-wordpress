@@ -30,7 +30,7 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-
+				<h1>Prueba</h1>
 					<?php
 					$bizlight_disable_recent_posts_meta = get_post_meta( get_the_ID(), 'bizlight-disable-in-recent-posts', true );
 					if( 1 != $bizlight_disable_recent_posts_meta ){

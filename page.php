@@ -24,7 +24,7 @@ get_header(); ?>
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				<h1>Prueba</h1>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php
