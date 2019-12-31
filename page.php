@@ -21,10 +21,7 @@ get_header(); ?>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h1>Prueba</h1>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php

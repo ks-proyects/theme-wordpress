@@ -11,6 +11,7 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
     function bizlight_home_service_array(  ){
         
         $bizlight_home_service_contents_array = array();
+        $query = new WP_Query( array( 'post_type' => 'keysist_servicios' ) );
 
         $bizlight_home_service_contents_array[0]['bizlight-home-service-title'] = __('LOVELY DESIGN', 'bizlight');
         $bizlight_home_service_contents_array[0]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
@@ -23,19 +24,19 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
         $bizlight_home_service_contents_array[1]['bizlight-home-service-icon'] = 'fa-camera-retro';
 
         $bizlight_home_service_contents_array[2]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
-        $bizlight_home_service_contents_array[2]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+        $bizlight_home_service_contents_array[2]['bizlight-home-service-content'] = __("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt.", 'bizlight');
         $bizlight_home_service_contents_array[2]['bizlight-home-service-link'] = '#';
         $bizlight_home_service_contents_array[2]['bizlight-home-service-icon'] = 'fa-rocket';
 
         $bizlight_home_service_contents_array[3]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
         $bizlight_home_service_contents_array[3]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
         $bizlight_home_service_contents_array[3]['bizlight-home-service-link'] = '#';
-        $bizlight_home_service_contents_array[3]['bizlight-home-service-icon'] = 'fa-rocket';
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-icon'] = 'fa-mobile-phone';
 
         $bizlight_home_service_contents_array[4]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
         $bizlight_home_service_contents_array[4]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
         $bizlight_home_service_contents_array[4]['bizlight-home-service-link'] = '#';
-        $bizlight_home_service_contents_array[4]['bizlight-home-service-icon'] = 'fa-rocket';
+        $bizlight_home_service_contents_array[4]['bizlight-home-service-icon'] = 'fa-airbnb';
 
         $bizlight_icons_arrays = array();
         $bizlight_home_service_args = array();
@@ -66,6 +67,7 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
             }
         }
         // the query
+        
         if( !empty( $bizlight_home_service_args )){
             $bizlight_home_service_contents_array = array(); /*again empty array*/
             $bizlight_home_service_post_query = new WP_Query( $bizlight_home_service_args );
@@ -90,6 +92,21 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
     }
 endif;
 
+if ( ! function_exists( 'keysist_home_service_array' ) ) :
+    /**
+     * Featured Slider array creation
+     *
+     * @since Bizlight 1.0.0
+     *
+     * @param null
+     * @return array
+     */
+    function keysist_home_service_array(  ){
+        $query = new WP_Query( array( 'post_type' => 'keysist_servicios' ,'posts_per_page'=>4) );
+        return $query;
+    }
+endif;
+
 if ( ! function_exists( 'bizlight_home_service' ) ) :
     /**
      * Featured Slider
@@ -107,38 +124,42 @@ if ( ! function_exists( 'bizlight_home_service' ) ) :
         }
         
         $bizlight_service_arrays = bizlight_home_service_array(  );
+        $keysist_service_arrays = keysist_home_service_array(  );
         if( is_array( $bizlight_service_arrays )){
             $bizlight_home_service_title = $bizlight_customizer_all_values['bizlight-home-service-title'];
+            $bizlight_home_service_contenido = $bizlight_customizer_all_values['bizlight-home-service-content'];
             ?>
             <section class="evision-wrapper block-section wrap-service">
                 <div class="container">
             <?php if(!empty( $bizlight_home_service_title ) ){
                 ?>
                 <h2 class="evision-animate slideInDown"><?php echo esc_html( $bizlight_home_service_title );?></h2>
+                <?php if(!empty( $bizlight_home_service_contenido ) ){
+                ?>
+                <h3 class="evision-animate slideOutUp"><?php echo esc_html( $bizlight_home_service_contenido );?></h3>
+                <?php
+            }?>
                 <span class="title-divider"></span>
                 <?php
             }?>
                     <div class="row block-row overhidden">
-                        <?php
-                        $i = 1;
+                    <?php
+                    if($keysist_service_arrays->have_posts()){
                         $data_delay = 0;
-                        foreach( $bizlight_service_arrays as $bizlight_service_array ){
-                            if( 4 < $i){
-                                break;
-                            }
+                        while ( $keysist_service_arrays->have_posts() ) {$keysist_service_arrays->the_post();
                             $data_wow_delay = 'data-wow-delay='.$data_delay.'s';
                             ?>
                             <div class="col-md-3 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
                                 <div class="box-inner">
-                                    <a href="<?php echo esc_url( $bizlight_service_array['bizlight-home-service-link'] );?>" title="<?php echo esc_attr( $bizlight_service_array['bizlight-home-service-title'] ); ?>">
+                                    <a href="<?php echo esc_url( the_permalink() );?>" title="<?php echo esc_attr( get_the_title(  ) ); ?>">
                                         <div class="icon-container">
-                                            <span><i class="fa <?php echo esc_attr( $bizlight_service_array['bizlight-home-service-icon'] ); ?>"></i></span>
+                                            <span><i class="fa <?php echo esc_attr( the_field('icono') ); ?>"></i></span>
                                         </div>
                                         <div class="box-content">
-                                            <h3><?php echo esc_html( $bizlight_service_array['bizlight-home-service-title'] );?></h3>
+                                            <h3><?php echo esc_html( get_the_title() );?></h3>
                                             <div class="box-content-text">
                                                 <p>
-                                                    <?php echo wp_kses_post( $bizlight_service_array['bizlight-home-service-content'] );?>
+                                                    <?php echo wp_kses_post( get_the_content());?>
                                                 </p>
                                             </div>
                                         </div>
@@ -146,7 +167,42 @@ if ( ! function_exists( 'bizlight_home_service' ) ) :
                                 </div>
                             </div>
                             <?php
-                            $i++;
+                        }
+                        wp_reset_postdata();
+                    }else{
+                        ?>
+                        </div>
+                        <div class="row block-row overhidden">
+                            <?php
+                            $i = 1;
+                            $data_delay = 0;
+                            foreach( $bizlight_service_arrays as $bizlight_service_array ){
+                                if( 4 < $i){
+                                    break;
+                                }
+                                $data_wow_delay = 'data-wow-delay='.$data_delay.'s';
+                                ?>
+                                <div class="col-md-3 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
+                                    <div class="box-inner">
+                                        <a href="<?php echo esc_url( $bizlight_service_array['bizlight-home-service-link'] );?>" title="<?php echo esc_attr( $bizlight_service_array['bizlight-home-service-title'] ); ?>">
+                                            <div class="icon-container">
+                                            
+                                                <span><i class="fa <?php echo esc_attr( $bizlight_service_array['bizlight-home-service-icon'] ); ?>"></i></span>
+                                            </div>
+                                            <div class="box-content">
+                                                <h3><?php echo esc_html( $bizlight_service_array['bizlight-home-service-title'] );?></h3>
+                                                <div class="box-content-text">
+                                                    <p>
+                                                        <?php echo wp_kses_post( $bizlight_service_array['bizlight-home-service-content'] );?>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <?php
+                                $i++;
+                            }
                         }
                         ?>
                     </div>
