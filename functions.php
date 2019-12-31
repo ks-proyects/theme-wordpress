@@ -161,8 +161,8 @@ function bizlight_scripts() {
 	}
 	wp_enqueue_style( 'bizlight-googleapis-other-font-family', '//fonts.googleapis.com/css?family=Raleway', array(), '' );/*added*/
 	/*Font-Awesome-master*/
-    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/Font-Awesome/css/font-awesome.min.css', array(), '4.4.0' );/*added*/
-
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/fontawesome/css/all.min.css', array(), '5.12.0' );/*added*/
+	
 	/*animate css*/
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/frameworks/wow/css/animate.min.css', array(), '3.4.0' );/*added*/
 	wp_enqueue_script('wow', get_template_directory_uri() . '/assets/frameworks/wow/js/wow.min.js', array('jquery'), '1.1.2', 1);

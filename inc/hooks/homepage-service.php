@@ -11,19 +11,17 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
     function bizlight_home_service_array(  ){
         
         $bizlight_home_service_contents_array = array();
-        $query = new WP_Query( array( 'post_type' => 'keysist_servicios' ) );
-
-        $bizlight_home_service_contents_array[0]['bizlight-home-service-title'] = __('LOVELY DESIGN', 'bizlight');
+        $bizlight_home_service_contents_array[0]['bizlight-home-service-title'] = __('DISEÑO ENCANTADOR', 'bizlight');
         $bizlight_home_service_contents_array[0]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
         $bizlight_home_service_contents_array[0]['bizlight-home-service-link'] = '#';
         $bizlight_home_service_contents_array[0]['bizlight-home-service-icon'] = 'fa-desktop';
 
-        $bizlight_home_service_contents_array[1]['bizlight-home-service-title'] = __('STYLIES PHOTOGRAPY', 'bizlight');
+        $bizlight_home_service_contents_array[1]['bizlight-home-service-title'] = __('FOTOGRAFÍA CON ESTILO', 'bizlight');
         $bizlight_home_service_contents_array[1]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
         $bizlight_home_service_contents_array[1]['bizlight-home-service-link'] = '#';
         $bizlight_home_service_contents_array[1]['bizlight-home-service-icon'] = 'fa-camera-retro';
 
-        $bizlight_home_service_contents_array[2]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
+        $bizlight_home_service_contents_array[2]['bizlight-home-service-title'] = __('AGENCIA CREATIVA', 'bizlight');
         $bizlight_home_service_contents_array[2]['bizlight-home-service-content'] = __("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt.", 'bizlight');
         $bizlight_home_service_contents_array[2]['bizlight-home-service-link'] = '#';
         $bizlight_home_service_contents_array[2]['bizlight-home-service-icon'] = 'fa-rocket';
@@ -31,12 +29,8 @@ if ( ! function_exists( 'bizlight_home_service_array' ) ) :
         $bizlight_home_service_contents_array[3]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
         $bizlight_home_service_contents_array[3]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
         $bizlight_home_service_contents_array[3]['bizlight-home-service-link'] = '#';
-        $bizlight_home_service_contents_array[3]['bizlight-home-service-icon'] = 'fa-mobile-phone';
+        $bizlight_home_service_contents_array[3]['bizlight-home-service-icon'] = 'fa-meteor';
 
-        $bizlight_home_service_contents_array[4]['bizlight-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
-        $bizlight_home_service_contents_array[4]['bizlight-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
-        $bizlight_home_service_contents_array[4]['bizlight-home-service-link'] = '#';
-        $bizlight_home_service_contents_array[4]['bizlight-home-service-icon'] = 'fa-airbnb';
 
         $bizlight_icons_arrays = array();
         $bizlight_home_service_args = array();
