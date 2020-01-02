@@ -14,8 +14,8 @@ $bizlight_customizer_defaults['keysist-home-product-enable'] = 1;
 /*aboutoptions*/
 $bizlight_sections['keysist-home-product-options'] =
     array(
-        'priority'       => 70,
-        'title'          => __( 'Productos', 'keysist' ),
+        'priority'       => 160,
+        'title'          => __( 'Ajustes de Productos', 'keysist' ),
     );
 
 

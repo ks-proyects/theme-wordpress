@@ -14,8 +14,8 @@ $bizlight_customizer_defaults['keysist-home-course-enable'] = 1;
 /*aboutoptions*/
 $bizlight_sections['keysist-home-course-options'] =
     array(
-        'priority'       => 70,
-        'title'          => __( 'Cursos', 'keysist' ),
+        'priority'       => 160,
+        'title'          => __( 'Ajustes de Cursos', 'keysist' ),
     );
 
 
