@@ -22,7 +22,7 @@ if (!function_exists('keysist_home_testimonial_array')) :
                 $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-title'] = get_the_title();
                 $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-content'] = get_the_content();
                 if(has_post_thumbnail()):
-                    $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-image'] = get_the_post_thumbnail();  
+                    $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-image'] = get_the_post_thumbnail(null,'testimonial',array());
                 endif;
                 $i++;
             endwhile;
@@ -89,7 +89,8 @@ if (!function_exists('bizlight_home_testimonial')) :
                                                     <?php if (($bizlight_home_testimonial_image_option == 1) && $bizlight_testimonial_array['bizlight-home-testimonial-image']!= NULL) { ?>
                                                         <div class="content-thumb">
                                                             <span>
-                                                                <img src="<?php echo $bizlight_testimonial_array['bizlight-home-testimonial-image']; ?>">
+                                                            <?php echo $bizlight_testimonial_array['bizlight-home-testimonial-image'] ?>
+                                                                
                                                             </span>
                                                         </div>  
                                                     <?php

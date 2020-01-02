@@ -12,7 +12,17 @@ if (!function_exists('keysist_home_about_array')) :
         $keysist_home_about_contents_array = array();
         $bizlight_home_about_args =    array(
             'post_type' => 'keysist_caracter',
-            'posts_per_page' => 3
+            'posts_per_page' => 3,
+            'meta_query'     => array(
+                array(
+                  'key'        => 'activo',
+                  'compare'    => '=',
+                  'value'      => 1
+                )
+            ),
+            'meta_key'       => 'orden',
+            'orderby'        => 'meta_value',
+            'order'          => 'ASC'
         );
         $keysist_home_about_contents_array = array();
         $bizlight_home_about_post_query = new WP_Query($bizlight_home_about_args);
