@@ -22,7 +22,9 @@ if (!function_exists('keysist_home_testimonial_array')) :
                 $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-title'] = get_the_title();
                 $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-content'] = get_the_content();
                 if(has_post_thumbnail()):
-                    $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-image'] = get_the_post_thumbnail(null,'testimonial',array());
+                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'testimonial' );
+                    $url = $thumb['0'];
+                    $bizlight_home_testimonial_contents_array[$i]['bizlight-home-testimonial-image'] = $url;
                 endif;
                 $i++;
             endwhile;

@@ -15,12 +15,24 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
         $bizlight_fs_contents_array = array();
 
         $keysist_home_testimonial_args =    array(
-            'post_type__in' => array(
-                'keysist_caracter',
-                'keysist_servicios',
-                'keysist_carreras',
-                'keysist_productos'
-            )
+            'post_type' => array('keysist_servicios', 'keysist_caracter', 'keysist_carreras', 'keysist_productos'),
+            'post_status' => array('publish'),
+            'meta_query'	=> array(
+                'relation'		=> 'AND',
+                array(
+                    'key'	 	=> 'activo',
+                    'value'	  	=> '1',
+                    'compare' 	=> '=',
+                ),
+                array(
+                    'key'	  	=> 'mostrar_inicio',
+                    'value'	  	=> '1',
+                    'compare' 	=> '=',
+                ),
+            ),
+            'meta_key'			=> 'orden',
+            'orderby'			=> 'meta_value',
+            'order'				=> 'ASC'
             
         );
         $keysist_home_testimonial_post_query = new WP_Query( $keysist_home_testimonial_args );
