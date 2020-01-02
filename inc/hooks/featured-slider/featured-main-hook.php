@@ -20,14 +20,8 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
                 'keysist_servicios',
                 'keysist_carreras',
                 'keysist_productos'
-            ),
-            'meta_query'     => array(
-                array(
-                  'key'        => 'mostrar_incio',
-                  'compare'    => '=',
-                  'value'      => 1
-                )
-            ),
+            )
+            
         );
         $keysist_home_testimonial_post_query = new WP_Query( $keysist_home_testimonial_args );
         $i=0;
@@ -37,11 +31,14 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
                 $bizlight_fs_contents_array[$i]['bizlight-fs-title2'] = get_the_title();
                 $bizlight_fs_contents_array[$i]['bizlight-fs-content'] = get_the_content();
                 $bizlight_fs_contents_array[$i]['bizlight-fs-link'] = get_permalink();
-                if(has_post_thumbnail()):
-                    $bizlight_fs_contents_array[$i]['bizlight-fs-image'] = get_the_post_thumbnail();
-                else:
+                $url ='';
+                if(has_post_thumbnail()){
+                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'home-main-slider' );
+                    $url = $thumb['0'];
+                    $bizlight_fs_contents_array[$i]['bizlight-fs-image'] = $url;
+                }else{
                     $bizlight_fs_contents_array[$i]['bizlight-fs-image'] = $bizlight_home_about_right_image;
-                endif;
+                }
                 $i++;
             endwhile;
             wp_reset_postdata();
