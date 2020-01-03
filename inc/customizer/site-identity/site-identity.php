@@ -9,6 +9,9 @@ $bizlight_customizer_defaults['bizlight-logo'] = '';
 $bizlight_customizer_defaults['bizlight-title-tagline-message'] = sprintf( __( '%1$s If you do not have a logo %2$s', 'bizlight' ), '<span class="customize-control-title">','</span>' );
 $bizlight_customizer_defaults['bizlight-enable-title'] = 1;
 $bizlight_customizer_defaults['bizlight-enable-tagline'] = 1;
+$bizlight_customizer_defaults['bizlight-phone'] = 'UIO +593 2 111 4586';
+$bizlight_customizer_defaults['bizlight-info-email'] = 'info@miempresa.com';
+$bizlight_customizer_defaults['bizlight-info-text-contact'] = 'Contactanos';
 
 /*creating setting control*/
 $bizlight_settings_controls['bizlight-logo'] =
@@ -25,7 +28,45 @@ $bizlight_settings_controls['bizlight-logo'] =
             'active_callback'       => ''
         )
     );
-
+$bizlight_settings_controls['bizlight-phone'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-phone']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
+            'section'               => 'title_tagline',
+            'type'                  => 'text',
+            'priority'              => 50,
+            'active_callback'       => ''
+        )
+    );
+$bizlight_settings_controls['bizlight-info-email'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-info-email']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
+            'section'               => 'title_tagline',
+            'type'                  => 'text',
+            'priority'              => 50,
+            'active_callback'       => ''
+        )
+    );
+$bizlight_settings_controls['bizlight-info-text-contact'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-info-text-contact']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
+            'section'               => 'title_tagline',
+            'type'                  => 'text',
+            'priority'              => 50,
+            'active_callback'       => ''
+        )
+    );
 /*enable option for enable tagline in header*/
 $bizlight_settings_controls['bizlight-title-tagline-message'] =
     array(

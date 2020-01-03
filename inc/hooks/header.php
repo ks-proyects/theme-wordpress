@@ -160,6 +160,14 @@ function bizlight_header() {
      <!-- header and navigation option second - navigation right  -->
         <header id="masthead" class="site-header evision-nav-right navbar-fixed-top" role="banner">
             <div class="container">
+                <div class="row desktop-header-info">
+                    <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info">
+                        <span class="" ><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?></span>
+                        <span class="sep"> | </span>
+                        <span class=""><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?></span>
+
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-4 rtl-fright">
                         <?php if ( isset($bizlight_customizer_all_values['bizlight-logo']) && !empty($bizlight_customizer_all_values['bizlight-logo'])) :
@@ -211,7 +219,11 @@ function bizlight_header() {
                     <div class="col-xs-12 col-sm-9 col-md-8 rtl-fleft">
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
+                            
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                            <span class="navbar-text mob-header-info">
+                                Navbar text with an inline element
+                            </span>
                         </nav>
                     </div>
                 </div>
