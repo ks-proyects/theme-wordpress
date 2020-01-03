@@ -11,7 +11,7 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
     function bizlight_featured_slider_array( ){
         global $bizlight_customizer_all_values;
         $bizlight_feature_slider_number = absint( $bizlight_customizer_all_values['bizlight-fs-number'] );
-        $bizlight_home_about_right_image = $bizlight_customizer_all_values['keysist-home-about-right-image'];
+        $bizlight_home_about_right_image = $bizlight_customizer_all_values['bizlight-fs-right-image'];
         $bizlight_fs_contents_array = array();
 
         $keysist_home_testimonial_args =    array(

@@ -27,8 +27,5 @@ $keysist_customizer_home_service_file_path = bizlight_file_directory('inc/custom
 require $keysist_customizer_home_service_file_path;
 
 /*Home testimonials Section*/
-$bizlight_customizer_home_testimonial_panel_file_path = bizlight_file_directory('inc/customizer/home-options/testimonial/testimonial-panel.php');
-require $bizlight_customizer_home_testimonial_panel_file_path;
-
 $keysist_customizer_home_testimonial_panel_file_path = bizlight_file_directory('inc/customizer/home-options/home-testimonial.php');
 require $keysist_customizer_home_testimonial_panel_file_path;

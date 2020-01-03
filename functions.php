@@ -75,7 +75,7 @@ function bizlight_setup() {
 	add_image_size( 'home-main-slider', 1361 ,533, true );
 	add_image_size( 'curses-post', 360 ,243, true );
 	add_image_size( 'curses-post-detail', 1108 ,761, true );
-	add_image_size( 'testimonial', 120 ,120, true );
+	add_image_size( 'testimonial', 80 ,80, true );
 	add_image_size( 'home-blog-post-thumbnails-image', 365, 247, true );
 
 	add_theme_support( 'custom-header' );

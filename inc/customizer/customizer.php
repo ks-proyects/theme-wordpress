@@ -75,8 +75,8 @@ require $bizlight_customizer_options_font_family_file_path;
 /******************************************
 Featured Slider options
  *******************************************/
-$bizlight_customizer_featured_slider_setting_file_path = bizlight_file_directory('inc/customizer/featured-slider/slider-panel.php');
-require $bizlight_customizer_featured_slider_setting_file_path;
+$bizlight_customizer_slider_options_file_path = bizlight_file_directory('inc/customizer/featured-slider/slider-options.php');
+require $bizlight_customizer_slider_options_file_path;
 
 /******************************************
 Home page options

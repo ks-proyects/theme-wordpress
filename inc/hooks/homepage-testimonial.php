@@ -91,8 +91,7 @@ if (!function_exists('bizlight_home_testimonial')) :
                                                     <?php if (($bizlight_home_testimonial_image_option == 1) && $bizlight_testimonial_array['bizlight-home-testimonial-image']!= NULL) { ?>
                                                         <div class="content-thumb">
                                                             <span>
-                                                            <?php echo $bizlight_testimonial_array['bizlight-home-testimonial-image'] ?>
-                                                                
+                                                            <img src="<?php echo esc_url( $bizlight_testimonial_array['bizlight-home-testimonial-image']);?>" />
                                                             </span>
                                                         </div>  
                                                     <?php

@@ -12,16 +12,33 @@ $bizlight_customizer_defaults['bizlight-fs-enable-control']         = 1;
 $bizlight_customizer_defaults['bizlight-fs-enable-autoplay']        = 1;
 $bizlight_customizer_defaults['bizlight-fs-primary-enable-button']  = 1;
 $bizlight_customizer_defaults['bizlight-fs-extra-enable-button']    = 1;
-$bizlight_customizer_defaults['bizlight-fs-primary-button-text']    = __( 'Clicl Start', 'bizlight' );
-$bizlight_customizer_defaults['bizlight-fs-button-text']            = __( 'Learn More', 'bizlight' );
+$bizlight_customizer_defaults['bizlight-fs-primary-button-text']    = __( 'Ver Más', 'bizlight' );
+$bizlight_customizer_defaults['bizlight-fs-button-text']            = __( 'Registrarme', 'bizlight' );
 $bizlight_customizer_defaults['bizlight-fs-button-url']             = '#';
+$bizlight_customizer_defaults['bizlight-fs-right-image']            = get_template_directory_uri().'/assets/img/slider.jpg';
+
+$bizlight_customizer_defaults['bizlight-fs-enable-on'] = 'front-index-page';
+$bizlight_customizer_defaults['bizlight-fs-enable'] = 1;
 
 /*fs options*/
 $bizlight_sections['bizlight-fs-slider-options'] =
     array(
-        'priority'       => 80,
-        'title'          => __( 'Slider Options', 'bizlight' ),
-        'panel'          => 'bizlight-featured-slider',
+        'priority'       => 150,
+        'title'          => __( 'Ajustes de Slider', 'bizlight' ),
+    );
+
+$bizlight_settings_controls['bizlight-fs-enable'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-fs-enable']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Habilitar Slider', 'bizlight' ),
+            'section'               => 'bizlight-fs-slider-options',
+            'type'                  => 'checkbox',
+            'priority'              => 30,
+            'active_callback'       => ''
+        )
     );
 
 $bizlight_settings_controls['bizlight-fs-number'] =
@@ -30,7 +47,7 @@ $bizlight_settings_controls['bizlight-fs-number'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-number']
         ),
         'control' => array(
-            'label'                 =>  __( 'Number Of Slider', 'bizlight' ),
+            'label'                 =>  __( 'Número de Slider a Mostrar', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'select',
             'choices'               => array(
@@ -53,7 +70,7 @@ $bizlight_settings_controls['bizlight-fs-slider-mode'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-slider-mode']
         ),
         'control' => array(
-            'label'                 =>  __( 'Slider Mode', 'bizlight' ),
+            'label'                 =>  __( 'Movimiento del Slider', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'select',
             'choices'               => array(
@@ -72,7 +89,7 @@ $bizlight_settings_controls['bizlight-fs-enable-control'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-enable-control']
         ),
         'control' => array(
-            'label'                 =>  __( 'Enabele Slider Arrow', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar Navegación', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'checkbox',
             'priority'              => 50,
@@ -86,7 +103,7 @@ $bizlight_settings_controls['bizlight-fs-enable-autoplay'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-enable-autoplay']
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Autoplay', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar AutoPlay', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'checkbox',
             'priority'              => 60,
@@ -100,7 +117,7 @@ $bizlight_settings_controls['bizlight-fs-primary-enable-button'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-primary-enable-button'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Primary Button', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar Botón Primario', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'checkbox',
             'priority'              => 63,
@@ -114,7 +131,7 @@ $bizlight_settings_controls['bizlight-fs-primary-button-text'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-primary-button-text'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Primary Button Title', 'bizlight' ),
+            'label'                 =>  __( 'Texto Botón Primario', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'text',
             'priority'              => 65,
@@ -129,7 +146,7 @@ $bizlight_settings_controls['bizlight-fs-extra-enable-button'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-extra-enable-button'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Additional Button', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar Botón Secundario', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'checkbox',
             'priority'              => 70,
@@ -143,7 +160,7 @@ $bizlight_settings_controls['bizlight-fs-button-text'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-button-text'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Additional Button Title', 'bizlight' ),
+            'label'                 =>  __( 'Texto Botón Secundario', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'text',
             'priority'              => 80,
@@ -157,9 +174,23 @@ $bizlight_settings_controls['bizlight-fs-button-url'] =
             'default'              => $bizlight_customizer_defaults['bizlight-fs-button-url'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Additional Button Link', 'bizlight' ),
+            'label'                 =>  __( 'Link Texto Botón Secundario', 'bizlight' ),
             'section'               => 'bizlight-fs-slider-options',
             'type'                  => 'text',
             'priority'              => 90,
+        )
+    );
+$bizlight_settings_controls['bizlight-fs-right-image'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-fs-right-image']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Imagen por Defecto', 'bizlight' ),
+            'description'           =>  __( 'Tamaño de imagen recomendado 1361 * 533, si elimina la imagen, la imagen predeterminada mostrará', 'bizlight' ),
+            'section'               => 'bizlight-fs-slider-options',
+            'type'                  => 'image',
+            'priority'              => 90,
+            'active_callback'       => ''
         )
     );

@@ -92,7 +92,7 @@ $bizlight_settings_controls['bizlight-site-identity-color'] =
             'default'              => $bizlight_customizer_defaults['bizlight-site-identity-color'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Site Identity Color', 'bizlight' ),
+            'label'                 =>  __( 'Color de identidad del sitio', 'bizlight' ),
             'description'           =>  __( 'Site title and tagline color', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',

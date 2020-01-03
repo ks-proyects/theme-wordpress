@@ -74,8 +74,8 @@ final class bizlight_Customize {
 				'bizlight-update',
 				array(
         			'priority'       => 10,					
-					'pro_text' => esc_html__( 'Bizlight Pro - Buy Now',  'bizlight' ),
-					'pro_url'  => 'https://evisionthemes.com/product/bizlight-premium-theme/'
+					'pro_text' => esc_html__( 'Contáctanos',  'bizlight' ),
+					'pro_url'  => 'http://www.keysist.com/'
 				)
 			)
 		);

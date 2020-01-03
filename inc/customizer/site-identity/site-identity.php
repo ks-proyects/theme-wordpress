@@ -21,7 +21,7 @@ $bizlight_settings_controls['bizlight-logo'] =
             'section'               => 'title_tagline',
             'type'                  => 'image',
             'priority'              => 70,
-            'description'           =>  __( 'Recommended logo size 165*50', 'bizlight' ),
+            'description'           =>  __( 'Tamaño de logotipo recomendado 165*50', 'bizlight' ),
             'active_callback'       => ''
         )
     );
@@ -44,7 +44,7 @@ $bizlight_settings_controls['bizlight-enable-title'] =
             'default'              => $bizlight_customizer_defaults['bizlight-enable-title'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Title', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar Titulo', 'bizlight' ),
             'section'               => 'title_tagline',
             'type'                  => 'checkbox',
             'priority'              => 80,
@@ -57,7 +57,7 @@ $bizlight_settings_controls['bizlight-enable-tagline'] =
             'default'              => $bizlight_customizer_defaults['bizlight-enable-tagline'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Tagline', 'bizlight' ),
+            'label'                 =>  __( 'Habilitar Tagline', 'bizlight' ),
             'section'               => 'title_tagline',
             'type'                  => 'checkbox',
             'priority'              => 90,
