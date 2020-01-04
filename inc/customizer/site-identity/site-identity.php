@@ -9,9 +9,9 @@ $bizlight_customizer_defaults['bizlight-logo'] = '';
 $bizlight_customizer_defaults['bizlight-title-tagline-message'] = sprintf( __( '%1$s If you do not have a logo %2$s', 'bizlight' ), '<span class="customize-control-title">','</span>' );
 $bizlight_customizer_defaults['bizlight-enable-title'] = 1;
 $bizlight_customizer_defaults['bizlight-enable-tagline'] = 1;
-$bizlight_customizer_defaults['bizlight-phone'] = 'UIO +593 2 111 4586';
+$bizlight_customizer_defaults['bizlight-phone'] = '+593 2 111 4586';
 $bizlight_customizer_defaults['bizlight-info-email'] = 'info@miempresa.com';
-$bizlight_customizer_defaults['bizlight-info-text-contact'] = 'Contactanos';
+$bizlight_customizer_defaults['bizlight-info-text-contact'] = 'Contáctanos';
 $bizlight_customizer_defaults['bizlight-info-marker-link'] = '';
 $bizlight_customizer_defaults['bizlight-info-marker-text'] = 'Ubicanos';
 

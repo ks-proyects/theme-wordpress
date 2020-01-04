@@ -160,32 +160,27 @@ function bizlight_header() {
      <!-- header and navigation option second - navigation right  -->
         <header id="masthead" class="site-header evision-nav-right navbar-fixed-top evision-animate slideInDown" role="banner">
             <div class="container">
+                <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])  || !empty($bizlight_customizer_all_values['bizlight-info-email']) || !empty($bizlight_customizer_all_values['bizlight-info-marker-link'])):?>
                 <div class="row desktop-header-info">
                     <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info-header">
-                        <span >
-                            
-                            <a  href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>">
-                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>    
-                            <i class="fa fa-phone-square-alt"></i>
-                            </a>
-                        </span>
-                        <span>
-                            <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>">
-                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>    
-                             
-                            <i class="fa fa-mail-bulk"></i>
-                            </a>
-                        </span>
-                        <span>
-                            <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>">
-                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?>    
-                                
-                            <i class="fa fa-map-marker"></i>
-                            </a>
-                        </span>
-                        
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    
+                            <span>
+                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?><i class="fa fa-phone"></i></a>
+                            </span>
+                        <?php endif;?>
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-info-email'])): ?>   
+                            <span>
+                                <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?><i class="fa fa-send"></i></a>
+                            </span>
+                        <?php endif;?>
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-info-marker-link'])): ?>   
+                            <span>
+                                <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?><i class="fa fa-map-marker"></i></a>
+                            </span>
+                        <?php endif;?>
                     </div>
                 </div>
+                <?php endif;?>
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-4 rtl-fright">
                         <?php if ( isset($bizlight_customizer_all_values['bizlight-logo']) && !empty($bizlight_customizer_all_values['bizlight-logo'])) :
@@ -240,7 +235,19 @@ function bizlight_header() {
                             
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                             <span class="navbar-text mob-header-info">
-                                Navbar text with an inline element
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    
+                                    <span>
+                                        <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?><i class="fa fa-phone"></i></a>
+                                    </span>
+                                <?php endif;?>
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-info-email'])): ?>   
+                                    <span><a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?><i class="fa fa-send"></i></a></span>
+                                <?php endif;?>
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-info-marker-link'])): ?>   
+                                    <span>
+                                        <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?><i class="fa fa-map-marker"></i></a>
+                                    </span>
+                                <?php endif;?>
                             </span>
                         </nav>
                     </div>

@@ -36,6 +36,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
                 --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
                 --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
+                --type-font:'FontAwesome'
             }
              <?php
             }

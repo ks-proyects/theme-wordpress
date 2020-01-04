@@ -1574,7 +1574,7 @@ body.home .page-inner-title {
 
 .cat-links:before {
     content: "\f07c";
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     margin-right: 5px;
 }
 
@@ -1585,7 +1585,7 @@ body.home .page-inner-title {
 
 .tags-links:before {
     content: "\f02c";
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     margin-right: 5px;
 }
 
@@ -1595,7 +1595,7 @@ body.home .page-inner-title {
 
 .comments-link:before {
     content: "\f086";
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     margin-right: 5px;
 }
 
@@ -1614,7 +1614,7 @@ body.home .page-inner-title {
 
 .posted-on:before {
     content: "\f274";
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     margin-right: 5px;
 }
 
@@ -1695,7 +1695,7 @@ body.home .page-inner-title {
 .nav-links .nav-previous a:before,
 .nav-links .nav-next a:after {
     position: absolute;
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     display: inline-block;
     font-size: 24px;
     line-height: 22px;
@@ -1776,7 +1776,7 @@ body.home .page-inner-title {
 .site-info-header {
     width: 96%;
     margin: 0 auto;
-    padding: 21px 15px 2px;
+    padding: 21px 0px 2px;
     font-size: 15px;
 }
 .site-info-header  span{
@@ -1786,8 +1786,11 @@ body.home .page-inner-title {
     margin-right: 8px;
 }
 .site-info-header a{
-    margin-left: 8px;
+    margin-left: 2px;
     color: var(--banner-text-color) !important;
+}
+.site-info-header a i{
+    margin-left: 5px;
 }
 .site-info-header a:hover{
     color: var(--banner-text-color) !important;
@@ -2002,7 +2005,7 @@ article.hentry .image-full {
 
 .byline:before {
     content: "\f007";
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     margin-right: 5px;
 }
 
@@ -2493,7 +2496,15 @@ article.hentry .image-full {
 /* --------------------------------------- */
 
 .mob-header-info {
-    display: block;
+    display: inline-flex;
+    margin: 0;
+}
+.mob-header-info span{
+    padding-right: 0.3rem;
+}
+.mob-header-info a {
+    padding: 1rem 0rem  !important;
+    display: grid !important;
 }
 
 .desktop-header-info {
@@ -2563,7 +2574,7 @@ article.hentry .image-full {
 }
 
 .evision-social-section a:before {
-    font-family: "FontAwesome";
+    font-family: var(--type-font);
     font-size: 14px;
 }
 
@@ -3988,7 +3999,7 @@ nav#site-navigation ul ul li {
 
 ul.sub-menu:before {
     content: "\f0d8";
-    font-family: fontAwesome;
+    font-family: var(--type-font);
     position: absolute;
     top: -19px;
     font-size: 50px;
