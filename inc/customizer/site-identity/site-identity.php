@@ -12,6 +12,8 @@ $bizlight_customizer_defaults['bizlight-enable-tagline'] = 1;
 $bizlight_customizer_defaults['bizlight-phone'] = 'UIO +593 2 111 4586';
 $bizlight_customizer_defaults['bizlight-info-email'] = 'info@miempresa.com';
 $bizlight_customizer_defaults['bizlight-info-text-contact'] = 'Contactanos';
+$bizlight_customizer_defaults['bizlight-info-marker-link'] = '';
+$bizlight_customizer_defaults['bizlight-info-marker-text'] = 'Ubicanos';
 
 /*creating setting control*/
 $bizlight_settings_controls['bizlight-logo'] =
@@ -37,6 +39,32 @@ $bizlight_settings_controls['bizlight-phone'] =
             'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
             'section'               => 'title_tagline',
             'type'                  => 'text',
+            'priority'              => 50,
+            'active_callback'       => ''
+        )
+    );
+$bizlight_settings_controls['bizlight-info-marker-text'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-info-marker-text']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Leyenda del Mapa', 'keysist' ),
+            'section'               => 'title_tagline',
+            'type'                  => 'text',
+            'priority'              => 50,
+            'active_callback'       => ''
+        )
+    );
+$bizlight_settings_controls['bizlight-info-marker-link'] =
+    array(
+        'setting' =>     array(
+            'default'              => $bizlight_customizer_defaults['bizlight-info-marker-link']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Url del Mapa', 'keysist' ),
+            'section'               => 'title_tagline',
+            'type'                  => 'url',
             'priority'              => 50,
             'active_callback'       => ''
         )

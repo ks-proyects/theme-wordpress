@@ -158,14 +158,32 @@ function bizlight_header() {
     global $bizlight_customizer_all_values;
     ?>
      <!-- header and navigation option second - navigation right  -->
-        <header id="masthead" class="site-header evision-nav-right navbar-fixed-top" role="banner">
+        <header id="masthead" class="site-header evision-nav-right navbar-fixed-top evision-animate slideInDown" role="banner">
             <div class="container">
                 <div class="row desktop-header-info">
-                    <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info">
-                        <span class="" ><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?></span>
-                        <span class="sep"> | </span>
-                        <span class=""><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?></span>
-
+                    <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info-header">
+                        <span >
+                            
+                            <a  href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>">
+                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>    
+                            <i class="fa fa-phone-square-alt"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>">
+                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>    
+                             
+                            <i class="fa fa-mail-bulk"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>">
+                            <?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?>    
+                                
+                            <i class="fa fa-map-marker"></i>
+                            </a>
+                        </span>
+                        
                     </div>
                 </div>
                 <div class="row">

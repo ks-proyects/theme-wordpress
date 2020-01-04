@@ -880,8 +880,8 @@ dd a {
     background-position: center top;
     background-color: #565656;
     text-align: center;
-    padding-bottom: 70px;
-    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-bottom: 30px;
     background-size: cover;
 }
@@ -932,7 +932,7 @@ body.home .page-inner-title {
 
 .site-title,
 .site-title a {
-    margin-top: 24px;
+    margin-top: 8px;
     font-size: 22px;
     text-transform: inherit;
     font-weight: 500;
@@ -994,7 +994,7 @@ body.home .page-inner-title {
     width: 100%;
     background: none repeat scroll 0 0 var(--main-bg-color);
     text-align: left;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .main-navigation .nav-menu {
@@ -1772,6 +1772,25 @@ body.home .page-inner-title {
     width: 1170px;
     margin: 0 auto;
     padding: 13px 15px 15px;
+}
+.site-info-header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 21px 15px 2px;
+    font-size: 15px;
+}
+.site-info-header  span{
+    background: var(--main-bg-color);
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin-right: 8px;
+}
+.site-info-header a{
+    margin-left: 8px;
+    color: var(--banner-text-color) !important;
+}
+.site-info-header a:hover{
+    color: var(--banner-text-color) !important;
 }
 
 @media only screen and (max-width: 1170px) {
