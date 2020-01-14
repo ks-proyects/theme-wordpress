@@ -27,7 +27,7 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
             $bizlight_background_class = 'bg-no-fix';
         }
         ?>
-        <section class="evision-wrapper block-section wrap-highlight <?php echo esc_attr($bizlight_background_class); ?>">
+        <section id="caracteristic" class="evision-wrapper block-section wrap-highlight <?php echo esc_attr($bizlight_background_class); ?>">
             <div class="container evision-animate fadeInUp">
                 <h2><?php echo esc_html( $bizlight_home_featured_title ); ?></h2>
                 <?php

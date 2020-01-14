@@ -41,9 +41,11 @@ jQuery(document).ready(function ($) {
         if(!$('.navbar-fixed-top').hasClass("navbar-fixed-active"))
         {
             $('.navbar-fixed-top').addClass("navbar-fixed-active").css('paddingBottom', '0');
+            $('.navbar-fixed-top').removeClass("navbar-fixed-shadow").css('paddingBottom', '15px');
         }
        }else{
-            $('.navbar-fixed-top').removeClass("navbar-fixed-active").css('paddingBottom', '15px');;
+            $('.navbar-fixed-top').addClass("navbar-fixed-shadow");
+            $('.navbar-fixed-top').removeClass("navbar-fixed-active").css('paddingBottom', '15px');
        }
     });
 

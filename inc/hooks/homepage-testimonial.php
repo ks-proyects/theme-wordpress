@@ -53,14 +53,17 @@ if (!function_exists('bizlight_home_testimonial')) :
      *
      */
     function bizlight_home_testimonial() {
+        ?>
+        <h1>TESTIMONI</h1>
+        <?php
         global $bizlight_customizer_all_values;
-        $bizlight_home_testimonial_image_option = $bizlight_customizer_all_values['bizlight-home-testimonial-image-enable'];
-        if (1 != $bizlight_customizer_all_values['bizlight-home-testimonial-enable']) {
+        $bizlight_home_testimonial_image_option = $bizlight_customizer_all_values['keysist-home-testimonial-image-enable'];
+        if (1 != $bizlight_customizer_all_values['keysist-home-testimonial-enable']) {
             return null;
         }
         $bizlight_testimonial_arrays = keysist_home_testimonial_array();
             ?>
-            <section class="evision-wrapper block-section wrap-testimonial">
+            <section id ="testimonios" class="evision-wrapper block-section wrap-testimonial">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">

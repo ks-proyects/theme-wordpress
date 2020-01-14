@@ -82,7 +82,8 @@ if (!function_exists('keysist_home_about')) :
         $bizlight_home_about_content = $bizlight_customizer_all_values['keysist-home-about-content'];
         $bizlight_home_about_right_image = $bizlight_customizer_all_values['keysist-home-about-right-image'];
         ?>
-            <section class="evision-wrapper block-section wrap-about">
+            <section id="aboutus" class="evision-wrapper block-section wrap-about">
+            
                     <div class="container overhidden">
                         <div class="row">
                             <div class="col-md-7 evision-animate slideInLeft">

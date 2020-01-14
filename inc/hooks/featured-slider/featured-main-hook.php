@@ -124,7 +124,7 @@ if ( ! function_exists( 'bizlight_featured_slider' ) ) :
         $bizlight_primary_button_text  = $bizlight_customizer_all_values['bizlight-fs-primary-button-text'];
 
         ?>
-        <section class="evision-wrapper evision-wrap-banner evision-banner-right-nav">
+        <section id="home" class="evision-wrapper evision-wrap-banner evision-banner-right-nav">
             <?php if( 1 == $bizlight_fs_enable_control){ ?>
                 <div class="controls">
                     <a href="#" id="bizlight-prev"><i class="fa fa-angle-left"></i></a> 
