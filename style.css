@@ -2932,6 +2932,17 @@ body:not(.home) .site-header.evision-nav-right {
 
 /*-------------------- Slider section -----------------*/
 
+
+.banner-slider{
+    height: 8em;
+}
+.banner-slider p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+}
+
 .evision-wrap-banner {
     border-bottom: 10px solid var(--main-bg-color);
     background-color: #555467;
@@ -3242,6 +3253,7 @@ body:not(.home) .site-header.evision-nav-right {
     z-index: 1;
 }
 
+
 .box-container .box-inner:hover .icon-container i,
 .box-container .box-content,
 .box-container h3,
@@ -3288,6 +3300,18 @@ body:not(.home) .site-header.evision-nav-right {
 
 .browse-more-btn {
     margin-top: 60px;
+}
+
+@media screen and (min-width: 991px) {
+    .service-content{
+        height: 16em;
+    }
+    .service-content-text p{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+    }
 }
 
 

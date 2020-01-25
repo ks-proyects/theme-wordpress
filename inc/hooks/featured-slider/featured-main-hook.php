@@ -186,7 +186,7 @@ if ( ! function_exists( 'bizlight_featured_slider' ) ) :
                                                     <div class="banner-divider-container">
                                                         <span class="banner-divider"></span>
                                                     </div>
-                                                    <div class="banner-con">
+                                                    <div class="banner-con banner-slider">
                                                         <p>
                                                             <?php echo wp_kses_post( $bizlight_slider_array['bizlight-fs-content'] ); ?>
                                                         </p>

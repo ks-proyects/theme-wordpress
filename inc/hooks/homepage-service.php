@@ -112,11 +112,12 @@ if ( ! function_exists( 'keysist_home_service' ) ) :
                                                 <div class="icon-container">
                                                     <span><i class="fa <?php echo esc_attr( $bizlight_service_array['keysist-home-service-icon'] ); ?>"></i></span>
                                                 </div>
-                                                <div class="box-content">
+                                                <div class="box-content service-content">
                                                     <h3><?php echo esc_html( $bizlight_service_array['keysist-home-service-title'] );?></h3>
-                                                    <div class="box-content-text">
-                                                        <p>
+                                                    <div class="box-content-text service-content-text">
+                                                        <p>  
                                                             <?php echo wp_kses_post( $bizlight_service_array['keysist-home-service-content'] );?>
+                                                        
                                                         </p>
                                                     </div>
                                                 </div>
