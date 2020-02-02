@@ -28,6 +28,7 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
         }
         ?>
         <section id="caracteristic" class="evision-wrapper block-section wrap-highlight <?php echo esc_attr($bizlight_background_class); ?>">
+            <p style="display:none;">caracteristic</p>
             <div class="container evision-animate fadeInUp">
                 <h2><?php echo esc_html( $bizlight_home_featured_title ); ?></h2>
                 <?php

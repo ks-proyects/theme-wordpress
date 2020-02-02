@@ -15,6 +15,7 @@ get_header(); ?>
 </div>
 <div id="content" class="site-content">
 	<section id="primary" class="content-area">
+		<p style="display:none;">primary</p>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

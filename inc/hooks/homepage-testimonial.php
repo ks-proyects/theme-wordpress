@@ -64,6 +64,7 @@ if (!function_exists('bizlight_home_testimonial')) :
         $bizlight_testimonial_arrays = keysist_home_testimonial_array();
             ?>
             <section id ="testimonios" class="evision-wrapper block-section wrap-testimonial"> 
+            <p style="display:none;">testimonios</p>
             <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">

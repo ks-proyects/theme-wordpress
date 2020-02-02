@@ -23,6 +23,7 @@ if ( ! function_exists( 'bizlight_home_blog' ) ) :
         }
         ?>
         <section id="blogs" class="evision-wrapper block-section wrap-blog">
+            <p style="display:none;">blogs</p>
             <div class="container">
                 <h2 class="evision-animate slideInDown"><?php echo esc_html( $bizlight_home_blog_title ); ?></h2>
                 <span class="title-divider"></span>
