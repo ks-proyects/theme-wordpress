@@ -4086,3 +4086,21 @@ h1.main-title a {
     background-color: #f8f8f9;
     padding-bottom: 60px;
 }
+
+/**/
+iframe {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px var(--main-bg-color);
+    -webkit-box-shadow: 4px 4px 14px var(--main-bg-color);
+    box-shadow: 4px 4px 14px var(--main-bg-color);
+    width: 100%; height: 30em;
+} 
+@media screen and (max-width: 991px) {
+    iframe {
+        width: 30em; height: 30em;
+    } 
+}

@@ -25,8 +25,12 @@ if (!function_exists('keysist_home_contact')) :
                             <div id="carousel-contact" class="carousel slide">
                                 <?php echo do_shortcode($bizlight_customizer_all_values['keysist-home-contact-shor-code']); ?>  
                             </div>
-                            <?php if( !empty($bizlight_customizer_all_values['keysist-home-contact-url-map']) ) {
-                                echo esc_html($bizlight_customizer_all_values['keysist-home-contact-url-map']); 
+                            <?php
+                            if( !empty($bizlight_customizer_all_values['keysist-home-contact-url-map']) ) {
+                              ?>
+                              <iframe src="<?php echo $bizlight_customizer_all_values['keysist-home-contact-url-map']; ?>" 
+                              frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                              <?php
                             }?>
                         </div>
                     </div>

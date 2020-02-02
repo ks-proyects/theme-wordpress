@@ -9,7 +9,7 @@ $bizlight_customizer_defaults['keysist-home-contact-enable']           = 1;
 $bizlight_customizer_defaults['keysist-home-contact-title'] = __( 'Contactanos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-content'] = __( 'Si tienes dudas escribenos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-shor-code'] = __( '', 'keysist' );
-$bizlight_customizer_defaults['keysist-home-contact-url-map'] = __( '', 'keysist' );
+$bizlight_customizer_defaults['keysist-home-contact-url-map'] = __( 'prueba', 'keysist' );
 /*testimonialsetting*/
 $bizlight_sections['keysist-home-contact-enable-setting'] =
     array(
@@ -74,7 +74,7 @@ $bizlight_settings_controls['keysist-home-contact-url-map'] =
         'control' => array(
             'label'                 =>  __( 'URL Mapa', 'keysist' ),
             'section'               => 'keysist-home-contact-enable-setting',
-            'type'                  => 'text',
+            'type'                  => 'textarea_html',
             'priority'              => 20,
         )
     );
