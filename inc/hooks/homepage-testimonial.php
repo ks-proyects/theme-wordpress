@@ -54,7 +54,7 @@ if (!function_exists('bizlight_home_testimonial')) :
      */
     function bizlight_home_testimonial() {
         ?>
-        <h1>TESTIMONI</h1>
+        
         <?php
         global $bizlight_customizer_all_values;
         $bizlight_home_testimonial_image_option = $bizlight_customizer_all_values['keysist-home-testimonial-image-enable'];
@@ -63,8 +63,8 @@ if (!function_exists('bizlight_home_testimonial')) :
         }
         $bizlight_testimonial_arrays = keysist_home_testimonial_array();
             ?>
-            <section id ="testimonios" class="evision-wrapper block-section wrap-testimonial">
-                <div class="container">
+            <section id ="testimonios" class="evision-wrapper block-section wrap-testimonial"> 
+            <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">
                             <div class="testimonial-icon">
@@ -92,7 +92,7 @@ if (!function_exists('bizlight_home_testimonial')) :
                                             <div class="item <?php echo $i == 0 ? 'active' : '';?>">
                                                 <div class="content-text">
                                                     <?php if (($bizlight_home_testimonial_image_option == 1) && $bizlight_testimonial_array['bizlight-home-testimonial-image']!= NULL) { ?>
-                                                        <div class="content-thumb">
+                                                        <div class="content-thumb testimonial-img">
                                                             <span>
                                                             <img src="<?php echo esc_url( $bizlight_testimonial_array['bizlight-home-testimonial-image']);?>" />
                                                             </span>

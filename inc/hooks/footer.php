@@ -86,7 +86,7 @@ if ( ! function_exists( 'bizlight_footer' ) ) :
             ?>
             <div class="col-xs-12 col-sm-12 col-md-12 rtl-fcenter">
                 <nav id="site-navigation" class="" role="navigation">
-                    <?php wp_nav_menu( array( 'theme_location' => 'menu-inferior', 'menu_id' => 'primary-menu' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'menu-inferior', 'menu_id' => 'footer-menu' ) ); ?>
                 </nav>
             </div>
             <div class="copyright">
@@ -97,9 +97,9 @@ if ( ! function_exists( 'bizlight_footer' ) ) :
                 ?>
             </div>
             <div class="site-info">
-                <a href="<?php echo esc_url( __( 'http://www.keysist.com/', 'bizlight' ) ); ?>"><?php printf( esc_html__( 'Desarollado por %s', 'bizlight' ), 'Keysist' ); ?></a>
+                <a href="<?php echo esc_url( __( 'http://www.keysist.com/', 'keysist' ) ); ?>"><?php printf( esc_html__( 'Desarollado por %s', 'bizlight' ), 'Keysist' ); ?></a>
                 <span class="sep"> | </span>
-                <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bizlight' ), 'Bizlight', '<a href="http://evisionthemes.com/" rel="designer">eVisionThemes</a>' ); ?>
+                <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bizlight' ), 'Keysist', '<a target="_new" href="http://evisionthemes.com/" rel="designer">eVisionThemes</a>' ); ?>
             </div><!-- .site-info -->
 
         </footer><!-- #colophon -->

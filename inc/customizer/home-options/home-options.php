@@ -29,3 +29,7 @@ require $keysist_customizer_home_service_file_path;
 /*Home testimonials Section*/
 $keysist_customizer_home_testimonial_panel_file_path = bizlight_file_directory('inc/customizer/home-options/home-testimonial.php');
 require $keysist_customizer_home_testimonial_panel_file_path;
+
+/*Home Contact Section*/
+$keysist_customizer_home_contact_panel_file_path = bizlight_file_directory('inc/customizer/home-options/home-contact.php');
+require $keysist_customizer_home_contact_panel_file_path;

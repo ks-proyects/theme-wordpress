@@ -232,8 +232,6 @@ function bizlight_header() {
                     <div class="col-xs-12 col-sm-9 col-md-8 rtl-fleft">
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
-                            
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                             <span class="navbar-text mob-header-info">
                                 <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    
                                     <span>
@@ -249,6 +247,7 @@ function bizlight_header() {
                                     </span>
                                 <?php endif;?>
                             </span>
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                         </nav>
                     </div>
                 </div>
