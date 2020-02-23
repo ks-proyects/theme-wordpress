@@ -86,7 +86,7 @@ if (!function_exists('keysist_home_about')) :
                 <p style="display:none;">aboutus</p>
                     <div class="container overhidden">
                         <div class="row">
-                            <div class="col-md-7 evision-animate slideInLeft">
+                            <div class="col-md-5 evision-animate slideInLeft">
                                 <div class="about-content">
                                     <h2><?php echo esc_html( $keysist_home_about_title );?></h2>
                                     <span class="title-divider"></span>
@@ -116,7 +116,7 @@ if (!function_exists('keysist_home_about')) :
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-md-5 evision-animate fadeInUp">
+                            <div class="col-md-7 evision-animate fadeInUp">
                                 <div class="product-thumb">
                                     <img src="<?php echo esc_url( $bizlight_home_about_right_image );?>" />
                                 </div>

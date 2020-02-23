@@ -47,6 +47,11 @@ if ( ! function_exists( 'bizlight_before_wp_head' ) ) :
 function bizlight_before_wp_head() {
     ?>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <meta property="og:image" content="https://secureservercdn.net/198.71.233.51/53p.d81.myftpupload.com/wp-content/uploads/2020/01/keysist-logo50.png">
+    <meta property="og:url" content="<?php bloginfo( 'url' )?>">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

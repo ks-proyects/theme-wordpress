@@ -66,7 +66,6 @@ if ( ! function_exists( 'bizlight_home_blog' ) ) :
                                             <div class="single-thumb-content-text">
                                                 <p>
                                                     <?php echo wp_kses_post(bizlight_words_count($bizlight_bolg_Single_number, get_the_content()) );?>
-                                                    
                                                 </p>
                                             </div>
                                         </div>
