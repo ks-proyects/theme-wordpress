@@ -24,7 +24,7 @@ $bizlight_customizer_defaults['bizlight-fs-enable'] = 1;
 $bizlight_sections['bizlight-fs-slider-options'] =
     array(
         'priority'       => 150,
-        'title'          => __( 'Ajustes de Slider', 'bizlight' ),
+        'title'          => __( 'Configuración de Slider', 'bizlight' ),
     );
 
 $bizlight_settings_controls['bizlight-fs-enable'] =

@@ -155,13 +155,6 @@ $bizlight_settings_controls['bizlight-link-color'] =
         )
     );
 
-
-
-
-
-
-
-
 $bizlight_settings_controls['bizlight-link-hover-color'] =
     array(
         'setting' =>     array(

@@ -160,7 +160,7 @@ function bizlight_header() {
      <!-- header and navigation option second - navigation right  -->
         <header id="masthead" class="site-header evision-nav-right navbar-fixed-top evision-animate slideInDown" role="banner">
             <div class="container">
-                <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])  || !empty($bizlight_customizer_all_values['bizlight-info-email']) || !empty($bizlight_customizer_all_values['bizlight-info-marker-link'])):?>
+                <?php if(is_front_page() && (!empty($bizlight_customizer_all_values['bizlight-phone'])  || !empty($bizlight_customizer_all_values['bizlight-info-email']) || !empty($bizlight_customizer_all_values['bizlight-info-marker-link']))):?>
                 <div class="row desktop-header-info">
                     <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info-header">
                         <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    

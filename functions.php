@@ -15,8 +15,8 @@
  * @return string full path of file inside theme
  *
  */
-if( !function_exists('bizlight_file_directory') ){
-	function bizlight_file_directory( $file_path ){
+if( !function_exists('keysist_file_directory') ){
+	function keysist_file_directory( $file_path ){
 		$located = locate_template( $file_path );
 		if( '' != $located ){
 			return $located;
@@ -27,11 +27,11 @@ if( !function_exists('bizlight_file_directory') ){
  * require bizlight int.
  */
 
-$bizlight_init_file_path = bizlight_file_directory('inc/init.php');
-require $bizlight_init_file_path;
+$keysist_init_file_path = keysist_file_directory('inc/init.php');
+require $keysist_init_file_path;
 require get_template_directory().'/inc/queries.php';
 
-if ( ! function_exists( 'bizlight_setup' ) ) :
+if ( ! function_exists( 'keysist_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -39,14 +39,14 @@ if ( ! function_exists( 'bizlight_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function bizlight_setup() {
+function keysist_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Bizlight, use a find and replace
 	 * to change 'bizlight' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'bizlight', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'keysist', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -76,6 +76,7 @@ function bizlight_setup() {
 	add_image_size( 'curses-post', 360 ,243, true );
 	add_image_size( 'curses-post-detail', 1108 ,761, true );
 	add_image_size( 'testimonial', 80 ,80, true );
+	add_image_size( 'team', 150 ,150, true );
 	add_image_size( 'home-blog-post-thumbnails-image', 365, 247, true );
 
 	add_theme_support( 'custom-header' );
@@ -84,9 +85,9 @@ function bizlight_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'bizlight' ),
-		'social' => esc_html__( 'Social Menu', 'bizlight' ),
-		'menu-inferior' => esc_html__( 'Secondary Menu', 'bizlight' )
+		'primary' => esc_html__( 'Primary Menu', 'keysist' ),
+		'social' => esc_html__( 'Social Menu', 'keysist' ),
+		'menu-inferior' => esc_html__( 'Secondary Menu', 'keysist' )
 	) );
 
 	/*
@@ -123,8 +124,8 @@ function bizlight_setup() {
 	add_theme_support( 'woocommerce' );
 
 }
-endif; // bizlight_setup
-add_action( 'after_setup_theme', 'bizlight_setup' );
+endif; 
+add_action( 'after_setup_theme', 'keysist_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -204,13 +205,13 @@ add_action( 'wp_enqueue_scripts', 'bizlight_scripts' );
 /**
  * Custom template tags for this theme.
  */
-$bizlight_template_tags = bizlight_file_directory('inc/template-tags.php');
+$bizlight_template_tags = keysist_file_directory('inc/template-tags.php');
 require $bizlight_template_tags;
 
 /**
  * Custom functions that act independently of the theme templates.
  */
-$bizlight_extras_tags = bizlight_file_directory('inc/extras.php');
+$bizlight_extras_tags = keysist_file_directory('inc/extras.php');
 require $bizlight_extras_tags;
 
 
@@ -222,7 +223,7 @@ require get_template_directory() . '/inc/custom-header.php';
 /**
  * Load Jetpack compatibility file.
  */
-$bizlight_jetpack_tags = bizlight_file_directory('inc/jetpack.php');
+$bizlight_jetpack_tags = keysist_file_directory('inc/jetpack.php');
 require $bizlight_jetpack_tags;
 
 /*update to pro added*/

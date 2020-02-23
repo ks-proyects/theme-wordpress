@@ -45,7 +45,7 @@ endif;
 /**
  * Customizer framework added.
  */
-$bizlight_coder_customizer_file_path = bizlight_file_directory('inc/frameworks/coder-customizer-framework/coder-customizer-framework.php');
+$bizlight_coder_customizer_file_path = keysist_file_directory('inc/frameworks/coder-customizer-framework/coder-customizer-framework.php');
 require $bizlight_coder_customizer_file_path;
 
 global $bizlight_panels;
@@ -57,37 +57,37 @@ global $bizlight_customizer_defaults;
 /******************************************
 Modify Site Identity sections
  *******************************************/
-$bizlight_customizer_site_identity_file_path = bizlight_file_directory('inc/customizer/site-identity/site-identity.php');
+$bizlight_customizer_site_identity_file_path = keysist_file_directory('inc/customizer/site-identity/site-identity.php');
 require $bizlight_customizer_site_identity_file_path;
 
 /******************************************
 Modify Site Color sections
  *******************************************/
-$bizlight_customizer_options_general_color_file_path = bizlight_file_directory('inc/customizer/colors/general.php');
+$bizlight_customizer_options_general_color_file_path = keysist_file_directory('inc/customizer/colors/general.php');
 require $bizlight_customizer_options_general_color_file_path;
 
 /******************************************
 Added font setting options
  *******************************************/
-$bizlight_customizer_options_font_family_file_path = bizlight_file_directory('inc/customizer/font-setting/font-family.php');
+$bizlight_customizer_options_font_family_file_path = keysist_file_directory('inc/customizer/font-setting/font-family.php');
 require $bizlight_customizer_options_font_family_file_path;
 
 /******************************************
 Featured Slider options
  *******************************************/
-$bizlight_customizer_slider_options_file_path = bizlight_file_directory('inc/customizer/featured-slider/slider-options.php');
+$bizlight_customizer_slider_options_file_path = keysist_file_directory('inc/customizer/featured-slider/slider-options.php');
 require $bizlight_customizer_slider_options_file_path;
 
 /******************************************
 Home page options
  *******************************************/
-$bizlight_customizer_home_options_setting_file_path = bizlight_file_directory('inc/customizer/home-options/home-options.php');
+$bizlight_customizer_home_options_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-options.php');
 require $bizlight_customizer_home_options_setting_file_path;
 
 /******************************************
 Theme options panel
  *******************************************/
-$bizlight_customizer_theme_options_setting_file_path = bizlight_file_directory('inc/customizer/theme-options/option-panel.php');
+$bizlight_customizer_theme_options_setting_file_path = keysist_file_directory('inc/customizer/theme-options/option-panel.php');
 require $bizlight_customizer_theme_options_setting_file_path;
 
 
