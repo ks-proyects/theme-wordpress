@@ -8,9 +8,8 @@ Para el correcto funcionamiento del tema dependera de los siguientes Plugins
 Advanced Custom Fields [Link](https://www.advancedcustomfields.com/)
 ```
 ```sh
-- Datos Dinámicos KeySist [Repositorio Git](https://github.com/ks-proyects/keysist_post_types)
+Datos Dinámicos KeySist [Repositorio Git](https://github.com/ks-proyects/keysist_post_types)
 ```
-
 
 # Configuracion
 ```sh
@@ -18,8 +17,8 @@ Paso 1. Instalar el plugin Advanced Custom Fields
 ```
 ```sh
 Paso 2. Crear propiedades dinámicas con los siguientes atributos
-- Activo-->activo Tipo Número **Valores 0 y 1**
-- Orden-->orden Tipo Número
+> Activo-->activo Tipo NúmeroValores 0 y **1**
+> Orden-->orden Tipo Número
 ```
 
 **Master** 1.0.0
