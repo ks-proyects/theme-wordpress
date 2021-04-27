@@ -41,18 +41,18 @@ if (!function_exists('keysist_home_about_array')) :
             endwhile;
             wp_reset_postdata();
         else:
-            $keysist_home_about_contents_array[0]['bizlight-home-about-title'] = __('Public Voice','bizlight');
-            $keysist_home_about_contents_array[0]['bizlight-home-about-content'] = __(" The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness.",'bizlight');
+            $keysist_home_about_contents_array[0]['bizlight-home-about-title'] = __('Confiabilidad','bizlight');
+            $keysist_home_about_contents_array[0]['bizlight-home-about-content'] = __(" Somos una empresa de servicios de TI especializada en la ejecución de proyectos de infraestructura y desarrollo de Software.",'bizlight');
             $keysist_home_about_contents_array[0]['bizlight-home-about-link'] = '#';
             $keysist_home_about_contents_array[0]['bizlight-home-about-icon'] = 'fa-bullhorn';
 
-            $keysist_home_about_contents_array[1]['bizlight-home-about-title'] = __('Photography','bizlight');
-            $keysist_home_about_contents_array[1]['bizlight-home-about-content'] = __(" The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness.",'bizlight');
+            $keysist_home_about_contents_array[1]['bizlight-home-about-title'] = __('Experiencia','bizlight');
+            $keysist_home_about_contents_array[1]['bizlight-home-about-content'] = __(" Más de 400 proyectos puestos en producción durante los últimos 15 años demuestran el compromiso con nuestros clientes, certifican nuestra metodología y reflejan la capacidad de nuestro equipo de profesionales..",'bizlight');
             $keysist_home_about_contents_array[1]['bizlight-home-about-link'] = '#';
             $keysist_home_about_contents_array[1]['bizlight-home-about-icon'] = 'fa-camera-retro';
 
-            $keysist_home_about_contents_array[2]['bizlight-home-about-title'] = __('Customization','bizlight');
-            $keysist_home_about_contents_array[2]['bizlight-home-about-content'] = __(" The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness.",'bizlight');
+            $keysist_home_about_contents_array[2]['bizlight-home-about-title'] = __('Ejecución','bizlight');
+            $keysist_home_about_contents_array[2]['bizlight-home-about-content'] = __(" Las organizaciones donde el uso de tecnología de la información es un factor determinante en la búsqueda de eficiencia operativa encontrarán en MicroGestion la mejor opción para llevar a cabo sus proyectos de manera eficaz y repetible..",'bizlight');
             $keysist_home_about_contents_array[2]['bizlight-home-about-link'] = '#';
             $keysist_home_about_contents_array[2]['bizlight-home-about-icon'] = 'fa-cog';
         endif;
