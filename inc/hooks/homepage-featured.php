@@ -36,7 +36,7 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
                     ?>
                     <div class="btn-container btn-outline">
                         <a class="button" href="<?php echo esc_url( $bizlight_home_featured_button_url ); ?>">
-                            <?php _e('LEARN MORE', 'bizlight');?>
+                            <?php _e('Leer Más', 'bizlight');?>
                         </a>
                     </div>
                     <?php

@@ -35,3 +35,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 > Contactos -> "contact"
 > Equipo -> "team"
 > testimonios -> "testimonios"
+> Acerca de Nosotros -> "aboutus"
+> Blogs -> "blogs"
+> Caracteristicas -> "caracteristic"
+> Servicios -> "services"

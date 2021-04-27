@@ -5,7 +5,7 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['bizlight-home-featured-title'] = __( 'WANT TO KNOW MORE ABOUT OUR COMPANY?', 'bizlight' );
+$bizlight_customizer_defaults['bizlight-home-featured-title'] = __( 'Quieres Conocer más acerca de nuestra empresa?', 'bizlight' );
 $bizlight_customizer_defaults['bizlight-home-featured-button-url'] = esc_url( home_url( '/about-us' ) );
 $bizlight_customizer_defaults['bizlight-home-featured-enable'] = 1;
 $bizlight_customizer_defaults['bizlight-home-featured-fix-bg-image'] = 1;

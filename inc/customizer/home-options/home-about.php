@@ -7,7 +7,7 @@ global $bizlight_customizer_defaults;
 
 /*defaults values*/
 $bizlight_customizer_defaults['keysist-home-about-enable'] = 1;
-$bizlight_customizer_defaults['keysist-home-about-title'] = __('Nuestros Servicios','bizlight');
+$bizlight_customizer_defaults['keysist-home-about-title'] = __('Acerca de Nosotros','bizlight');
 $bizlight_customizer_defaults['keysist-home-about-content'] = __('Ofrecemos los siguientes servicios','bizlight');
 $bizlight_customizer_defaults['keysist-home-about-right-image'] = get_template_directory_uri().'/assets/img/product.png';
 

@@ -118,7 +118,6 @@ if ( ! function_exists( 'keysist_home_service' ) ) :
                                                     <div class="box-content-text service-content-text">
                                                         <p>  
                                                             <?php echo wp_kses_post( $bizlight_service_array['keysist-home-service-content'] );?>
-                                                        
                                                         </p>
                                                     </div>
                                                 </div>
