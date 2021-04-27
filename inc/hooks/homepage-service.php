@@ -13,8 +13,8 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
          $keysist_home_service_static_array = array();
          $keysist_home_service_args =    array(
             'post_type' => 'keysist_servicios',
-            'posts_per_page' => 4,
-            /*'meta_query'     => array(
+            //'posts_per_page' => 4,
+            'meta_query'     => array(
                 array(
                   'key'        => 'activo',
                   'compare'    => '=',
@@ -23,7 +23,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
             ),
             'meta_key'       => 'orden',
             'orderby'        => 'meta_value',
-            'order'          => 'ASC'*/
+            'order'          => 'ASC'
         );
         $keysist_home_service_static_array = array(); /*again empty array*/
         $keysist_home_service_post_query = new WP_Query( $keysist_home_service_args );
