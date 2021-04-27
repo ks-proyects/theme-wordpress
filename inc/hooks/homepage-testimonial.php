@@ -31,11 +31,11 @@ if (!function_exists('keysist_home_testimonial_array')) :
             wp_reset_postdata();
         else:
             $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.",'bizlight');
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
             $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-image'] = get_template_directory_uri().'/assets/img/product.png';;
     
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.",'bizlight');
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-image'] = get_template_directory_uri().'/assets/img/product.png';
         endif;
         return $bizlight_home_testimonial_contents_array;

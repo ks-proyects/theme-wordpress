@@ -14,7 +14,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
          $keysist_home_service_args =    array(
             'post_type' => 'keysist_servicios',
             'posts_per_page' => 4,
-            'meta_query'     => array(
+            /*'meta_query'     => array(
                 array(
                   'key'        => 'activo',
                   'compare'    => '=',
@@ -23,7 +23,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
             ),
             'meta_key'       => 'orden',
             'orderby'        => 'meta_value',
-            'order'          => 'ASC'
+            'order'          => 'ASC'*/
         );
         $keysist_home_service_static_array = array(); /*again empty array*/
         $keysist_home_service_post_query = new WP_Query( $keysist_home_service_args );
@@ -43,22 +43,22 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
             wp_reset_postdata();
         else:
             $keysist_home_service_static_array[0]['keysist-home-service-title'] = __('DISEÑO ENCANTADOR', 'bizlight');
-            $keysist_home_service_static_array[0]['keysist-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+            $keysist_home_service_static_array[0]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
             $keysist_home_service_static_array[0]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[0]['keysist-home-service-icon'] = 'fa-desktop';
     
             $keysist_home_service_static_array[1]['keysist-home-service-title'] = __('FOTOGRAFÍA CON ESTILO', 'bizlight');
-            $keysist_home_service_static_array[1]['keysist-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+            $keysist_home_service_static_array[1]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
             $keysist_home_service_static_array[1]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[1]['keysist-home-service-icon'] = 'fa-camera-retro';
     
             $keysist_home_service_static_array[2]['keysist-home-service-title'] = __('AGENCIA CREATIVA', 'bizlight');
-            $keysist_home_service_static_array[2]['keysist-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+            $keysist_home_service_static_array[2]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
             $keysist_home_service_static_array[2]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[2]['keysist-home-service-icon'] = 'fa-rocket';
     
             $keysist_home_service_static_array[3]['keysist-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
-            $keysist_home_service_static_array[3]['keysist-home-service-content'] = __("The set doesn't moved. Deep don't fru it fowl gathering heaven days moving creeping under from i air. Set it fifth Meat was darkness. every bring in it.", 'bizlight');
+            $keysist_home_service_static_array[3]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
             $keysist_home_service_static_array[3]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[3]['keysist-home-service-icon'] = 'fa-meteor';
         endif;
