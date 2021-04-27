@@ -42,23 +42,23 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
             endwhile;
             wp_reset_postdata();
         else:
-            $keysist_home_service_static_array[0]['keysist-home-service-title'] = __('DISEÑO ENCANTADOR', 'bizlight');
-            $keysist_home_service_static_array[0]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
+            $keysist_home_service_static_array[0]['keysist-home-service-title'] = __('Aplicaciones de Escritorio', 'bizlight');
+            $keysist_home_service_static_array[0]['keysist-home-service-content'] = __("Implementamos aplicaciones de escritorio adaptadas a tu modelo de negocio, con una apariencia moderna e intuitiva, construidas con base a los últimos estándares de programación. Brindamos soluciones en cualquier área como gestión administrativa, control de producción, recursos humanos, automatización y control de inventarios entre otras.", 'bizlight');
             $keysist_home_service_static_array[0]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[0]['keysist-home-service-icon'] = 'fa-desktop';
     
-            $keysist_home_service_static_array[1]['keysist-home-service-title'] = __('FOTOGRAFÍA CON ESTILO', 'bizlight');
-            $keysist_home_service_static_array[1]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
+            $keysist_home_service_static_array[1]['keysist-home-service-title'] = __('Desarrollo Web', 'bizlight');
+            $keysist_home_service_static_array[1]['keysist-home-service-content'] = __("Al tener sistema web podrá conectarse fácilmente con otras aplicaciones lo que le dará más competitividad. Imagínese conectado con Facebook, Twiter o cualquier red social.Tenga sus sistemas disponibles todo el día, en cualquier momento, desde cualquier parte del mundo. Lo que le proporcionará que su negocio no se detenga. Permita que sus sistemas puedan ser accedidos desde cualquier dispositivo conectado a una red. Ya sea computadora, celular o tablet ", 'bizlight');
             $keysist_home_service_static_array[1]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[1]['keysist-home-service-icon'] = 'fa-camera-retro';
     
-            $keysist_home_service_static_array[2]['keysist-home-service-title'] = __('AGENCIA CREATIVA', 'bizlight');
-            $keysist_home_service_static_array[2]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
+            $keysist_home_service_static_array[2]['keysist-home-service-title'] = __('Aplicaciones Móviles', 'bizlight');
+            $keysist_home_service_static_array[2]['keysist-home-service-content'] = __("Las aplicaciones para teléfonos inteligentes (abreviadas app) han crecido exponencialmente en la última década, gracias a la expansión de los dispositivos portátiles multifuncionales y a su relativa sencillez a la hora de resolver problemas de rutina. Go Consultores les ofrece a nuestros clientes el desarrollo de aplicaciones para los sistemas operativos de telefonía móvil Android e IOS. Una aplicación para móvil le permite a usted y a su organización las siguientes facilidades: Flexibilidad,Expansión de herramientas de software y Centralización.", 'bizlight');
             $keysist_home_service_static_array[2]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[2]['keysist-home-service-icon'] = 'fa-rocket';
     
-            $keysist_home_service_static_array[3]['keysist-home-service-title'] = __('CREATIVE AGENCY', 'bizlight');
-            $keysist_home_service_static_array[3]['keysist-home-service-content'] = __("Creamos un diseño que se encuentra a la vanguardia de los aultimos avances.Con las últimas practicas sobre el diseño Web", 'bizlight');
+            $keysist_home_service_static_array[3]['keysist-home-service-title'] = __('Páginas Web', 'bizlight');
+            $keysist_home_service_static_array[3]['keysist-home-service-content'] = __("Con tu página web podrás tener un valor agregado y estar siempre un paso más adelante que tu competencia, ya que tu negocio o empresa podrá ser ubicada fácilmente; ya sea desde una computador en casa o desde un celular en cualquier parte del mundo.Tu página web es una oficina que nunca cerrará sus puertas. De esta manera,  brindarás atención a tus clientes en cualquier momento del día manteniendo la personalización, el detalle y la dinámica de tu negocio.Resuelve las dudas y consultas de tu clientes mediante chat en línea, chat con bots y formularios de contacto, esto les generará mayor comodidad y confianza. Además, puedes conectar tu sitio directamente a tu whatsapp, permitiendo una comunicación más rápida y personalizada con tu cliente.", 'bizlight');
             $keysist_home_service_static_array[3]['keysist-home-service-link'] = '#';
             $keysist_home_service_static_array[3]['keysist-home-service-icon'] = 'fa-meteor';
         endif;
