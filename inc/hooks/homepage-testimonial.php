@@ -30,12 +30,12 @@ if (!function_exists('keysist_home_testimonial_array')) :
             endwhile;
             wp_reset_postdata();
         else:
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-title'] = __('CEO Erica Moore','bizlight');
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-content'] = __("“Realmente nos ayudó a crecer. Puedo mantener toda la información del cliente allí, así que si necesito buscar algo en el futuro o llamarlos para un seguimiento, tengo todo eso allí, por lo que realmente nos ayudó a organizar todo el negocio.",'bizlight');
             $bizlight_home_testimonial_contents_array[0]['bizlight-home-testimonial-image'] = get_template_directory_uri().'/assets/img/product.png';;
     
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-title'] = __('CEO Nick May','bizlight');
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-content'] = __("“No hay forma de que hubiéramos podido contratar a tanta gente y conseguir tanto negocio si no hubiéramos resuelto todos esos sistemas administrativos. Ha sido más fácil hacer crecer nuestra empresa con un sistema tan fácil y escalable .",'bizlight');
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-testimonial-image'] = get_template_directory_uri().'/assets/img/product.png';
         endif;
         return $bizlight_home_testimonial_contents_array;

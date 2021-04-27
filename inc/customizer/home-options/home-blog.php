@@ -6,7 +6,7 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['bizlight-home-blog-title'] = __('LATEST NEWS','bizlight');
+$bizlight_customizer_defaults['bizlight-home-blog-title'] = __('últimas Noticias','bizlight');
 $bizlight_customizer_defaults['bizlight-blog-sinle-word'] = 35;
 $bizlight_customizer_defaults['bizlight-home-blog-enable'] = 1;
 $bizlight_customizer_defaults['bizlight-home-blog-category'] = 0;

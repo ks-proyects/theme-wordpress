@@ -30,13 +30,13 @@ if (!function_exists('keysist_home_team_array')) :
             endwhile;
             wp_reset_postdata();
         else:
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/slider2.jpg';;
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-title'] = __('Freddy Castillo','bizlight');
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-content'] = __("Freddy Castillo, Muy gustoso de formar parte de este equipo de trabajo especializandome en mi área de conocimiento.",'bizlight');
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/freddy.jpg';;
     
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-title'] = __('Sayer Name, CEO','bizlight');
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-content'] = __("El set no se mueve. Profundo no lo fructifiquen las aves que se juntan los días del cielo moviéndose arrastrándose desde el aire Ponlo en quinto lugar. La carne era oscuridad. cada traerlo.",'bizlight');
-            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/slider2.jpg';
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/dayana.jpg';
         endif;
         return $bizlight_home_testimonial_contents_array;
     }
