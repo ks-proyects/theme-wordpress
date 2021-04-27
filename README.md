@@ -1,10 +1,27 @@
 # Theme-Keysist
-Thema WordPress
+>Es un tema desarollado por KeySist, que permite gestionar información dinámica como **"Servicios, Testimonios, Cursos, Carreras"**
 
-# FYBECA WEB Y WEB MOVIL
-[![Keysist](https://www.fybeca.com/FybecaWeb/resources/themes/default/images/logo_fybeca_com.png "Fybeca")](https://www.fybeca.com/FybecaWeb/resources/themes/default/images/logo_fybeca_com.png "Fybeca")
->Este documento **Readme** Solo debe ser modificado cuando producción o Preproducción han recibido status de aprobado. DE SER POSIBLE EL MISMO DIA. EL COMMIT DEBE TENER EL MENSAJE **"Autor- Cambios Keysist.com"** debe hacerse merge con master antes de publicar esta versión.
-### Producción
+# Dependecias
+
+Para el correcto funcionamiento del tema dependera de los siguientes Plugins
+```sh
+Advanced Custom Fields [Link](https://www.advancedcustomfields.com/)
+```
+```sh
+- Datos Dinámicos KeySist [Repositorio Git](https://github.com/ks-proyects/keysist_post_types)
+```
+
+
+# Configuracion
+```sh
+Paso 1. Instalar el plugin Advanced Custom Fields
+```
+```sh
+Paso 2. Crear propiedades dinámicas con los siguientes atributos
+- Activo-->activo Tipo Número **Valores 0 y 1**
+- Orden-->orden Tipo Número
+```
+
 **Master** 1.0.0
 
 ### Preproducción
