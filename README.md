@@ -28,3 +28,10 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ```sh
 Paso 4. Crear Registros en cada uno de las entidades con los nuevos metadas
 ```
+
+```sh
+Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia o el id de las secciones son las siguientes
+```
+> Contactos -> "contact"
+> Equipo -> "team"
+> testimonios -> "testimonios"
