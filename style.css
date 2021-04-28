@@ -946,7 +946,7 @@ body.home .page-inner-title {
     font-size: 22px;
     text-transform: inherit;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--banner-color-titulos) !important;
 }
 
 .site-title a {
@@ -954,7 +954,7 @@ body.home .page-inner-title {
 }
 
 .site-title a:hover {
-    color: #CCCCCC;
+    color: var(--banner-color-titulos-hover) !important;
 }
 
 .site-description {
@@ -2747,13 +2747,13 @@ body.home .block-section {
 }
 
 #breadcrumb a {
-    color: var(--banner-color-titulos);
+    color: var(--banner-color-titulos) !important;
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: var(--banner-color-titulos-hover);
+    color: var(--banner-color-titulos-hover) !important;
 }
 
 #breadcrumb span {
