@@ -16,15 +16,13 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
         $bizlight_secondary_color               = $bizlight_customizer_all_values['keysist-color-secundario'];
         $bizlight_h1_h6_color                   = $bizlight_customizer_all_values['keysist-color-titulos'];
         $bizlight_link_color                    = $bizlight_customizer_all_values['keysist-color-link'];
-        $bizlight_link_hover_color              = $bizlight_customizer_all_values['keysist-color-link-hover'];
-        $bizlight_site_identity_color           = $bizlight_customizer_all_values['bizlight-site-identity-color'];
         $bizlight_banner_text_color             = $bizlight_customizer_all_values['bizlight-banner-text-color'];
-        $bizlight_fondo_color               = $bizlight_customizer_all_values['bizlight-background-color'];
-        $bizlight_footer_text_color             = $bizlight_customizer_all_values['bizlight-footer-text-color'];
+        
         $header_image = get_header_image();
 
         /*footer option*/
         $bizlight_footer_text_color                  = $bizlight_customizer_all_values['bizlight-footer-text-color'];
+        $bizlight_footer_fondo_color               = $bizlight_customizer_all_values['bizlight-footer-background-color'];
         ?>
         <style type="text/css">
             /*site identity font family*/
@@ -36,8 +34,13 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
                 --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
                 --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;
-                --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_hover_color );?>;
-                --fondo-color: <?php echo esc_attr( $$bizlight_fondo_color );?>;
+                --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_color );?>94;
+                --banner-color-titulos: <?php echo esc_attr( $bizlight_h1_h6_color );?>94;
+                --banner-color-titulos-hover: <?php echo esc_attr( $bizlight_h1_h6_color );?>;
+                --fondo-footer-color: <?php echo esc_attr( $$bizlight_footer_fondo_color );?>;
+                --footer-link-color: <?php echo esc_attr( $bizlight_footer_text_color );?>94;
+                --footer-link-color-hover: <?php echo esc_attr( $bizlight_footer_text_color );?>;
+                
                 --type-font:'FontAwesome'
             }
              <?php
@@ -63,7 +66,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
            
             <?php
             /*Main h1-h6 color*/
-            if( !empty($bizlight_h1_h6_color) ){
+            if( !empty($bizlight_link_color) ){
             ?>
             h1, h1 a,
             h2, h2 a,
@@ -72,12 +75,14 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             h5, h5 a,
             h6, h6 a,
             .box-container .box-inner a:hover{
-                color: <?php echo esc_attr( $bizlight_h1_h6_color );?> !important; /*#212121*/
+                color: <?php echo esc_attr( $bizlight_link_color );?>c4 !important; /*#212121*/
+
             }
             <?php
             }
           /*Link color*/
-            if( !empty($bizlight_site_identity_color) ){
+            if( !empty($bizlight_link_color) ){
+
             ?>
             a,
             a > p,
@@ -90,17 +95,18 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             .nav-links .nav-previous a,
             .nav-links .nav-next a,
             .page-links a {
-                color: <?php echo esc_attr( $bizlight_site_identity_color ); ?> !important; /*#212121*/
+                color: <?php echo esc_attr( $bizlight_link_color ); ?>94 !important; /*#212121*/
             }
             <?php
             }
+            
 
             if( !empty( $bizlight_banner_text_color ) ){
             ?>
             .evision-main-slider .slide-item .main-title a,
             .evision-main-slider .slide-item .banner-con,
             .evision-main-slider .slide-item p{
-                color: <?php echo esc_attr( $bizlight_banner_text_color );?>!important;
+                color: <?php echo esc_attr( $bizlight_banner_text_color);?>d4 !important;
             }
             .banner-divider-container span{
                 background-color: <?php echo esc_attr( $bizlight_banner_text_color );?>!important;
@@ -109,7 +115,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             }
 
             /*Link Hover color*/
-              if( !empty($bizlight_site_identity_color) ){
+              if( !empty($bizlight_link_color) ){
               ?>
               a:hover,
               a:focus,
@@ -141,16 +147,17 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
               .evision-main-slider .slide-item .main-title a:hover,
               .evision-main-slider .slide-item .main-title a:focus,
               .evision-main-slider .slide-item .main-title a:active{
-                  color: <?php echo esc_attr( $bizlight_site_identity_color );?> !important; /*#212121*/
+                  color: <?php echo esc_attr( $bizlight_link_color );?> !important; /*#212121*/
+
               }
               <?php
               }
         
             /*footer bg*/
-            if( !empty( $bizlight_fondo_color ) ){
+            if( !empty( $bizlight_footer_fondo_color ) ){
             ?>
             .a{
-                background-color: <?php echo esc_attr( $bizlight_fondo_color );?>!important;
+                background-color: <?php echo esc_attr( $bizlight_footer_fondo_color );?>!important;
             }
             <?php
             }
@@ -176,11 +183,11 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
 
             /*footer color*/
             //footer background
-            if( !empty( $bizlight_fondo_color ) ){
+            if( !empty( $bizlight_footer_fondo_color ) ){
             ?>
                 .wrap-contact,
                 .site-footer{
-                    background-color: <?php echo esc_url($bizlight_fondo_color);?>!important;
+                    background-color: <?php echo esc_url($bizlight_footer_fondo_color);?>!important;
                     }
             <?php
             }

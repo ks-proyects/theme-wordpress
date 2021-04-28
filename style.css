@@ -3,8 +3,8 @@ Theme Name: KeySist
 Theme URI: https://evisionthemes.com/product/bizlight/
 Author: Freddy Castillo
 Author URI: http://evisionthemes.com/
-Description: KeySist, es un hermoso, poderoso, feature-rich free business theme. It is most suited for business and corporation websites. The theme can be customized using just the customizer API and you have a great deal of options for customization. You can change the color and the font of each and every text, link in the theme. We won’t bind you to settle for a dull background; you can choose a color or a cool image instead. What do you want as your front page: a static page, or your latest post, it’s all up to you. The header of your website can have an image-banner or an elegant image slider. Your website is sure to have a professional look with the different sections (service, about us, featured, blog, testimonial) offered by the theme. Apart from the professional look, you site will be well organized and very eye-catching. This free business theme is completely responsive. So your website will look great on any device, any screen size, browsers. It also makes your website SEO friendly and user friendly as well. Preview : http://demo.evisionthemes.com/bizlight-pro/ Documentation : http://doc.evisionthemes.com/bizlight/
-Version: 1.0.0
+Description: KeySist Theme es un tema enfocado para negocios, instituciones educativas, floricolas
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bizlight
@@ -1042,7 +1042,7 @@ body.home .page-inner-title {
 }
 
 .main-navigation a {
-    color: #ffffff!important;
+    color: var(--banner-color-titulos) !important;
     display: block;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -1078,7 +1078,8 @@ body.home .page-inner-title {
 .main-navigation li a:focus,
 .main-navigation li a:active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #ffffff!important;
+    color: var(--banner-color-titulos-hover) !important;
+    
 }
 
 .main-navigation ul ul a:hover {
@@ -1356,11 +1357,11 @@ body.home .page-inner-title {
 }
 
 .widget li a {
-    color: var(--banner-link-color);
+    color: var(--banner-link-color) !important;
 }
 
 .widget li a:hover {
-    color: var(--banner-link-hover-color);
+    color: var(--banner-link-hover-color) !important;
 }
 
 
@@ -1800,7 +1801,7 @@ body.home .page-inner-title {
 
 .site-info-header a {
     margin-left: 2px;
-    color: var(--banner-text-color) !important;
+    color: var(--banner-color-titulos) !important;
 }
 
 .site-info-header a i {
@@ -1808,7 +1809,7 @@ body.home .page-inner-title {
 }
 
 .site-info-header a:hover {
-    color: var(--banner-text-color) !important;
+    color: var(--banner-color-titulos-hover) !important;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -2065,9 +2066,6 @@ article.hentry .image-full {
     width: 2em;
 }
 
-.page-links a {
-    color: #212121;
-}
 
 .page-links a:hover,
 .page-links a:focus,
@@ -2744,18 +2742,18 @@ body.home .block-section {
 
 #breadcrumb {
     background-color: var(--second-bg-color);
-    color: var(--banner-text-color);
+    color: var(--banner-color-titulos);
     font-size: 13px;
 }
 
 #breadcrumb a {
-    color: var(--banner-link-color);
+    color: var(--banner-color-titulos);
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: var(--banner-link-hover-color);
+    color: var(--banner-color-titulos-hover);
 }
 
 #breadcrumb span {
@@ -2885,7 +2883,7 @@ body:not(.home) .site-header.evision-nav-right {
 }
 
 .evision-nav-right .site-description {
-    color: #ffffff;
+    color: var(--banner-color-titulos-hover);
 }
 
 .evision-nav-right .main-navigation .nav-menu {
@@ -3003,30 +3001,12 @@ body:not(.home) .site-header.evision-nav-right {
     width: 80%;
 }
 
-.evision-slider-content p {
-    color: #ffffff;
-}
 
 .evision-main-slider .slide-item .main-title {
-    color: red;
     line-height: 1;
 }
 
-.evision-main-slider .slide-item .main-title a,
-.evision-main-slider .slide-item .main-title a:visted {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.2;
-    text-transform: uppercase;
-    display: block;
-}
 
-.evision-main-slider .slide-item .main-title a:hover,
-.evision-main-slider .slide-item .main-title a:focus,
-.evision-main-slider .slide-item .main-title a:active {
-    color: var(--main-bg-color);
-}
 
 .evision-main-slider .slide-item .banner-con,
 .evision-main-slider .slide-item .button {
@@ -4024,9 +4004,6 @@ ul.trail-items li {
     margin-right: 15px;
 }
 
-#breadcrumb a {
-    color: #212121 !important;
-}
 
 
 /*   breadcrumb fixing    */
@@ -4091,8 +4068,12 @@ h1.main-title a {
     text-decoration: none;
     float: left;
     padding: 10px;
+    color: var(--footer-link-color) !important;
 }
 
+#footer-menu li a:hover {
+    color: var(--footer-link-color-hover) !important;
+}
 
 /*-------------------- Contact section -----------------*/
 
@@ -4100,7 +4081,6 @@ h1.main-title a {
     background-color: #f8f8f9;
     padding-bottom: 60px;
 }
-
 
 /**/
 

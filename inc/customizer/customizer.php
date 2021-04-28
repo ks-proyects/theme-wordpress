@@ -123,7 +123,7 @@ add_action( 'customize_save_after','bizlight_customizer_reset' );
 $bizlight_sections['bizlight-customizer-reset'] =
     array(
         'priority'       => 999,
-        'title'          => __( 'Reset All Options', 'bizlight' )
+        'title'          => __( 'Reiniciar Configuración', 'bizlight' )
     );
 $bizlight_settings_controls['bizlight-customizer-reset'] =
     array(
@@ -133,8 +133,8 @@ $bizlight_settings_controls['bizlight-customizer-reset'] =
             'transport'            => 'postmessage',
         ),
         'control' => array(
-            'label'                 =>  __( 'Reset All Options', 'bizlight' ),
-            'description'           =>  __( 'Caution: Reset all options settings to default. Refresh the page after save to view the effects. ', 'bizlight' ),
+            'label'                 =>  __( 'Reiniciar todas las opciones', 'bizlight' ),
+            'description'           =>  __( 'Precaución: Restablecera la configuración predeterminada de todas las opciones. Actualice la página después de guardar para ver los efectos. ', 'bizlight' ),
             'section'               => 'bizlight-customizer-reset',
             'type'                  => 'checkbox',
             'priority'              => 10,

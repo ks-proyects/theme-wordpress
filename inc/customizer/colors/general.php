@@ -6,41 +6,25 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*creating panel for general*/
-$bizlight_panels['bizlight-colors'] =
+$bizlight_panels['keysist-colores'] =
     array(
-        'title'          => __( 'Colors', 'bizlight' ),
-        'description'    => __( 'Customize colors of you awesome site', 'bizlight' ),
+        'title'          => __( 'Colores Generales', 'bizlight' ),
+        'description'    => __( 'Configure los colores de su página', 'bizlight' ),
         'priority'       => 42,
     );
 
 /*Default color*/
-$bizlight_sections['colors'] =
+$bizlight_sections['paleta-colores'] =
     array(
         'priority'       => 40,
-        'title'          => __( 'Basic Colors Options', 'bizlight' ),
-        'panel'          => 'bizlight-colors',
+        'title'          => __( 'Paleta de Colores', 'bizlight' ),
+        'panel'          => 'keysist-colores',
     );
 
-/*Bizlight colors*/
-$bizlight_sections['bizlight-colors'] =
-    array(
-        'priority'       => 50,
-        'title'          => __( 'Bizlight Colors Options', 'bizlight' ),
-        'panel'          => 'bizlight-colors',
-    );
-/*Bizlight colors*/
-$bizlight_sections['bizlight-colors-reset'] =
-    array(
-        'priority'       => 60,
-        'title'          => __( 'Bizlight Colors Reset', 'bizlight' ),
-        'panel'          => 'bizlight-colors',
-    );
 
 /*defaults values*/
 $bizlight_customizer_defaults['keysist-color-titulos'] = '#212121';
 $bizlight_customizer_defaults['keysist-color-link'] = '#212121';
-$bizlight_customizer_defaults['bizlight-site-identity-color'] = '#ffffff';
-$bizlight_customizer_defaults['keysist-color-link-hover'] = '#028484';
 $bizlight_customizer_defaults['bizlight-banner-text-color'] = '#ffffff';
 $bizlight_customizer_defaults['bizlight-color-reset'] = '';
 $bizlight_customizer_defaults['keysist-color-principal'] = '#8a2b2b';
@@ -68,8 +52,6 @@ if ( ! function_exists( 'bizlight_color_reset' ) ) :
             $bizlight_customizer_saved_values['keysist-color-secundario'] = $bizlight_customizer_defaults['keysist-color-secundario'];
             $bizlight_customizer_saved_values['keysist-color-titulos'] = $bizlight_customizer_defaults['keysist-color-titulos'];
             $bizlight_customizer_saved_values['keysist-color-link'] = $bizlight_customizer_defaults['keysist-color-link'];
-            $bizlight_customizer_saved_values['bizlight-site-identity-color'] = $bizlight_customizer_defaults['bizlight-site-identity-color'];
-            $bizlight_customizer_saved_values['keysist-color-link-hover'] = $bizlight_customizer_defaults['keysist-color-link-hover'];
             $bizlight_customizer_saved_values['bizlight-banner-text-color'] = $bizlight_customizer_defaults['bizlight_customizer_defaults'];
 
             remove_theme_mod( 'background_color' );
@@ -86,118 +68,88 @@ endif;
 add_action( 'customize_save_after','bizlight_color_reset' );
 
 
-$bizlight_settings_controls['bizlight-site-identity-color'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-site-identity-color'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Colores de la Página', 'bizlight' ),
-            'description'           =>  __( 'Colores de los diferentes elementos', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 11,
-            'active_callback'       => ''
-        )
-    );
 
-    $bizlight_settings_controls['keysist-color-principal'] = array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-color-principal'],
-        ),
-        'control' => array(
-            'label'                 =>  esc_html__( 'Color Principal', 'bizlight' ),
-            'description'           =>  __( 'Header, Botones, Bordes', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 1,
-        )
-    );
-    $bizlight_settings_controls['keysist-color-secundario'] = array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-color-secundario'],
-        ),
-        'control' => array(
-            'label'                 =>  esc_html__( 'Color Secundario', 'bizlight' ),
-            'description'           =>  __( 'Botones Hover,Fondo Titulos', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 2,
-        )
-    );
-
+$bizlight_settings_controls['keysist-color-principal'] = array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['keysist-color-principal'],
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Color Principal', 'bizlight' ),
+        'description'           =>  __( 'Header, Botones, Bordes', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'color',
+        'priority'              => 12,
+    )
+);
+$bizlight_settings_controls['keysist-color-secundario'] = array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['keysist-color-secundario'],
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Color Secundario', 'bizlight' ),
+        'description'           =>  __( 'Botones Hover,Fondo Titulos', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'color',
+        'priority'              => 13,
+    )
+);
 
 $bizlight_settings_controls['keysist-color-titulos'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-color-titulos'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Color de Titulos', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 31,
-            'active_callback'       => ''
-        )
-    );
-
-
+array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['keysist-color-titulos'],
+    ),
+    'control' => array(
+        'label'                 =>  __( 'Color de Titulos', 'bizlight' ),
+        'description'           =>  __( 'Titulo de página, Footer, Blogs', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'color',
+        'priority'              => 14,
+        'active_callback'       => ''
+    )
+);
 
 $bizlight_settings_controls['keysist-color-link'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-color-link'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Color de Links', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 32,
-            'active_callback'       => ''
-        )
-    );
-
-$bizlight_settings_controls['keysist-color-link-hover'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-color-link-hover'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Color de Links Hover', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 100,
-            'active_callback'       => ''
-        )
-    );
+array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['keysist-color-link'],
+    ),
+    'control' => array(
+        'label'                 =>  __( 'Color de Links de las secciones con fondo', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'color',
+        'priority'              => 15,
+        'active_callback'       => ''
+    )
+);
 
 $bizlight_settings_controls['bizlight-banner-text-color'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-banner-text-color'],
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Banner Text Color', 'bizlight' ),
-            'description'           =>  __( 'Text color above the image will be changed', 'bizlight' ),
-            'section'               => 'colors',
-            'type'                  => 'color',
-            'priority'              => 100,
-            'active_callback'       => ''
-        )
-    );
+array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['bizlight-banner-text-color'],
+    ),
+    'control' => array(
+        'label'                 =>  __( 'Color de Texto del Banner', 'bizlight' ),
+        'description'           =>  __( 'Color del Texto de la sección del banner/carroucel', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'color',
+        'priority'              => 16,
+        'active_callback'       => ''
+    )
+);
 
 $bizlight_settings_controls['bizlight-color-reset'] =
-    array(
-        'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-color-reset'],
-            'transport'            => 'postmessage',
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Reset', 'bizlight' ),
-            'description'           =>  __( 'Caution: Reset all above color settings to default. Refresh the page after save to view the effects. ', 'bizlight' ),
-            'section'               => 'bizlight-colors-reset',
-            'type'                  => 'checkbox',
-            'priority'              => 220,
-            'active_callback'       => ''
-        )
-    );
+array(
+    'setting' =>     array(
+        'default'              => $bizlight_customizer_defaults['bizlight-color-reset'],
+        'transport'            => 'postmessage',
+    ),
+    'control' => array(
+        'label'                 =>  __( 'Reset', 'bizlight' ),
+        'description'           =>  __( 'Precausión: Restablecera todas las configuraciones de color a sus valores por defecto. Actualiza la página después de guardar para ver los efectos.. ', 'bizlight' ),
+        'section'               => 'paleta-colores',
+        'type'                  => 'checkbox',
+        'priority'              => 17,
+        'active_callback'       => ''
+    )
+);
