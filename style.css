@@ -878,7 +878,7 @@ dd a {
 
 .page-inner-title {
     background-position: center top;
-    background-color: #565656;
+    background-color: var(--second-bg-color);
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -1002,7 +1002,7 @@ body.home .page-inner-title {
     display: block;
     float: left;
     width: 100%;
-    background: none repeat scroll 0 0 var(--main-bg-colormain-bg-color);
+    background: none repeat scroll 0 0 var(--second-bg-color);
     text-align: left;
     margin-top: 0px;
 }
@@ -1356,11 +1356,11 @@ body.home .page-inner-title {
 }
 
 .widget li a {
-    color: #212121;
+    color: var(--banner-link-color);
 }
 
 .widget li a:hover {
-    color: var(--main-bg-color);
+    color: var(--banner-link-hover-color);
 }
 
 
@@ -1421,7 +1421,7 @@ body.home .page-inner-title {
 
 .search-form .search-submit:hover,
 .search-form .search-submit:focus {
-    background-color: #212121;
+    background-color: var(--second-bg-color);
     box-shadow: none;
     border: none;
     text-shadow: none;
@@ -2743,20 +2743,19 @@ body.home .block-section {
 /*-------------------- block section -----------------*/
 
 #breadcrumb {
-    background-color: #009292;
-    color: #565656;
+    background-color: var(--second-bg-color);
+    color: var(--banner-text-color);
     font-size: 13px;
-    color: #ffffff;
 }
 
 #breadcrumb a {
-    color: #e1e1e1 !important;
+    color: var(--banner-link-color);
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: #ffffff !important;
+    color: var(--banner-link-hover-color);
 }
 
 #breadcrumb span {
@@ -2845,13 +2844,13 @@ body.home .block-section {
 }
 
 .wrap-breadcrumb a {
-    color: #626262;
+    color: var(--banner-link-color);
 }
 
 .wrap-breadcrumb a:hover,
 .wrap-breadcrumb a:focus,
 .wrap-breadcrumb a:active {
-    color: #882720;
+    color: var(--banner-link-hover-color);;
 }
 
 
@@ -2861,7 +2860,7 @@ body.home .block-section {
 /*==================== eVision Nav Right Start====================*/
 
 .site-header.evision-nav-right {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--second-bg-color);
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -4063,7 +4062,7 @@ h1.main-title a {
 }
 
 .testimonial-img span img {
-    max-width: 11em;
+    max-width: 25%;
 }
 
 .mob-header-info {
@@ -4120,7 +4119,6 @@ iframe {
 
 @media screen and (max-width: 991px) {
     iframe {
-<<<<<<< HEAD
         width: 30em; height: 30em;
     } 
 }
@@ -4129,7 +4127,7 @@ iframe {
 
 .icon-container i.team {
     border: 1px solid var(--main-bg-color);
-    border-radius: 100px;
+    border-radius: 50%;
     color: #565656;
     display: inline-block;
     font-size: 21px;
@@ -4343,9 +4341,5 @@ iframe {
 @media screen and (max-width: 991px) {
     .box-container {
         margin-bottom: 30px;
-=======
-        width: 30em;
-        height: 30em;
->>>>>>> 8810e9cf25177d43e64d919d32c53d508de99bbc
     }
 }

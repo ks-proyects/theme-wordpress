@@ -10,7 +10,7 @@ $bizlight_customizer_defaults['bizlight-copyright-text'] = esc_html__('Copyright
 $bizlight_customizer_defaults['bizlight-enable-social-icons'] = '';
 
 
-$bizlight_customizer_defaults['bizlight-footer-background-color']       = '#3E4444';
+$bizlight_customizer_defaults['bizlight-background-color']       = '#3E4444';
 $bizlight_customizer_defaults['bizlight-footer-text-color']             = '#fff';
 
 $bizlight_sections['bizlight-footer-options'] = array(
@@ -45,9 +45,9 @@ $bizlight_settings_controls['bizlight-enable-social-icons'] = array(
     )
 );
 
-$bizlight_settings_controls['bizlight-footer-background-color'] = array(
+$bizlight_settings_controls['bizlight-background-color'] = array(
     'setting' =>     array(
-        'default'              => $bizlight_customizer_defaults['bizlight-footer-background-color'],
+        'default'              => $bizlight_customizer_defaults['bizlight-background-color'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Background Color', 'bizlight' ),

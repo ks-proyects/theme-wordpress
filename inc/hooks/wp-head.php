@@ -12,19 +12,18 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
         $bizlight_font_family_site_identity     = $bizlight_google_fonts[$bizlight_customizer_all_values['bizlight-font-family-site-identity']];
         $bizlight_font_family_h1_h6             = $bizlight_google_fonts[$bizlight_customizer_all_values['bizlight-font-family-h1-h6']];
         /*Color options */
-        $bizlight_primary_color                 = $bizlight_customizer_all_values['bizlight-primary-color'];
-        $bizlight_secondary_color               = $bizlight_customizer_all_values['bizlight-second-color'];
-        $bizlight_h1_h6_color                   = $bizlight_customizer_all_values['bizlight-h1-h6-color'];
-        $bizlight_link_color                    = $bizlight_customizer_all_values['bizlight-link-color'];
-        $bizlight_link_hover_color              = $bizlight_customizer_all_values['bizlight-link-hover-color'];
+        $bizlight_primary_color                 = $bizlight_customizer_all_values['keysist-color-principal'];
+        $bizlight_secondary_color               = $bizlight_customizer_all_values['keysist-color-secundario'];
+        $bizlight_h1_h6_color                   = $bizlight_customizer_all_values['keysist-color-titulos'];
+        $bizlight_link_color                    = $bizlight_customizer_all_values['keysist-color-link'];
+        $bizlight_link_hover_color              = $bizlight_customizer_all_values['keysist-color-link-hover'];
         $bizlight_site_identity_color           = $bizlight_customizer_all_values['bizlight-site-identity-color'];
         $bizlight_banner_text_color             = $bizlight_customizer_all_values['bizlight-banner-text-color'];
-        $bizlight_footer_bg_color               = $bizlight_customizer_all_values['bizlight-footer-background-color'];
+        $bizlight_fondo_color               = $bizlight_customizer_all_values['bizlight-background-color'];
         $bizlight_footer_text_color             = $bizlight_customizer_all_values['bizlight-footer-text-color'];
         $header_image = get_header_image();
 
         /*footer option*/
-        $bizlight_footer_background_color             = $bizlight_customizer_all_values['bizlight-footer-background-color'];
         $bizlight_footer_text_color                  = $bizlight_customizer_all_values['bizlight-footer-text-color'];
         ?>
         <style type="text/css">
@@ -36,6 +35,9 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
                 --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
                 --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
+                --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;
+                --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_hover_color );?>;
+                --fondo-color: <?php echo esc_attr( $$bizlight_fondo_color );?>;
                 --type-font:'FontAwesome'
             }
              <?php
@@ -75,7 +77,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             <?php
             }
           /*Link color*/
-            if( !empty($bizlight_link_color) ){
+            if( !empty($bizlight_site_identity_color) ){
             ?>
             a,
             a > p,
@@ -88,7 +90,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             .nav-links .nav-previous a,
             .nav-links .nav-next a,
             .page-links a {
-                color: <?php echo esc_attr( $bizlight_link_color ); ?> !important; /*#212121*/
+                color: <?php echo esc_attr( $bizlight_site_identity_color ); ?> !important; /*#212121*/
             }
             <?php
             }
@@ -107,7 +109,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             }
 
             /*Link Hover color*/
-              if( !empty($bizlight_link_hover_color) ){
+              if( !empty($bizlight_site_identity_color) ){
               ?>
               a:hover,
               a:focus,
@@ -139,27 +141,16 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
               .evision-main-slider .slide-item .main-title a:hover,
               .evision-main-slider .slide-item .main-title a:focus,
               .evision-main-slider .slide-item .main-title a:active{
-                  color: <?php echo esc_attr( $bizlight_link_hover_color ); ?> !important; /*#212121*/
+                  color: <?php echo esc_attr( $bizlight_site_identity_color );?> !important; /*#212121*/
               }
               <?php
               }
-            /*header menu text*/
-            if( !empty( $bizlight_site_identity_color ) ){
-            ?>
-            .site-title,
-            .site-title a,
-            .site-description,
-            .site-description a{
-                color: <?php echo esc_attr( $bizlight_site_identity_color );?>!important;
-            }
-            <?php
-            }
-
+        
             /*footer bg*/
-            if( !empty( $bizlight_footer_bg_color ) ){
+            if( !empty( $bizlight_fondo_color ) ){
             ?>
             .a{
-                background-color: <?php echo esc_attr( $bizlight_footer_bg_color );?>!important;
+                background-color: <?php echo esc_attr( $bizlight_fondo_color );?>!important;
             }
             <?php
             }
@@ -185,11 +176,11 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
 
             /*footer color*/
             //footer background
-            if( !empty( $bizlight_footer_background_color ) ){
+            if( !empty( $bizlight_fondo_color ) ){
             ?>
                 .wrap-contact,
                 .site-footer{
-                    background-color: <?php echo esc_url($bizlight_footer_background_color);?>!important;
+                    background-color: <?php echo esc_url($bizlight_fondo_color);?>!important;
                     }
             <?php
             }

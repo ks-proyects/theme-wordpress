@@ -10,18 +10,15 @@
 get_header(); ?>
 	<div class="wrapper page-inner-title">
 		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'bizlight' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Lo Sentimos! Pero la pagina solicitada ya no se encuentra disponible.', 'bizlight' ); ?></h1>
 		</header><!-- .page-header -->
 	</div>
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
-
 				<section class="error-404 not-found">
-
-
 					<div class="page-content">
-						<h3><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'bizlight' ); ?></h3>
+						<h3><?php esc_html_e( 'Parece que no se encontró lo solicitado. Puedes usar el siguiente buscador.', 'bizlight' ); ?></h3>
 
 						<?php get_search_form(); ?>
 

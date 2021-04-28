@@ -37,14 +37,14 @@ $bizlight_sections['bizlight-colors-reset'] =
     );
 
 /*defaults values*/
-$bizlight_customizer_defaults['bizlight-h1-h6-color'] = '#212121';
-$bizlight_customizer_defaults['bizlight-link-color'] = '#212121';
+$bizlight_customizer_defaults['keysist-color-titulos'] = '#212121';
+$bizlight_customizer_defaults['keysist-color-link'] = '#212121';
 $bizlight_customizer_defaults['bizlight-site-identity-color'] = '#ffffff';
-$bizlight_customizer_defaults['bizlight-link-hover-color'] = '#028484';
+$bizlight_customizer_defaults['keysist-color-link-hover'] = '#028484';
 $bizlight_customizer_defaults['bizlight-banner-text-color'] = '#ffffff';
 $bizlight_customizer_defaults['bizlight-color-reset'] = '';
-$bizlight_customizer_defaults['bizlight-primary-color'] = '#8a2b2b';
-$bizlight_customizer_defaults['bizlight-second-color'] = '#5e0c0c';
+$bizlight_customizer_defaults['keysist-color-principal'] = '#8a2b2b';
+$bizlight_customizer_defaults['keysist-color-secundario'] = '#5e0c0c';
 
 
 /**
@@ -64,12 +64,12 @@ if ( ! function_exists( 'bizlight_color_reset' ) ) :
 
             /*setting fields */
             
-            $bizlight_customizer_saved_values['bizlight-primary-color'] = $bizlight_customizer_defaults['bizlight-primary-color'];
-            $bizlight_customizer_saved_values['bizlight-second-color'] = $bizlight_customizer_defaults['bizlight-second-color'];
-            $bizlight_customizer_saved_values['bizlight-h1-h6-color'] = $bizlight_customizer_defaults['bizlight-h1-h6-color'];
-            $bizlight_customizer_saved_values['bizlight-link-color'] = $bizlight_customizer_defaults['bizlight-link-color'];
+            $bizlight_customizer_saved_values['keysist-color-principal'] = $bizlight_customizer_defaults['keysist-color-principal'];
+            $bizlight_customizer_saved_values['keysist-color-secundario'] = $bizlight_customizer_defaults['keysist-color-secundario'];
+            $bizlight_customizer_saved_values['keysist-color-titulos'] = $bizlight_customizer_defaults['keysist-color-titulos'];
+            $bizlight_customizer_saved_values['keysist-color-link'] = $bizlight_customizer_defaults['keysist-color-link'];
             $bizlight_customizer_saved_values['bizlight-site-identity-color'] = $bizlight_customizer_defaults['bizlight-site-identity-color'];
-            $bizlight_customizer_saved_values['bizlight-link-hover-color'] = $bizlight_customizer_defaults['bizlight-link-hover-color'];
+            $bizlight_customizer_saved_values['keysist-color-link-hover'] = $bizlight_customizer_defaults['keysist-color-link-hover'];
             $bizlight_customizer_saved_values['bizlight-banner-text-color'] = $bizlight_customizer_defaults['bizlight_customizer_defaults'];
 
             remove_theme_mod( 'background_color' );
@@ -92,8 +92,8 @@ $bizlight_settings_controls['bizlight-site-identity-color'] =
             'default'              => $bizlight_customizer_defaults['bizlight-site-identity-color'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Color de identidad del sitio', 'bizlight' ),
-            'description'           =>  __( 'Site title and tagline color', 'bizlight' ),
+            'label'                 =>  __( 'Colores de la Página', 'bizlight' ),
+            'description'           =>  __( 'Colores de los diferentes elementos', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 11,
@@ -101,23 +101,25 @@ $bizlight_settings_controls['bizlight-site-identity-color'] =
         )
     );
 
-    $bizlight_settings_controls['bizlight-primary-color'] = array(
+    $bizlight_settings_controls['keysist-color-principal'] = array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-primary-color'],
+            'default'              => $bizlight_customizer_defaults['keysist-color-principal'],
         ),
         'control' => array(
-            'label'                 =>  esc_html__( 'Color Primario', 'bizlight' ),
+            'label'                 =>  esc_html__( 'Color Principal', 'bizlight' ),
+            'description'           =>  __( 'Header, Botones, Bordes', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 1,
         )
     );
-    $bizlight_settings_controls['bizlight-second-color'] = array(
+    $bizlight_settings_controls['keysist-color-secundario'] = array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-second-color'],
+            'default'              => $bizlight_customizer_defaults['keysist-color-secundario'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Color Secundario', 'bizlight' ),
+            'description'           =>  __( 'Botones Hover,Fondo Titulos', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 2,
@@ -125,13 +127,13 @@ $bizlight_settings_controls['bizlight-site-identity-color'] =
     );
 
 
-$bizlight_settings_controls['bizlight-h1-h6-color'] =
+$bizlight_settings_controls['keysist-color-titulos'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-h1-h6-color'],
+            'default'              => $bizlight_customizer_defaults['keysist-color-titulos'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Heading (H1-H6) Color', 'bizlight' ),
+            'label'                 =>  __( 'Color de Titulos', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 31,
@@ -141,13 +143,13 @@ $bizlight_settings_controls['bizlight-h1-h6-color'] =
 
 
 
-$bizlight_settings_controls['bizlight-link-color'] =
+$bizlight_settings_controls['keysist-color-link'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-link-color'],
+            'default'              => $bizlight_customizer_defaults['keysist-color-link'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Link Color', 'bizlight' ),
+            'label'                 =>  __( 'Color de Links', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 32,
@@ -155,13 +157,13 @@ $bizlight_settings_controls['bizlight-link-color'] =
         )
     );
 
-$bizlight_settings_controls['bizlight-link-hover-color'] =
+$bizlight_settings_controls['keysist-color-link-hover'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-link-hover-color'],
+            'default'              => $bizlight_customizer_defaults['keysist-color-link-hover'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Link Hover Color', 'bizlight' ),
+            'label'                 =>  __( 'Color de Links Hover', 'bizlight' ),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 100,
