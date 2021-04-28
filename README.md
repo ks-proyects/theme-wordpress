@@ -57,3 +57,12 @@ Permite Modificar el tipo de letra de la página
 ## Imagen de cabecera
 
 ## Imagen de fondo
+
+## Configuración de Tema
+
+### Layout Options
+
+Configuramos la forma de mostrar el contenido de los blogs
+
+### Sección Footer
+Permite Configurar la sección del Footer, para mostrar las redes sociales de debe de activar la opcion y luego crear un menu de tipo red social con los links respectivos
