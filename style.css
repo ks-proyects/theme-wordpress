@@ -2622,6 +2622,9 @@ article.hentry .image-full {
 .evision-social-section a[href*="facebook.com"]:before {
     content: "\f09a";
 }
+.evision-social-section a[href*="www.instagram.com"]:before {
+    content: "\f16d";
+}
 
 .evision-social-section a[href*="twitter.com"]:before {
     content: "\f099";
@@ -2637,6 +2640,10 @@ article.hentry .image-full {
 
 .evision-social-section a:hover[href*="facebook.com"] {
     background-color: #3C579E;
+}
+
+.evision-social-section a:hover[href*="www.instagram.com"] {
+    background-color: #d43085;
 }
 
 .evision-social-section a:hover[href*="twitter.com"] {
