@@ -41,6 +41,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 
 ```sh
 Paso 6. Debemos crear una pagina y en la opción "Ajustes de portada" de la plantilla seleccionamos pagina estatica y en "Página de inicio" selecioanmos la pagina creada
+```
 
 # Secciones
 
