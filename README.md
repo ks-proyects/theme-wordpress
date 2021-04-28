@@ -22,7 +22,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 - Activo-->activo, Tipo--> Select, Valores--> 0,1
 - Orden-->orden, TipO--> Número, Valores--> 0,1,2,..
 - Icono-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
-> Se puede usar los sigueintes iconos [Link](https://fontawesome.com/v4.7.0/icons/)
+> Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
 ```sh
 Paso 4. Crear Registros en cada uno de las entidades con los nuevos metadas
