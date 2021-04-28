@@ -25,7 +25,7 @@ $bizlight_settings_controls['bizlight-home-blogs-title'] =
             'default'              => $bizlight_customizer_defaults['bizlight-home-blogs-title']
         ),
         'control' => array(
-            'label'                 =>  __( 'I´tulo Principal', 'bizlight' ),
+            'label'                 =>  __( 'Titulo Principal', 'bizlight' ),
             'section'               => 'bizlight-home-blog-options',
             'type'                  => 'text',
             'priority'              => 50,
