@@ -915,10 +915,10 @@ body.home .page-inner-title {
 
 .navbar-fixed-shadow {
     transition: background-color 1.5s ease;
-    background: rgb(0, 0, 0) !important;
-    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(12, 12, 13, 0.6923144257703081) 44%, rgba(255, 255, 255, 0) 100%) !important;
-    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(12, 12, 13, 0.6923144257703081) 44%, rgba(255, 255, 255, 0) 100%) !important;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(12, 12, 13, 0.6923144257703081) 44%, rgba(255, 255, 255, 0) 100%) !important;
+    background: var(--second-bg-color) !important;
+    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 }
 
@@ -2866,10 +2866,16 @@ body.home .block-section {
 
 .site-header.evision-nav-right {
     background-color: var(--second-bg-color);
+    background: var(--second-bg-color) !important;
+    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+
     position: absolute;
     width: 100%;
     z-index: 2;
-    color: #ffffff;
+    color: var(--color-titulos-hover);
     padding-bottom: 15px;
     text-align: left;
 }

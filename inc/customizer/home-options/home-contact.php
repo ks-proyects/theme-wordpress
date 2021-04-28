@@ -9,14 +9,13 @@ $bizlight_customizer_defaults['keysist-home-contact-enable']           = 1;
 $bizlight_customizer_defaults['keysist-home-contact-title'] = __( 'Contactanos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-descripcion'] = __( 'Si tienes dudas escribenos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-shor-code'] = __( '', 'keysist' );
-$bizlight_customizer_defaults['bizlight-googlemaps-link'] = __( '', 'keysist' );
-//
-$bizlight_customizer_defaults['bizlight-celular'] = __( '+593988695631', 'keysist' );
-$bizlight_customizer_defaults['bizlight-telefono'] = __( '+59322359358', 'keysist' );
-$bizlight_customizer_defaults['bizlight-correo'] =  __( 'info@miempresa.com', 'keysist' );
-$bizlight_customizer_defaults['bizlight-whatsapp-mensaje'] = __( 'Quiero obtener más información de ustedes', 'keysist' );
-$bizlight_customizer_defaults['bizlight-googlemaps-link'] = __( '', 'keysist' );
-$bizlight_customizer_defaults['bizlight-googlemap-label'] = __( 'Estamos Aquí', 'keysist' );
+$bizlight_customizer_defaults['keysist-googlemaps-link'] = __( '', 'keysist' );
+$bizlight_customizer_defaults['keysist-googlemap-label'] = __( 'Estamos Aquí', 'keysist' );
+$bizlight_customizer_defaults['keysist-celular'] = __( '+593988695631', 'keysist' );
+$bizlight_customizer_defaults['keysist-telefono'] = __( '+59322359358', 'keysist' );
+$bizlight_customizer_defaults['keysist-correo'] =  __( 'info@miempresa.com', 'keysist' );
+$bizlight_customizer_defaults['keysist-whatsapp-mensaje'] = __( 'Quiero obtener más información de ustedes', 'keysist' );
+
 
 /*testimonialsetting*/
 $bizlight_sections['keysist-home-contact-enable-setting'] =
@@ -74,10 +73,10 @@ $bizlight_settings_controls['keysist-home-contact-shor-code'] =
             'priority'              => 20,
         )
     );
-$bizlight_settings_controls['bizlight-googlemaps-link'] =
+$bizlight_settings_controls['keysist-googlemaps-link'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-googlemaps-link'],
+            'default'              => $bizlight_customizer_defaults['keysist-googlemaps-link'],
         ),
         'control' => array(
             'label'                 =>  __( 'Google Maps Url', 'keysist' ),
@@ -86,10 +85,10 @@ $bizlight_settings_controls['bizlight-googlemaps-link'] =
             'priority'              => 20,
         )
     );
-$bizlight_settings_controls['bizlight-googlemap-label'] =
+$bizlight_settings_controls['keysist-googlemap-label'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-googlemap-label']
+            'default'              => $bizlight_customizer_defaults['keysist-googlemap-label']
         ),
         'control' => array(
             'label'                 =>  __( 'Leyenda del Mapa', 'keysist' ),
@@ -99,10 +98,10 @@ $bizlight_settings_controls['bizlight-googlemap-label'] =
             'active_callback'       => ''
         )
     );
-$bizlight_settings_controls['bizlight-celular'] =
+$bizlight_settings_controls['keysist-celular'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-celular']
+            'default'              => $bizlight_customizer_defaults['keysist-celular']
         ),
         'control' => array(
             'label'                 =>  __( 'Celular', 'keysist' ),
@@ -112,10 +111,10 @@ $bizlight_settings_controls['bizlight-celular'] =
             'active_callback'       => ''
         )
     );
-$bizlight_settings_controls['bizlight-whatsapp-mensaje'] =
+$bizlight_settings_controls['keysist-whatsapp-mensaje'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-whatsapp-mensaje']
+            'default'              => $bizlight_customizer_defaults['keysist-whatsapp-mensaje']
         ),
         'control' => array(
             'label'                 =>  __( 'Mensaje para Whatsapp', 'keysist' ),
@@ -125,10 +124,10 @@ $bizlight_settings_controls['bizlight-whatsapp-mensaje'] =
             'active_callback'       => ''
         )
     );
-$bizlight_settings_controls['bizlight-telefono'] =
+$bizlight_settings_controls['keysist-telefono'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-telefono']
+            'default'              => $bizlight_customizer_defaults['keysist-telefono']
         ),
         'control' => array(
             'label'                 =>  __( 'Teléfono', 'keysist' ),
@@ -138,10 +137,10 @@ $bizlight_settings_controls['bizlight-telefono'] =
             'active_callback'       => ''
         )
     );
-$bizlight_settings_controls['bizlight-correo'] =
+$bizlight_settings_controls['keysist-correo'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-correo']
+            'default'              => $bizlight_customizer_defaults['keysist-correo']
         ),
         'control' => array(
             'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
