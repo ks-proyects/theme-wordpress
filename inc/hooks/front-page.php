@@ -11,7 +11,7 @@ if ( ! function_exists( 'bizlight_if_all_disable' ) ) :
             1 != $bizlight_customizer_all_values['bizlight-home-service-enable'] &&
             1 != $bizlight_customizer_all_values['bizlight-home-about-enable'] &&
             1 != $bizlight_customizer_all_values['bizlight-home-featured-enable'] &&
-            1 != $bizlight_customizer_all_values['bizlight-home-blog-enable'] &&
+            1 != $bizlight_customizer_all_values['bizlight-home-blogs-enable'] &&
             1 != $bizlight_customizer_all_values['keysist-home-testimonial-enable'] &&
             1 != $bizlight_customizer_all_values['keysist-home-team-enable'] &&
             1 != $bizlight_customizer_all_values['keysist-home-contact-enable']

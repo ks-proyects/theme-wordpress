@@ -6,8 +6,8 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['keysist-home-product-title'] = __('Nuestros Cursos 2','keysist');
-$bizlight_customizer_defaults['keysist-home-product-content'] = __('Conoce acerca de nuestros cursos','keysist');
+$bizlight_customizer_defaults['keysist-home-product-title'] = __('Nuestros Productos','keysist');
+$bizlight_customizer_defaults['keysist-home-product-content'] = __('Conoce acerca de nuestros Productos','keysist');
 $bizlight_customizer_defaults['keysist-home-product-enable'] = 1;
 
 
@@ -52,7 +52,7 @@ $bizlight_settings_controls['keysist-home-product-enable'] =
             'default'              => $bizlight_customizer_defaults['keysist-home-product-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Activo', 'keysist' ),
+            'label'                 =>  __( 'Mostrar', 'keysist' ),
             'section'               => 'keysist-home-product-options',
             'type'                  => 'checkbox',
             'priority'              => 40,

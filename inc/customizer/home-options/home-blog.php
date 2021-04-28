@@ -6,26 +6,26 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['bizlight-home-blog-title'] = __('últimas Noticias','bizlight');
-$bizlight_customizer_defaults['bizlight-blog-sinle-word'] = 35;
-$bizlight_customizer_defaults['bizlight-home-blog-enable'] = 1;
-$bizlight_customizer_defaults['bizlight-home-blog-category'] = 0;
+$bizlight_customizer_defaults['bizlight-home-blogs-title'] = __('Últimas Noticias','bizlight');
+$bizlight_customizer_defaults['bizlight-blogs-sinle-word'] = 35;
+$bizlight_customizer_defaults['bizlight-home-blogs-enable'] = 1;
+$bizlight_customizer_defaults['bizlight-home-blogs-category'] = 0;
 
 /*aboutoptions*/
 $bizlight_sections['bizlight-home-blog-options'] =
     array(
         'priority'       => 175,
-        'title'          => __( 'Home/Front Blog Options', 'bizlight' ),
+        'title'          => __( 'Sección Blog', 'bizlight' ),
     );
 
 
-$bizlight_settings_controls['bizlight-home-blog-title'] =
+$bizlight_settings_controls['bizlight-home-blogs-title'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-home-blog-title']
+            'default'              => $bizlight_customizer_defaults['bizlight-home-blogs-title']
         ),
         'control' => array(
-            'label'                 =>  __( 'Main Title', 'bizlight' ),
+            'label'                 =>  __( 'I´tulo Principal', 'bizlight' ),
             'section'               => 'bizlight-home-blog-options',
             'type'                  => 'text',
             'priority'              => 50,
@@ -33,13 +33,13 @@ $bizlight_settings_controls['bizlight-home-blog-title'] =
         )
     );
 
-$bizlight_settings_controls['bizlight-home-blog-enable'] =
+$bizlight_settings_controls['bizlight-home-blogs-enable'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-home-blog-enable']
+            'default'              => $bizlight_customizer_defaults['bizlight-home-blogs-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Blog', 'bizlight' ),
+            'label'                 =>  __( 'Mostrar', 'bizlight' ),
             'section'               => 'bizlight-home-blog-options',
             'type'                  => 'checkbox',
             'priority'              => 40,
@@ -48,13 +48,13 @@ $bizlight_settings_controls['bizlight-home-blog-enable'] =
     );
 
 
-$bizlight_settings_controls['bizlight-blog-sinle-word'] =
+$bizlight_settings_controls['bizlight-blogs-sinle-word'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-blog-sinle-word']
+            'default'              => $bizlight_customizer_defaults['bizlight-blogs-sinle-word']
         ),
         'control' => array(
-            'label'                 =>  __( 'Select single number of word--', 'bizlight' ),
+            'label'                 =>  __( 'Cantidad de Letras a Mostrar', 'bizlight' ),
             'section'               => 'bizlight-home-blog-options',
             'type'                  => 'number',
             'priority'              => 70,
@@ -63,14 +63,14 @@ $bizlight_settings_controls['bizlight-blog-sinle-word'] =
     );
 
 /*creating setting control for bizlight-fs-Category start*/
-$bizlight_settings_controls['bizlight-home-blog-category'] =
+$bizlight_settings_controls['bizlight-home-blogs-category'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['bizlight-home-blog-category']
+            'default'              => $bizlight_customizer_defaults['bizlight-home-blogs-category']
         ),
         'control' => array(
-            'label'                 =>  __( 'Select Category For Blog', 'bizlight' ),
-            'description'           =>  __( 'Blog will only displayed from this category', 'bizlight' ),
+            'label'                 =>  __( 'Seleccionar categoría para blog', 'bizlight' ),
+            'description'           =>  __( 'El blog solo se mostrará en esta categoría.', 'bizlight' ),
             'section'               => 'bizlight-home-blog-options',
             'type'                  => 'category_dropdown',
             'priority'              => 80,

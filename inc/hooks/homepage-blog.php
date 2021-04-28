@@ -14,11 +14,11 @@ if ( ! function_exists( 'bizlight_home_blog' ) ) :
     function bizlight_home_blog() {
         global $bizlight_customizer_all_values;
 
-        $bizlight_home_blog_title = $bizlight_customizer_all_values['bizlight-home-blog-title'];
-        $bizlight_home_blog_category = $bizlight_customizer_all_values['bizlight-home-blog-category'];
-        $bizlight_bolg_Single_number = $bizlight_customizer_all_values['bizlight-blog-sinle-word'];
+        $bizlight_home_blog_title = $bizlight_customizer_all_values['bizlight-home-blogs-title'];
+        $bizlight_home_blog_category = $bizlight_customizer_all_values['bizlight-home-blogs-category'];
+        $bizlight_bolg_Single_number = $bizlight_customizer_all_values['bizlight-blogs-sinle-word'];
 
-        if( 1 != $bizlight_customizer_all_values['bizlight-home-blog-enable'] ){
+        if( 1 != $bizlight_customizer_all_values['bizlight-home-blogs-enable'] ){
             return null;
         }
         ?>
