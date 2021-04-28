@@ -4,12 +4,10 @@
 # Dependecias
 
 Para el correcto funcionamiento del tema dependera de los siguientes Plugins
-```sh
-Advanced Custom Fields [Link](https://www.advancedcustomfields.com/)
-```
-```sh
-Datos Dinámicos KeySist [Repositorio Git](https://github.com/ks-proyects/keysist_post_types)
-```
+
+> Advanced Custom Fields [Link](https://www.advancedcustomfields.com/)
+
+>Datos Dinámicos KeySist [Repositorio Git](https://github.com/ks-proyects/keysist_post_types)
 
 # Configuracion
 ```sh
@@ -21,9 +19,10 @@ Paso 2. Comprimir el repositorio descargado en .zip y cargar como un plugin a Wo
 ```sh
 Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para las entidades creadas con el plugin anterior
 ```
-- Activo-->activo, Tipo-->Número, Valores-->0,1
-- Orden-->orden, TipO-->Número, Valores-->0,1,2,..
-- Icono-->icono, TipO-->Cadena, Valores-->**fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
+- Activo-->activo, Tipo--> Select, Valores--> 0,1
+- Orden-->orden, TipO--> Número, Valores--> 0,1,2,..
+- Icono-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
+> Se puede usar los sigueintes iconos [Link](https://fontawesome.com/v4.7.0/icons/)
 
 ```sh
 Paso 4. Crear Registros en cada uno de las entidades con los nuevos metadas

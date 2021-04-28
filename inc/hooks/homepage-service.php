@@ -60,7 +60,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
             $keysist_home_service_static_array[3]['keysist-home-service-title'] = __('Páginas Web', 'bizlight');
             $keysist_home_service_static_array[3]['keysist-home-service-content'] = __("Con tu página web podrás tener un valor agregado y estar siempre un paso más adelante que tu competencia, ya que tu negocio o empresa podrá ser ubicada fácilmente; ya sea desde una computador en casa o desde un celular en cualquier parte del mundo.Tu página web es una oficina que nunca cerrará sus puertas. De esta manera,  brindarás atención a tus clientes en cualquier momento del día manteniendo la personalización, el detalle y la dinámica de tu negocio.Resuelve las dudas y consultas de tu clientes mediante chat en línea, chat con bots y formularios de contacto, esto les generará mayor comodidad y confianza. Además, puedes conectar tu sitio directamente a tu whatsapp, permitiendo una comunicación más rápida y personalizada con tu cliente.", 'bizlight');
             $keysist_home_service_static_array[3]['keysist-home-service-link'] = '#';
-            $keysist_home_service_static_array[3]['keysist-home-service-icon'] = 'fa-meteor';
+            $keysist_home_service_static_array[3]['keysist-home-service-icon'] = 'fa-dashboard';
         endif;
         return $keysist_home_service_static_array;
     }
