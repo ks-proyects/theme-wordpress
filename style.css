@@ -939,23 +939,35 @@ body.home .page-inner-title {
 .evision-nav-right .menu {
     width: auto;
 }
-
-.site-title,
-.site-title a {
+.evision-nav-right .site-title, 
+.evision-nav-right .site-title a {
+    transition: color 1.5s ease;
     margin-top: 8px;
     font-size: 22px;
     text-transform: inherit;
     font-weight: 500;
-    color: var(--color-titulos) !important;
+    color: var(--main-bg-color) !important;
 }
+
+.evision-nav-right:not(.navbar-fixed-active) .site-title, 
+.evision-nav-right:not(.navbar-fixed-active) .site-title a {
+    transition: color 1.5s ease;
+    color: var(--color-titulos-hover) !important;
+}
+
 
 .site-title a {
     display: block;
 }
-
 .site-title a:hover {
-    color: var(--color-titulos-hover) !important;
+    color: var(--banner-link-color-hover) !important;
 }
+.evision-nav-right:not(.navbar-fixed-active) .site-title a:hover {
+    color: var(--color-titulos-hover) !important;
+    font-weight: 600;
+}
+
+
 
 .site-description {
     font-size: 14px;
@@ -1041,14 +1053,20 @@ body.home .page-inner-title {
     position: relative;
 }
 
-.main-navigation a {
-    color: var(--color-titulos) !important;
+
+.evision-nav-right:not(.navbar-fixed-active) .main-navigation a {
+    color: var(--color-titulos-hover) !important;
+    transition: color 1.5s ease;
     display: block;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     padding: 17px 18px;
     position: relative;
+}
+.evision-nav-right .main-navigation a {
+    color: var(--main-bg-color) !important;
+    transition: color 1.5s ease;
 }
 
 .main-navigation ul ul {
@@ -1074,12 +1092,22 @@ body.home .page-inner-title {
     border-top: none;
 }
 
-.main-navigation li a:hover,
-.main-navigation li a:focus,
-.main-navigation li a:active {
+.evision-nav-right .main-navigation li a:hover,
+.evision-nav-right .main-navigation li a:focus,
+.evision-nav-right .main-navigation li a:active {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: var(--main-bg-color) !important;
+    transition: color 1.5s ease;
+    font-weight: 600;
+}
+
+.evision-nav-right:not(.navbar-fixed-active) .main-navigation li a:hover,
+.evision-nav-right:not(.navbar-fixed-active) .main-navigation li a:focus,
+.evision-nav-right:not(.navbar-fixed-active) .main-navigation li a:active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: var(--color-titulos-hover) !important;
-    
+    transition: color 1.5s ease;
+    font-weight: 600;
 }
 
 .main-navigation ul ul a:hover {
@@ -1411,7 +1439,7 @@ body.home .page-inner-title {
     border: medium none;
     border-radius: 0;
     box-shadow: none;
-    color: var(--color-titulos) !important;
+    color: var(--color-titulos-hover) !important;
     display: inline-block;
     height: 22px;
     padding: 15px 30px 27px;
@@ -1801,7 +1829,7 @@ body.home .page-inner-title {
 
 .site-info-header a {
     margin-left: 2px;
-    color: var(--color-titulos) !important;
+    color: var(--color-titulos-hover) !important;
 }
 
 .site-info-header a i {
@@ -1810,6 +1838,7 @@ body.home .page-inner-title {
 
 .site-info-header a:hover {
     color: var(--color-titulos-hover) !important;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -2749,18 +2778,19 @@ body.home .block-section {
 
 #breadcrumb {
     background-color: var(--second-bg-color);
-    color: var(--color-titulos);
+    color: var(--color-titulos-hover);
     font-size: 13px;
 }
 
 #breadcrumb a {
-    color: var(--color-titulos) !important;
+    color: var(--color-titulos-hover) !important;
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
     color: var(--color-titulos-hover) !important;
+    font-weight: 600;
 }
 
 #breadcrumb span {
@@ -2863,21 +2893,23 @@ body.home .block-section {
 
 
 /*==================== eVision Nav Right Start====================*/
-
-.site-header.evision-nav-right {
+.site-header.evision-nav-right{
+    transition: background-color 1.5s ease;
     background-color: var(--second-bg-color);
     background: var(--second-bg-color) !important;
-    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
-
     position: absolute;
     width: 100%;
     z-index: 2;
     color: var(--color-titulos-hover);
     padding-bottom: 15px;
     text-align: left;
+}
+.site-header.evision-nav-right:not(.navbar-fixed-active) {
+    transition: background-color 1.5s ease;
+    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 }
 
 .home .site-header.navbar-fixed-top {
@@ -2894,9 +2926,13 @@ body:not(.home) .site-header.evision-nav-right {
 .evision-nav-right .site-title a:hover {
     color: #cccccc;
 }
-
 .evision-nav-right .site-description {
+    transition: color 1.5s ease;
+    color: var(--main-bg-color);
+}
+.evision-nav-right:not(.navbar-fixed-active) .site-description {
     color: var(--color-titulos-hover);
+    transition: color 1.5s ease;
 }
 
 .evision-nav-right .main-navigation .nav-menu {
