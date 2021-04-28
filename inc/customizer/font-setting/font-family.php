@@ -8,7 +8,7 @@ global $bizlight_customizer_defaults;
 /*creating panel for fonts-setting*/
 $bizlight_panels['bizlight-fonts'] =
     array(
-        'title'          => __( 'Font Setting', 'bizlight' ),
+        'title'          => __( 'Configuración de Letra', 'bizlight' ),
         'priority'       => 43
     );
 
