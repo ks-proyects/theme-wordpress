@@ -946,7 +946,7 @@ body.home .page-inner-title {
     font-size: 22px;
     text-transform: inherit;
     font-weight: 500;
-    color: var(--banner-color-titulos) !important;
+    color: var(--color-titulos) !important;
 }
 
 .site-title a {
@@ -954,7 +954,7 @@ body.home .page-inner-title {
 }
 
 .site-title a:hover {
-    color: var(--banner-color-titulos-hover) !important;
+    color: var(--color-titulos-hover) !important;
 }
 
 .site-description {
@@ -1042,7 +1042,7 @@ body.home .page-inner-title {
 }
 
 .main-navigation a {
-    color: var(--banner-color-titulos) !important;
+    color: var(--color-titulos) !important;
     display: block;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -1078,7 +1078,7 @@ body.home .page-inner-title {
 .main-navigation li a:focus,
 .main-navigation li a:active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: var(--banner-color-titulos-hover) !important;
+    color: var(--color-titulos-hover) !important;
     
 }
 
@@ -1411,7 +1411,7 @@ body.home .page-inner-title {
     border: medium none;
     border-radius: 0;
     box-shadow: none;
-    color: #ffffff;
+    color: var(--color-titulos) !important;
     display: inline-block;
     height: 22px;
     padding: 15px 30px 27px;
@@ -1801,7 +1801,7 @@ body.home .page-inner-title {
 
 .site-info-header a {
     margin-left: 2px;
-    color: var(--banner-color-titulos) !important;
+    color: var(--color-titulos) !important;
 }
 
 .site-info-header a i {
@@ -1809,7 +1809,7 @@ body.home .page-inner-title {
 }
 
 .site-info-header a:hover {
-    color: var(--banner-color-titulos-hover) !important;
+    color: var(--color-titulos-hover) !important;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -2742,18 +2742,18 @@ body.home .block-section {
 
 #breadcrumb {
     background-color: var(--second-bg-color);
-    color: var(--banner-color-titulos);
+    color: var(--color-titulos);
     font-size: 13px;
 }
 
 #breadcrumb a {
-    color: var(--banner-color-titulos) !important;
+    color: var(--color-titulos) !important;
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: var(--banner-color-titulos-hover) !important;
+    color: var(--color-titulos-hover) !important;
 }
 
 #breadcrumb span {
@@ -2883,7 +2883,7 @@ body:not(.home) .site-header.evision-nav-right {
 }
 
 .evision-nav-right .site-description {
-    color: var(--banner-color-titulos-hover);
+    color: var(--color-titulos-hover);
 }
 
 .evision-nav-right .main-navigation .nav-menu {

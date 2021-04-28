@@ -35,8 +35,8 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
                 --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;
                 --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_color );?>94;
-                --banner-color-titulos: <?php echo esc_attr( $bizlight_h1_h6_color );?>94;
-                --banner-color-titulos-hover: <?php echo esc_attr( $bizlight_h1_h6_color );?>;
+                --color-titulos: <?php echo esc_attr( $bizlight_h1_h6_color );?>94;
+                --color-titulos-hover: <?php echo esc_attr( $bizlight_h1_h6_color );?>;
                 --fondo-footer-color: <?php echo esc_attr( $$bizlight_footer_fondo_color );?>;
                 --footer-link-color: <?php echo esc_attr( $bizlight_footer_text_color );?>94;
                 --footer-link-color-hover: <?php echo esc_attr( $bizlight_footer_text_color );?>;
