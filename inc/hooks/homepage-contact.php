@@ -11,8 +11,8 @@ if (!function_exists('keysist_home_contact')) :
      *
      */
     function keysist_home_contact() {
-        global $bizlight_customizer_all_values;
-        if (1 != $bizlight_customizer_all_values['keysist-home-contact-enable']) {
+        global $bizlight__customizer_all_values;
+        if (1 !=$bizlight_t_customizer_all_values['keysist-home-contact-enable']) {
             return null;
         }
             ?>
@@ -21,15 +21,15 @@ if (!function_exists('keysist_home_contact')) :
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">
-                            <h2 class=""><?php echo $bizlight_customizer_all_values['keysist-home-contact-title']; ?></h2>
-                            <h3 class=""><?php echo $bizlight_customizer_all_values['keysist-home-contact-content']; ?></h3>
+                            <h2 class=""><?php echo $bizlight_ht_customizer_all_values['keysist-home-contact-title']; ?></h2>
+                            <h3 class=""><?php echo $bizlight_ght_customizer_all_values['keysist-home-contact-content']; ?></h3>
                             <div id="carousel-contact" class="carousel slide">
-                                <?php echo do_shortcode($bizlight_customizer_all_values['keysist-home-contact-shor-code']); ?>  
+                                <?php echo do_shortcode($bizlight_ight_customizer_all_values['keysist-home-contact-shor-code']); ?>  
                             </div>
                             <?php
-                            if( !empty($bizlight_customizer_all_values['keysist-home-contact-url-map']) ) {
+                            if( !empty($bizlight_light_customizer_all_values['keysist-home-contact-url-map']) ) {
                               ?>
-                              <iframe src="<?php echo $bizlight_customizer_all_values['keysist-home-contact-url-map']; ?>" 
+                              <iframe src="<?php echo $bizlight_zlight_customizer_all_values['keysist-home-contact-url-map']; ?>" 
                               frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                               <?php
                             }?>

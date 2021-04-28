@@ -47,7 +47,7 @@ if ( ! function_exists( 'bizlight_before_wp_head' ) ) :
 function bizlight_before_wp_head() {
     ?>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:title" content="<?php bloginfo('name'); ?>">
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta property="og:image" content="https://secureservercdn.net/198.71.233.51/53p.d81.myftpupload.com/wp-content/uploads/2020/01/keysist-logo50.png">
     <meta property="og:url" content="<?php bloginfo( 'url' )?>">
@@ -165,22 +165,31 @@ function bizlight_header() {
      <!-- header and navigation option second - navigation right  -->
         <header id="masthead" class="site-header evision-nav-right navbar-fixed-top evision-animate slideInDown" role="banner">
             <div class="container">
-                <?php if(is_front_page() && (!empty($bizlight_customizer_all_values['bizlight-phone'])  || !empty($bizlight_customizer_all_values['bizlight-info-email']) || !empty($bizlight_customizer_all_values['bizlight-info-marker-link']))):?>
+                <?php if(is_front_page() && (!empty($bizlight_customizer_all_values['bizlight-celular'])  || !empty($bizlight_customizer_all_values['bizlight-correo']) || !empty($bizlight_customizer_all_values['bizlight-googlemaps-link']))):?>
                 <div class="row desktop-header-info">
                     <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info-header">
-                        <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-celular'])): ?>    
                             <span>
-                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?><i class="fa fa-phone"></i></a>
+                                <?php echo esc_html( $bizlight_customizer_all_values['bizlight-celular'] );?>
+                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-celular'] );?>"><i class="fa fa-phone"></i></a>
+                                <a class="ml-2" href="https://api.whatsapp.com/send?phone=<?php echo esc_html( $bizlight_customizer_all_values['bizlight-celular'] );?>&text=<?php echo esc_html( $bizlight_customizer_all_values['bizlight-whatsapp-mensaje'] );?>"><i class="fa fa-whatsapp"></i></a>
                             </span>
                         <?php endif;?>
-                        <?php if(!empty($bizlight_customizer_all_values['bizlight-info-email'])): ?>   
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-telefono'])): ?>    
                             <span>
-                                <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?><i class="fa fa-send"></i></a>
+                                <?php echo esc_html( $bizlight_customizer_all_values['bizlight-telefono'] );?>
+                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-telefono'] );?>"><i class="fa fa-phone"></i></a>
                             </span>
                         <?php endif;?>
-                        <?php if(!empty($bizlight_customizer_all_values['bizlight-info-marker-link'])): ?>   
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-correo'])): ?>   
                             <span>
-                                <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?><i class="fa fa-map-marker"></i></a>
+                                <?php echo esc_html( $bizlight_customizer_all_values['bizlight-correo'] );?>
+                                <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-correo'] );?>"><i class="fa fa-send"></i></a>
+                            </span>
+                        <?php endif;?>
+                        <?php if(!empty($bizlight_customizer_all_values['bizlight-googlemaps-link'])): ?>   
+                            <span>
+                                <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-googlemaps-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-googlemap-label'] );?><i class="fa fa-map-marker"></i></a>
                             </span>
                         <?php endif;?>
                     </div>
@@ -238,17 +247,17 @@ function bizlight_header() {
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
                             <span class="navbar-text mob-header-info">
-                                <?php if(!empty($bizlight_customizer_all_values['bizlight-phone'])): ?>    
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-celular'])): ?>    
                                     <span>
-                                        <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-phone'] );?><i class="fa fa-phone"></i></a>
+                                        <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-celular'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-celular'] );?><i class="fa fa-phone"></i></a>
                                     </span>
                                 <?php endif;?>
-                                <?php if(!empty($bizlight_customizer_all_values['bizlight-info-email'])): ?>   
-                                    <span><a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-email'] );?><i class="fa fa-send"></i></a></span>
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-correo'])): ?>   
+                                    <span><a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['bizlight-correo'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-correo'] );?><i class="fa fa-send"></i></a></span>
                                 <?php endif;?>
-                                <?php if(!empty($bizlight_customizer_all_values['bizlight-info-marker-link'])): ?>   
+                                <?php if(!empty($bizlight_customizer_all_values['bizlight-googlemaps-link'])): ?>   
                                     <span>
-                                        <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-info-marker-text'] );?><i class="fa fa-map-marker"></i></a>
+                                        <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['bizlight-googlemaps-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['bizlight-googlemap-label'] );?><i class="fa fa-map-marker"></i></a>
                                     </span>
                                 <?php endif;?>
                             </span>

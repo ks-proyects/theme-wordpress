@@ -86,7 +86,6 @@ if ( ! function_exists( 'keysist_home_service' ) ) :
             ?>
             <section id="services" class="evision-wrapper block-section wrap-service">
             
-            <a class="whatsapp-movil" href="https://api.whatsapp.com/send?phone=+593939262679&text=hola,%20qu%C3%A9%20tal?">Preguntar por Whatsapp</a>
                 <p style="display:none;">services</p>
                 <div class="container">
             <?php if(!empty( $bizlight_home_service_title ) ){
