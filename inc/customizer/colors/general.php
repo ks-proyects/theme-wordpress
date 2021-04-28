@@ -115,7 +115,7 @@ array(
         'default'              => $bizlight_customizer_defaults['keysist-color-link'],
     ),
     'control' => array(
-        'label'                 =>  __( 'Color de Links de las secciones con fondo', 'bizlight' ),
+        'label'                 =>  __( 'Color de Links', 'bizlight' ),
         'section'               => 'paleta-colores',
         'type'                  => 'color',
         'priority'              => 15,
