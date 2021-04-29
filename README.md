@@ -23,17 +23,19 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 
 Label | Código | Tipo | Valor 
 --- | --- | --- | --- |--- 
-Activo | activo | Select | 0,1 
+ |  |  | 
 
-| Primer encabezado | Segundo encabezado |
-| ------------- | ------------- |
-| Contenido de la celda  | Contenido de la celda  |
-| Contenido de la celda  | Contenido de la celda  |
+| Label | Código | Tipo | Valor |
+| ------------- | ------------- |------------- |------------- |
+| Activo  | activo  | Select  | 0,1  |
+| Orden  | orden  | Número  | 0,1,2,3,..  |
+| Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro |
+
 
 
 - Activo Código-->activo, Tipo--> Select, Valores--> 0,1
 - Orden Código-->orden, TipO--> Número, Valores--> 0,1,2,..
-- Icono Código-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
+- Icono Código-->icono, Tipo--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
 > Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
 
