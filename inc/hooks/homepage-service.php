@@ -13,7 +13,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
          $keysist_home_service_static_array = array();
          $keysist_home_service_args =    array(
             'post_type' => 'keysist_servicios',
-            //'posts_per_page' => 4,
+            'posts_per_page' => 4,
             'meta_query'     => array(
                 array(
                   'key'        => 'activo',

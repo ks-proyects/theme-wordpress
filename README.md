@@ -20,6 +20,7 @@ Paso 2. Comprimir el repositorio descargado en .zip y cargar como un plugin a Wo
 Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para las entidades creadas con el plugin anterior
 ```
 - Activo-->activo, Tipo--> Select, Valores--> 0,1
+- Mostrar Inicio -->mostrar_inicio Tipo--> Select, Valores--> 0,1
 - Orden-->orden, TipO--> Número, Valores--> 0,1,2,..
 - Icono-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
 > Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
