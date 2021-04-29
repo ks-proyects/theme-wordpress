@@ -14,13 +14,9 @@ require $keysist_customizer_home_featured_file_path;
 $keysist_customizer_home_blog_file_path = keysist_file_directory('inc/customizer/home-options/home-blog.php');
 require $keysist_customizer_home_blog_file_path;
 
-/*Home Cursos Section*/
-$keysist_customizer_home_course_file_path = keysist_file_directory('inc/customizer/home-options/home-cursos.php');
+/*Home Admin Section*/
+$keysist_customizer_home_course_file_path = keysist_file_directory('inc/customizer/home-options/home-admin.php');
 require $keysist_customizer_home_course_file_path;
-
-/*Home Convenios Section*/
-$keysist_customizer_home_product_file_path = keysist_file_directory('inc/customizer/home-options/home-convenio.php');
-require $keysist_customizer_home_product_file_path;
 
 /*Service Section*/
 $keysist_customizer_home_service_file_path = keysist_file_directory('inc/customizer/home-options/home-service.php');

@@ -28,5 +28,4 @@ get_header(); ?>
 		</div><!-- #primary -->
 	</div><!-- #content -->
 <?php get_sidebar(); ?>
-<h1>PRUBA</h1>
 <?php get_footer(); ?>

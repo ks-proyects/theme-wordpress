@@ -52,7 +52,7 @@ require $keysist_hooks_homepage_about_file_path;
 $keysist_hooks_homepage_team_file_path = keysist_file_directory('inc/hooks/homepage-team.php');
 require $keysist_hooks_homepage_team_file_path;
 
-$keysist_hooks_homepage_service_file_path = keysist_file_directory('inc/hooks/homepage-data.php');
+$keysist_hooks_homepage_service_file_path = keysist_file_directory('inc/hooks/homepage-admin.php');
 require $keysist_hooks_homepage_service_file_path;
 
 $keysist_hooks_homepage_testimonial_file_path = keysist_file_directory('inc/hooks/homepage-testimonial.php');
