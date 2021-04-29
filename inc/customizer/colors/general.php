@@ -23,12 +23,13 @@ $bizlight_sections['paleta-colores'] =
 
 
 /*defaults values*/
-$bizlight_customizer_defaults['keysist-color-titulos'] = '#212121';
-$bizlight_customizer_defaults['keysist-color-link'] = '#212121';
+$bizlight_customizer_defaults['keysist-color-principal'] = '#bb342f';
+$bizlight_customizer_defaults['keysist-color-secundario'] = '#DDA448';
+$bizlight_customizer_defaults['keysist-color-titulos'] = '#f7d851';
+$bizlight_customizer_defaults['keysist-color-link'] = '#7a1818';
 $bizlight_customizer_defaults['bizlight-banner-text-color'] = '#ffffff';
 $bizlight_customizer_defaults['bizlight-color-reset'] = '';
-$bizlight_customizer_defaults['keysist-color-principal'] = '#8a2b2b';
-$bizlight_customizer_defaults['keysist-color-secundario'] = '#5e0c0c';
+
 
 
 /**

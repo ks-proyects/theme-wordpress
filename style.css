@@ -724,11 +724,18 @@ input[type="submit"]:active:before,
     transform: scale(1);
 }
 
-button a,
+
 button:hover a,
-a.button,
 a.button:hover {
-    color: #ffffff !important;
+    transition: color 1.5s ease;
+    color: var(--main-bg-color) !important;
+    display: inline-block;
+}
+
+button a,
+a.button{
+    transition: color 1.5s ease;
+    color: var(--second-bg-color) !important;
     display: inline-block;
 }
 
@@ -895,7 +902,7 @@ body.home .page-inner-title {
 .page-inner-title .taxonomy-description {
     padding-left: 15px;
     padding-right: 15px;
-    color: #ffffff!important;
+    color: var(--main-bg-color)!important;
 }
 
 .wrap-header .nav-tabs {
@@ -2778,18 +2785,18 @@ body.home .block-section {
 
 #breadcrumb {
     background-color: var(--second-bg-color);
-    color: var(--color-titulos-hover);
+    color: var(--main-bg-color);
     font-size: 13px;
 }
 
 #breadcrumb a {
-    color: var(--color-titulos-hover) !important;
+    color: var(--main-bg-color) !important;
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: var(--color-titulos-hover) !important;
+    color: var(--main-bg-color) !important;
     font-weight: 600;
 }
 
@@ -3323,6 +3330,7 @@ body:not(.home) .site-header.evision-nav-right {
 .box-container h3 {
     margin-top: 0px;
     margin-bottom: 25px;
+    font-weight:600;
 }
 
 .box-container .box-inner:hover h3,
@@ -4231,8 +4239,8 @@ iframe {
 }
 
 .box-content {
-    background: #f8f8f9;
-    border: 1px solid rgba(232, 232, 232, 0.45);
+    background: var(--second-bg-color-5);
+    border: 1px solid var(--second-bg-color-50);
 }
 
 .box-container .box-inner:hover h3,

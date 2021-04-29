@@ -15,7 +15,7 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
         $bizlight_fs_contents_array = array();
 
         $keysist_home_testimonial_args =    array(
-            'post_type' => array('servicio', 'caracteristica', 'testimonio', 'keysist_productos'),
+            'post_type' => array('curso', 'taller', 'pregrado', 'postgrado','maestria','doctorado','diplomado'),
             'post_status' => array('publish'),
             'meta_query'	=> array(
                 'relation'		=> 'AND',

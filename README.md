@@ -26,6 +26,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 | Activo  | activo  | Select  | 0,1  |
 | Orden  | orden  | Número  | 0,1,2,3,..  |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro |
+| Sección Id  | id_seccion  | Cadena  | fa-desktop,fa-camera-retro |
 
 > El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 

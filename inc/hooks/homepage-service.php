@@ -12,7 +12,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
          // the query
          $keysist_home_service_static_array = array();
          $keysist_home_service_args =    array(
-            'post_type' => 'keysist_servicios',
+            'post_type' => 'servicio',
             'posts_per_page' => 4,
             'meta_query'     => array(
                 array(
@@ -37,6 +37,11 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
                     $keysist_home_service_static_array[$i]['keysist-home-service-icon'] = get_field('icono'); 
                 else:
                     $keysist_home_service_static_array[$i]['keysist-home-service-icon'] = 'fa-desktop';
+                endif;
+                if(get_field('id_seccion')>''):
+                    $keysist_home_service_static_array[$i]['keysist-home-service-link'] = get_field('id_seccion'); 
+                else:
+                    $keysist_home_service_static_array[$i]['keysist-home-service-link'] = '#';
                 endif;
                 $i++;
             endwhile;

@@ -6,23 +6,23 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['keysist-home-product-title'] = __('Nuestros Productos','keysist');
-$bizlight_customizer_defaults['keysist-home-product-content'] = __('Conoce acerca de nuestros Productos','keysist');
-$bizlight_customizer_defaults['keysist-home-product-enable'] = 1;
+$bizlight_customizer_defaults['keysist-home-convenio-title'] = __('Nuestros Productos','keysist');
+$bizlight_customizer_defaults['keysist-home-convenio-content'] = __('Conoce acerca de nuestros Productos','keysist');
+$bizlight_customizer_defaults['keysist-home-convenio-enable'] = 1;
 
 
 /*aboutoptions*/
 $bizlight_sections['keysist-home-product-options'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajustes de Productos', 'keysist' ),
+        'title'          => __( 'Sección Convenios', 'keysist' ),
     );
 
 
-$bizlight_settings_controls['keysist-home-product-title'] =
+$bizlight_settings_controls['keysist-home-convenio-title'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-home-product-title']
+            'default'              => $bizlight_customizer_defaults['keysist-home-convenio-title']
         ),
         'control' => array(
             'label'                 =>  __( 'Título', 'keysist' ),
@@ -32,10 +32,10 @@ $bizlight_settings_controls['keysist-home-product-title'] =
             'active_callback'       => ''
         )
     );
-$bizlight_settings_controls['keysist-home-product-content'] =
+$bizlight_settings_controls['keysist-home-convenio-content'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-home-product-content']
+            'default'              => $bizlight_customizer_defaults['keysist-home-convenio-content']
         ),
         'control' => array(
             'label'                 =>  __( 'Descripción', 'keysist' ),
@@ -46,10 +46,10 @@ $bizlight_settings_controls['keysist-home-product-content'] =
         )
     );
 
-$bizlight_settings_controls['keysist-home-product-enable'] =
+$bizlight_settings_controls['keysist-home-convenio-enable'] =
     array(
         'setting' =>     array(
-            'default'              => $bizlight_customizer_defaults['keysist-home-product-enable']
+            'default'              => $bizlight_customizer_defaults['keysist-home-convenio-enable']
         ),
         'control' => array(
             'label'                 =>  __( 'Mostrar', 'keysist' ),

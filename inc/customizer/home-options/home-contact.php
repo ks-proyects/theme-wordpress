@@ -9,7 +9,7 @@ $bizlight_customizer_defaults['keysist-home-contact-enable']           = 1;
 $bizlight_customizer_defaults['keysist-home-contact-title'] = __( 'Contactanos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-descripcion'] = __( 'Si tienes dudas escribenos', 'keysist' );
 $bizlight_customizer_defaults['keysist-home-contact-shor-code'] = __( '', 'keysist' );
-$bizlight_customizer_defaults['keysist-googlemaps-link'] = __( '', 'keysist' );
+$bizlight_customizer_defaults['keysist-googlemaps-link'] = __( 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.9029315787745!2d-78.45112119942911!3d-0.14317630514420235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f9be2cffacd%3A0xfe298049f14ca5af!2sKeySist!5e0!3m2!1ses!2sec!4v1619722361501!5m2!1ses!2sec', 'keysist' );
 $bizlight_customizer_defaults['keysist-googlemap-label'] = __( 'Estamos Aquí', 'keysist' );
 $bizlight_customizer_defaults['keysist-celular'] = __( '+593988695631', 'keysist' );
 $bizlight_customizer_defaults['keysist-telefono'] = __( '+59322359358', 'keysist' );

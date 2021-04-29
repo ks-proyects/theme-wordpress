@@ -14,12 +14,12 @@ require $keysist_customizer_home_featured_file_path;
 $keysist_customizer_home_blog_file_path = keysist_file_directory('inc/customizer/home-options/home-blog.php');
 require $keysist_customizer_home_blog_file_path;
 
-/*Home Course Section*/
-$keysist_customizer_home_course_file_path = keysist_file_directory('inc/customizer/home-options/home-course.php');
+/*Home Cursos Section*/
+$keysist_customizer_home_course_file_path = keysist_file_directory('inc/customizer/home-options/home-cursos.php');
 require $keysist_customizer_home_course_file_path;
 
-/*Home Product Section*/
-$keysist_customizer_home_product_file_path = keysist_file_directory('inc/customizer/home-options/home-product.php');
+/*Home Convenios Section*/
+$keysist_customizer_home_product_file_path = keysist_file_directory('inc/customizer/home-options/home-convenio.php');
 require $keysist_customizer_home_product_file_path;
 
 /*Service Section*/
