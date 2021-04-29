@@ -19,11 +19,28 @@ Paso 2. Comprimir el repositorio descargado en .zip y cargar como un plugin a Wo
 ```sh
 Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para las entidades creadas con el plugin anterior
 ```
+### Para Los Tipos Servicios, Caracteristicas, Testimonios y Equipo de Trabajo
+
+Label | Código | Tipo | Valor 
+--- | --- | --- | --- |--- 
+Activo | activo | Select | 0,1 
+
+
+- Activo Código-->activo, Tipo--> Select, Valores--> 0,1
+- Orden Código-->orden, TipO--> Número, Valores--> 0,1,2,..
+- Icono Código-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
+> Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
+
+
+### Para Los Tipos que son Cursos Carreras
 - Activo-->activo, Tipo--> Select, Valores--> 0,1
-- Mostrar Inicio -->mostrar_inicio Tipo--> Select, Valores--> 0,1
 - Orden-->orden, TipO--> Número, Valores--> 0,1,2,..
 - Icono-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
 > Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
+
+- Mostrar Inicio -->mostrar_inicio Tipo--> Select, Valores--> 0,1
+
+
 
 ```sh
 Paso 4. Crear Registros en cada uno de las entidades con los nuevos metadas
@@ -34,7 +51,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 ```
 - Contactos -> "contact"
 - Equipo -> "team"
-- testimonios -> "testimonios"
+- Testimonios -> "testimonios"
 - Acerca de Nosotros -> "aboutus"
 - Blogs -> "blogs"
 - Caracteristicas -> "caracteristic"

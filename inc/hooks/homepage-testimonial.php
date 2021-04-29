@@ -12,7 +12,7 @@ if (!function_exists('keysist_home_testimonial_array')) :
         $bizlight_home_testimonial_contents_array = array();
 
         $keysist_home_testimonial_args =    array(
-            'post_type' => 'keysist_testimonios',
+            'post_type' => 'testimonio',
             'posts_per_page' => 4
         );
         $keysist_home_testimonial_post_query = new WP_Query( $keysist_home_testimonial_args );

@@ -11,7 +11,7 @@ if (!function_exists('keysist_home_about_array')) :
     function keysist_home_about_array() {
         $keysist_home_about_contents_array = array();
         $bizlight_home_about_args =    array(
-            'post_type' => 'keysist_caracter',
+            'post_type' => 'caracteristica',
             'posts_per_page' => 3,
             'meta_query'     => array(
                 array(
