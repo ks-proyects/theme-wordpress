@@ -93,16 +93,16 @@ if ( ! function_exists( 'keysist_home_curso' ) ) :
                                             <img src="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-imagen']); ?>" alt="<?php $bizlight_service_array['keysist-home-curso-title'];?>">
                                             <div class="overlay"></div>
                                             <div class="icon">
-                                                <a href="<?php $bizlight_service_array['keysist-home-curso-link'];?>" title="<?php echo esc_attr( $bizlight_service_array['keysist-home-curso-title'] );?>">
+                                                <a href="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-link'] ); ?>" title="<?php echo esc_attr( $bizlight_service_array['keysist-home-curso-title'] );?>">
                                                     <span><img src="<?php echo esc_url( get_template_directory_uri().'/assets/img/plus-icon.png'); ?>"></span>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="single-thumb-content">
-                                            <h3><a href="<?php echo esc_url($bizlight_service_array['keysist-home-curso-link']); ?>"><?php echo esc_url($bizlight_service_array['keysist-home-curso-title']);?></a></h3>
+                                            <h3> <a href="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-link'] ); ?>"><?php echo esc_attr( $bizlight_service_array['keysist-home-curso-title'] );?></a></h3>
                                             <div class="single-thumb-content-text">
                                                 <p>
-                                                    <?php echo wp_kses_post($keysist_home_cursos_static_array[$i]['keysist-home-curso-content']);?>
+                                                    <?php echo wp_kses_post($bizlight_service_array['keysist-home-curso-content']);?>
                                                 </p>
                                             </div>
                                         </div>
