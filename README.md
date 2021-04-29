@@ -25,6 +25,11 @@ Label | Código | Tipo | Valor
 --- | --- | --- | --- |--- 
 Activo | activo | Select | 0,1 
 
+| Primer encabezado | Segundo encabezado |
+| ------------- | ------------- |
+| Contenido de la celda  | Contenido de la celda  |
+| Contenido de la celda  | Contenido de la celda  |
+
 
 - Activo Código-->activo, Tipo--> Select, Valores--> 0,1
 - Orden Código-->orden, TipO--> Número, Valores--> 0,1,2,..
