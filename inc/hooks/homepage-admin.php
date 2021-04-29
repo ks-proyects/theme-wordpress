@@ -1,120 +1,92 @@
 <?php
-if ( ! function_exists( 'keysist_home_curso_array' ) ) :
-    /**
-     * Featured Slider array creation
-     *
-     * @since Keysist 1.0.0
-     *
-     * @param null
-     * @return array
-     */
-    function keysist_home_curso_array(  ){
-         // the query
-         $keysist_home_cursos_static_array = array();
-         $keysist_home_cursos_args =    array(
-            'post_type' => 'curso',
-            'meta_query'     => array(
-                array(
-                  'key'        => 'activo',
-                  'compare'    => '=',
-                  'value'      => 1
-                )
-            ),
-            'meta_key'       => 'orden',
-            'orderby'        => 'meta_value',
-            'order'          => 'ASC'
-        );
-        $keysist_home_cursos_static_array = array(); /*again empty array*/
-        $keysist_home_service_post_query = new WP_Query( $keysist_home_cursos_args );
-        if ($keysist_home_service_post_query->have_posts()):
-            $i=0;
-            while ( $keysist_home_service_post_query->have_posts() ) : $keysist_home_service_post_query->the_post();
-                $keysist_home_cursos_static_array[$i]['keysist-home-curso-title'] = get_the_title() ;
-                $keysist_home_cursos_static_array[$i]['keysist-home-curso-content'] =bizlight_words_count( 30 ,get_the_content());
-                $keysist_home_cursos_static_array[$i]['keysist-home-curso-link'] = the_permalink();
-                $keysist_home_cursos_static_array[$i]['keysist-home-curso-duracion'] = get_field('duracion'); 
-                $keysist_home_cursos_static_array[$i]['keysist-home-curso-tipo-duracion'] = get_field('tipo_duracion'); 
-                if(has_post_thumbnail()){
-                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'curso' );
-                    $keysist_home_cursos_static_array[$i]['keysist-home-curso-imagen'] = $thumb['0'];
-                }else{
-                    $keysist_home_cursos_static_array[$i]['keysist-home-curso-imagen'] = get_template_directory_uri().'/assets/img/no-image-course.jpg';
-                }
-                $i++;
-            endwhile;
-            wp_reset_postdata();
-        endif;
-        return $keysist_home_cursos_static_array;
-    }
-endif;
 
-if ( ! function_exists( 'keysist_home_curso' ) ) :
+
+if ( ! function_exists( 'bizlight_home_admin' ) ) :
     /**
-     * Featured Slider
+     * blog Slider
      *
-     * @since Keysist 1.0.0
+     * @since Bizlight 1.0.0
      *
      * @param null
      * @return null
      *
      */
-    function keysist_home_curso() {
+    function bizlight_home_admin() {
         global $bizlight_customizer_all_values;
-        if( 1 != $bizlight_customizer_all_values['keysist-home-curso-enable'] ){
+
+        $bizlight_home_admin_title = $bizlight_customizer_all_values['keysist-home-curso-title'];
+        $bizlight_bolg_Single_number = $bizlight_customizer_all_values['bizlight-blogs-sinle-word'];
+
+        if( 1 != $bizlight_customizer_all_values['bizlight-home-blogs-enable'] ){
             return null;
         }
-            $bizlight_home_curso_title = $bizlight_customizer_all_values['keysist-home-curso-title'];
-            $bizlight_home_curso_contenido = $bizlight_customizer_all_values['keysist-home-curso-content'];
-            ?>
-            <section id="curso" class="evision-wrapper block-section wrap-service">
-                <p style="display:none;">curso</p>
-                <div class="container">
-                <?php if(!empty( $bizlight_home_curso_title ) ){
-                    ?>
-                    <h2 class="evision-animate slideInDown"><?php echo esc_html( $bizlight_home_curso_title );?></h2>
-                    <?php if(!empty( $bizlight_home_curso_contenido ) ){
-                        ?>
-                        <h3 class="evision-animate slideOutUp"><?php echo esc_html( $bizlight_home_curso_contenido );?></h3>
+        ?>
+        <section id="blogs" class="evision-wrapper block-section wrap-blog">
+            <p style="display:none;">blogs</p>
+            <div class="container">
+                <h2 class="evision-animate slideInDown"><?php echo esc_html( $bizlight_home_admin_title ); ?></h2>
+                <span class="title-divider"></span>
+                <div class="row block-row">
+                    <div class="row-same-height overhidden">
                         <?php
-                    }?>
-                    <span class="title-divider"></span>
-                    <?php
-                }?>
-                <div class="row block-row overhidden">
-                    <?php
-                        $i = 1;
-                        $data_delay = 0;
-                        foreach( keysist_home_curso_array() as $bizlight_service_array ){
-                            $data_wow_delay = 'data-wow-delay='.$data_delay.'s';
-                            ?>
-                            <div class="col-md-3 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
-                                <div class="single-thumb-inner">
-                                        <div class="single-thumb-image key-post-radio">
-                                            <img src="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-imagen']); ?>" alt="<?php $bizlight_service_array['keysist-home-curso-title'];?>">
+                        $bizlight_home_about_args = array(
+                            'post_type' => 'curso',
+                            'meta_query'     => array(
+                                array(
+                                  'key'        => 'activo',
+                                  'compare'    => '=',
+                                  'value'      => 1
+                                )
+                            ),
+                            'meta_key'       => 'orden',
+                            'orderby'        => 'meta_value',
+                            'order'          => 'ASC'
+
+                        );
+                        $bizlight_home_about_post_query = new WP_Query($bizlight_home_about_args);
+                        if ($bizlight_home_about_post_query->have_posts()) :
+                            $data_delay = 0;
+                            while ($bizlight_home_about_post_query->have_posts()) : $bizlight_home_about_post_query->the_post();
+                                if(has_post_thumbnail()){
+                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'home-blog-post-thumbnails-image' );
+                                    $url = $thumb['0'];
+                                }
+                                else{
+                                    $url = get_template_directory_uri().'/assets/img/no-image-course.jpg';
+                                }
+                                $data_wow_delay = 'data-wow-delay='.$data_delay.'s';
+                                ?>
+                                <div class="col-md-4 single-thumb-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
+                                    <div class="single-thumb-inner">
+                                        <div class="single-thumb-image">
+                                            <img src="<?php echo esc_url( $url ); ?>" alt="<?php the_title_attribute();?>">
                                             <div class="overlay"></div>
                                             <div class="icon">
-                                                <a href="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-link'] ); ?>" title="<?php echo esc_attr( $bizlight_service_array['keysist-home-curso-title'] );?>">
+                                                <a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>">
                                                     <span><img src="<?php echo esc_url( get_template_directory_uri().'/assets/img/plus-icon.png'); ?>"></span>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="single-thumb-content">
-                                            <h3> <a href="<?php echo esc_url( $bizlight_service_array['keysist-home-curso-link'] ); ?>"><?php echo esc_attr( $bizlight_service_array['keysist-home-curso-title'] );?></a></h3>
+                                            <h3> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h3>
                                             <div class="single-thumb-content-text">
                                                 <p>
-                                                    <?php echo wp_kses_post($bizlight_service_array['keysist-home-curso-content']);?>
+                                                    <?php echo wp_kses_post(bizlight_words_count($bizlight_bolg_Single_number, get_the_content()) );?>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                            </div>
-                            <?php
-                            }
+                                </div>
+                                <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
                         ?>
+                    </div>
                 </div>
             </div>
-        </section><!-- about section -->
-    <?php
+        </section> <!-- blog section -->
+        <?php
     }
 endif;
-add_action( 'homepage', 'keysist_home_curso', 20 );
+add_action( 'homepage', 'bizlight_home_admin', 20 );
