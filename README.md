@@ -21,31 +21,40 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ```
 ### Para Los Tipos Servicios, Caracteristicas, Testimonios y Equipo de Trabajo
 
-Label | Código | Tipo | Valor 
---- | --- | --- | --- |--- 
- |  |  | 
-
 | Label | Código | Tipo | Valor |
 | ------------- | ------------- |------------- |------------- |
 | Activo  | activo  | Select  | 0,1  |
 | Orden  | orden  | Número  | 0,1,2,3,..  |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro |
 
+> El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
 
-- Activo Código-->activo, Tipo--> Select, Valores--> 0,1
-- Orden Código-->orden, TipO--> Número, Valores--> 0,1,2,..
-- Icono Código-->icono, Tipo--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
-> Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
+### Para Los Tipos que son Cursos, Carreras entre otros
 
+| Label | Código | Tipo | Valor |
+| ------------- | ------------- |------------- |------------- |
+| Activo  | activo  | Select  | 0,1  |
+| Orden  | orden  | Número  | 0,1,2,3,..  |
+| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 |
+| Duración  | duracion  | Número  | minimo 1 |
+| Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |
+| Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |
+| Titulo  | titulo  | Cadena  |  |
+| Campo Ocupacional  | campo_ocupacional  | Cadena  |  |
+| Perfil Egresado  | perfil_egresado  | Cadena  |  |
+| Ambito Desempeño  | ambito_desempenio  | Cadena  |  |
+| Requisitos  | requisitos  | Cadena  |  |
+| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |
 
-### Para Los Tipos que son Cursos Carreras
-- Activo-->activo, Tipo--> Select, Valores--> 0,1
-- Orden-->orden, TipO--> Número, Valores--> 0,1,2,..
-- Icono-->icono, TipO--> Select, Valores--> **fa-desktop**,**fa-camera-retro**,**fa-rocket**,...
-> Se puede usar los siguientes iconos [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
+### Para Los Tipos que son Convenios
 
-- Mostrar Inicio -->mostrar_inicio Tipo--> Select, Valores--> 0,1
+| Label | Código | Tipo | Valor |
+| ------------- | ------------- |------------- |------------- |
+| Activo  | activo  | Select  | 0,1  |
+| Orden  | orden  | Número  | 0,1,2,3,..  |
+| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 |
+| Código Convenio  | codigo_convenio  | Cadena  |  |
 
 
 
