@@ -11,26 +11,21 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
      * @return null
      *
      */
-    function bizlight_home_admin() {
-        global $bizlight_customizer_all_values;
-
-        $bizlight_home_admin_title = $bizlight_customizer_all_values['keysist-home-curso-title'];
-        $bizlight_bolg_Single_number = $bizlight_customizer_all_values['bizlight-blogs-sinle-word'];
-
-        if( 1 != $bizlight_customizer_all_values['bizlight-home-blogs-enable'] ){
+    function bizlight_home_admin($tipo,$titulo,$descripcion,$mostrar) {
+        if( 1 != $mostrar){
             return null;
         }
         ?>
-        <section id="blogs" class="evision-wrapper block-section wrap-blog">
-            <p style="display:none;">blogs</p>
+        <section id="<?php echo $tipo; ?>" class="evision-wrapper block-section wrap-blog">
+            <p style="display:none;"><?php echo  $tipo;  ?></p>
             <div class="container">
-                <h2 class="evision-animate slideInDown"><?php echo esc_html( $bizlight_home_admin_title ); ?></h2>
+                <h2 class="evision-animate slideInDown"><?php echo esc_html( $titulo ); ?></h2>
                 <span class="title-divider"></span>
                 <div class="row block-row">
                     <div class="row-same-height overhidden">
                         <?php
                         $bizlight_home_about_args = array(
-                            'post_type' => 'curso',
+                            'post_type' => $tipo,
                             'meta_query'     => array(
                                 array(
                                   'key'        => 'activo',
@@ -58,7 +53,7 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
                                 ?>
                                 <div class="col-md-4 single-thumb-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
                                     <div class="single-thumb-inner">
-                                        <div class="single-thumb-image">
+                                        <div class="single-thumb-image key-post-radio">
                                             <img src="<?php echo esc_url( $url ); ?>" alt="<?php the_title_attribute();?>">
                                             <div class="overlay"></div>
                                             <div class="icon">
@@ -71,7 +66,7 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
                                             <h3> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h3>
                                             <div class="single-thumb-content-text">
                                                 <p>
-                                                    <?php echo wp_kses_post(bizlight_words_count($bizlight_bolg_Single_number, get_the_content()) );?>
+                                                    <?php echo wp_kses_post(bizlight_words_count(30, get_the_content()) );?>
                                                 </p>
                                             </div>
                                         </div>
@@ -89,4 +84,80 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
         <?php
     }
 endif;
-add_action( 'homepage', 'bizlight_home_admin', 20 );
+
+if ( ! function_exists( 'bizlight_home_curso' ) ) :
+    function bizlight_home_curso() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-curso-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-curso-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-curso-enable'] ;
+        bizlight_home_admin('curso',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_curso', 20 );
+
+if ( ! function_exists( 'bizlight_home_taller' ) ) :
+    function bizlight_home_taller() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-taller-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-taller-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-taller-enable'] ;
+        bizlight_home_admin('taller',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_taller', 20 );
+
+if ( ! function_exists( 'bizlight_home_pregrado' ) ) :
+    function bizlight_home_pregrado() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-pregrado-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-pregrado-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-pregrado-enable'] ;
+        bizlight_home_admin('pregrado',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_pregrado', 20 );
+
+if ( ! function_exists( 'bizlight_home_postgrado' ) ) :
+    function bizlight_home_postgrado() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-postgrado-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-postgrado-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-postgrado-enable'] ;
+        bizlight_home_admin('postgrado',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_postgrado', 20 );
+
+if ( ! function_exists( 'bizlight_home_maestria' ) ) :
+    function bizlight_home_maestria() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-maestria-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-maestria-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-maestria-enable'] ;
+        bizlight_home_admin('maestria',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_maestria', 20 );
+
+if ( ! function_exists( 'bizlight_home_doctorado' ) ) :
+    function bizlight_home_doctorado() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-doctorado-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-doctorado-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-doctorado-enable'] ;
+        bizlight_home_admin('doctorado',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_doctorado', 20 );
+
+if ( ! function_exists( 'bizlight_home_diplomado' ) ) :
+    function bizlight_home_diplomado() {
+        global $bizlight_customizer_all_values;
+        $titulo = $bizlight_customizer_all_values['keysist-home-diplomado-title'];
+        $descripcion = $bizlight_customizer_all_values['keysist-home-diplomado-content'];
+        $mostrar = $bizlight_customizer_all_values['keysist-home-diplomado-enable'] ;
+        bizlight_home_admin('diplomado',$titulo,$descripcion,$mostrar);
+    }
+endif;
+add_action( 'homepage', 'bizlight_home_diplomado', 20 );
