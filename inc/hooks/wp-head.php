@@ -31,7 +31,8 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             ?>
             :root{
                 --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
-                --main-bg-color-54: <?php echo esc_attr( $bizlight_primary_color );?>54;
+                --main-bg-color-90: <?php echo esc_attr( $bizlight_primary_color );?>ed;
+                --main-bg-color-50: <?php echo esc_attr( $bizlight_primary_color );?>66;
                 --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
                 --second-bg-color-50: <?php echo esc_attr( $bizlight_secondary_color );?>73;
                 --second-bg-color-5: <?php echo esc_attr( $bizlight_secondary_color );?>1f;

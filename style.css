@@ -111,22 +111,8 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 html {
     display: block;
@@ -4433,12 +4419,15 @@ iframe {
 
 .seccion-admin-content .fondo {
     bottom: -160%;
-    background-color: var(--main-bg-color-54);
+    background-color: var(--main-bg-color-90);
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -ms-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
+}
+.seccion-admin-content:hover .fondo{
+    background-color: var(--main-bg-color-50);
 }
 
 .seccion-admin-content .info {
@@ -4493,7 +4482,7 @@ iframe {
 }
 
 .seccion-admin-content h3 {
-    color: var(--color-titulos-hover) !important;
+    color: var( --color-titulos-hover) !important;
     font-weight: 600;
 }
 
@@ -4518,3 +4507,25 @@ iframe {
     }
 }
 /*End Admin*/
+/*Animacion*/
+.background-animated{
+    background: linear-gradient(-45deg, var(--main-bg-color), var(--second-bg-color), var(--banner-text-color), var(--banner-link-color));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.panel-radius{
+    border-radius: 5px;
+    padding: 15px;
+}

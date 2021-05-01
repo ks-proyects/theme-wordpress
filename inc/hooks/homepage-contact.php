@@ -19,7 +19,7 @@ if (!function_exists('keysist_home_contact')) :
             <section id ="contact" class="evision-wrapper block-section contact-about">
                 <p style="display:none;">contact</p>
                 <div class="container">
-                    <div class="row">
+                    <div class="row background-animated">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">
                             <h2 class=""><?php echo $bizlight_customizer_all_values['keysist-home-contact-title']; ?></h2>
                             <h3 class=""><?php echo $bizlight_customizer_all_values['keysist-home-contact-content']; ?></h3>

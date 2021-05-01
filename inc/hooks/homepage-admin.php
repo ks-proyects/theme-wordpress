@@ -40,6 +40,9 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
                         );
                         $result = new WP_Query($arg);
                         if ($result->have_posts()) :
+                            ?>
+
+                            <?php
                             $data_delay = 0;
                             $count=0;
                             while ($result->have_posts()) : $result->the_post();

@@ -9,37 +9,56 @@
 global $bizlight_customizer_all_values;
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php bizlight_posted_on(); ?>
-			<?php bizlight_entry_footer(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-		if (!is_single()) {
-			if( has_post_thumbnail()){
-				echo "<div class='image-full'>";
-				the_post_thumbnail('full');
-				echo "</div>";/*div end*/
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="padding: 0;border: 0;">
+	<?php if(get_post_type()==='post'):?>
+		<header class="entry-header">
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<div class="entry-meta">
+				<?php bizlight_posted_on(); ?>
+				<?php bizlight_entry_footer(); ?>
+			</div><!-- .entry-meta -->
+		</header><!-- .entry-header -->
+		<div class="entry-content">
+			<?php
+			if (!is_single()) {
+				if( has_post_thumbnail()){
+					echo "<div class='image-full'>";
+					the_post_thumbnail('full');
+					echo "</div>";/*div end*/
+				}
 			}
-		}
-		?>
-		<?php
-		the_excerpt();
-		?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bizlight' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
+			?>
+			<?php
+			the_excerpt();
+			?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bizlight' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+	<?php else:?>
+	<div class="row align-items-start justify-content-between background-animated panel-radius">
+		<div class="col-md-6">
+			<div class="col">
+				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+				<?php
+					the_excerpt();
+				?>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<?php
+			if (!is_single()) {
+				if( has_post_thumbnail()){
+					echo "<div class='image-full image-right'>";
+					the_post_thumbnail('medium_large');
+					echo "</div>";/*div end*/
+				}
+			}
+			?>
+		</div>
+	</div>
+	<?php endif;?>
 </article><!-- #post-## -->
