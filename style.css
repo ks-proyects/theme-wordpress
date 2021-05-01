@@ -4471,7 +4471,7 @@ iframe {
 }
 
 .seccion-admin-content .info span {
-    background-color: var(--banner-text-color);
+    background-color: var(--main-bg-color);
     border-radius: 100px;
     display: inline-block;
     height: 80px;
@@ -4483,12 +4483,13 @@ iframe {
 .seccion-admin-content .info img {
     vertical-align: middle;
 }
-.seccion-admin-content:hover img {
-    filter: blur(2px);
+.seccion-admin-content:hover img.image-blur {
+    filter: blur(10px);
 }
 
-.seccion-admin-content .info:hover {
-    opacity: 0.8;
+.seccion-admin-content .info a:hover {
+    -webkit-transform: rotate(90);
+    transform: rotate(90);
 }
 
 .seccion-admin-content h3 {

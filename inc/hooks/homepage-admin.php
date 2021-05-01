@@ -56,7 +56,7 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
                                 <div class="col-md-4 evision-animate slideInDown" <?php echo esc_attr( $data_wow_delay );?>>
                                     <div class="seccion-admin">
                                         <div class="seccion-admin-content">
-                                            <img src="<?php echo esc_url( $url ); ?>" alt="<?php the_title_attribute();?>">
+                                            <img  class="image-blur" src="<?php echo esc_url( $url ); ?>" alt="<?php the_title_attribute();?>">
                                             <div class="fondo"></div>
                                             <div class="info ">
                                                 <h3> <?php the_title();?> </h3>
