@@ -32,7 +32,7 @@
 					'after'  => '</div>',
 				) );
 			?>
-		</div><!-- .entry-content -->
+		</div>
 	<?php elseif ( 'curso' === get_post_type() 
 		|| 'diplomado' === get_post_type() 
 		|| 'doctorado' === get_post_type() 
@@ -41,8 +41,58 @@
 		|| 'pregrado' === get_post_type() 
 		|| 'taller' === get_post_type()
 		|| 'curso' === get_post_type()) : ?>
-		<div class="entry-content">
-
+		<div class="row align-items-start justify-content-between background-animated panel-radius">
+			<div class="col-md-12">
+			<?php
+				if( has_post_thumbnail()){
+					echo "<div class='image-full gallery-item'>";
+					the_post_thumbnail('full');
+					echo "</div>";
+				}
+				?>
+			</div>
+			<div class="col-md-12">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+			<div class="col-md-4 text-center section-info">
+				<i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+				<p>Duración</p>
+				<p><?php echo get_field('duracion')?>  <?php echo get_field('tipo_duracion')?></p>
+			</div>
+			<div class="col-md-4 text-center section-info">
+				<i class="fa fa-users fa-4x" aria-hidden="true"></i>
+				<p>Modalidad</p>
+				<p><?php echo get_field('modalidad')?></p>
+			</div>
+			<div class="col-md-4 text-center section-info">
+				<i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+				<p>Inicio</p>
+				<p><?php echo get_field('inicio')?></p>
+			</div>
+			<?php if(get_field('titulo')>''):?>
+				<div class="col-md-12">
+					Titulo: <?php echo get_field('titulo')?><p>
+				</div>
+			<?php endif;?>
+			<?php if(get_field('perfil_egresado')>''):?>
+				<div class="col-md-12">
+					Perfil profesional: <?php echo get_field('perfil_egresado')?><p>
+				</div>
+			<?php endif;?>
+			
+			
+			<?php if(get_field('ambito_desempenio')>''):?>
+				<div class="col-md-12">
+					Campo Ocupacional: <?php echo get_field('ambito_desempenio')?><p>
+				</div>
+			<?php endif;?>
+			
+			<?php if(get_field('requisitos')>''):?>
+				<div class="col-md-12">
+					Requisitos de Ingreso: <?php echo get_field('requisitos')?><p>
+				</div>
+			<?php endif;?>
+			
 		</div>
 	<?php elseif ('convenio' === get_post_type()) : ?>
 		<div class="entry-content">

@@ -4529,3 +4529,9 @@ iframe {
     border-radius: 5px;
     padding: 15px;
 }
+.section-info{
+    margin-bottom: 15px;
+}
+.section-info p{
+    margin: 0 !important;
+}
