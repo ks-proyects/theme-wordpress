@@ -21,41 +21,40 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ```
 ### Para Los Tipos Servicios, Caracteristicas, Testimonios y Equipo de Trabajo
 
-| Label | Código | Tipo | Valor |
-| ------------- | ------------- |------------- |------------- |
-| Activo  | activo  | Select  | 0,1  |
-| Orden  | orden  | Número  | 0,1,2,3,..  |
-| Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro |
-| Sección Id  | id_seccion  | Cadena  | fa-desktop,fa-camera-retro |
+| Label | Código | Tipo | Valor | Requerido |
+| ------------- | ------------- |------------- |------------- |------------- |
+| Activo  | activo  | True/False  | 0,1  | NO |
+| Orden  | orden  | Número  | 0,1,2,3,..  | SI |
+| Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |
+| Sección Id  | id_seccion  | Cadena  | fa-desktop,fa-camera-retro | SI |
 
 > El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
 
 ### Para Los Tipos que son Cursos, Carreras entre otros
 
-| Label | Código | Tipo | Valor |
-| ------------- | ------------- |------------- |------------- |
-| Activo  | activo  | Select  | 0,1  |
-| Orden  | orden  | Número  | 0,1,2,3,..  |
-| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 |
-| Duración  | duracion  | Número  | minimo 1 |
-| Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |
-| Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |
-| Titulo  | titulo  | Cadena  |  |
-| Campo Ocupacional  | campo_ocupacional  | Cadena  |  |
-| Perfil Egresado  | perfil_egresado  | Cadena  |  |
-| Ambito Desempeño  | ambito_desempenio  | Cadena  |  |
-| Requisitos  | requisitos  | Cadena  |  |
-| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |
+| Label | Código | Tipo | Valor | Requerido | 
+| ------------- | ------------- |------------- |------------- |------------- |
+| Activo  | activo  | True/False  | 0,1  | NO |
+| Orden  | orden  | Número  | 0,1,2,3,..  | SI |
+| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO |
+| Duración  | duracion  | Número  | minimo 1 |  SI |
+| Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |  SI |
+| Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI |
+| Titulo  | titulo  | Cadena  |  |  SI |
+| Campo Ocupacional  | ambito_ocupacional  | Cadena  |  |  NO |
+| Perfil Egresado  | perfil_egresado  | Cadena  |  |  NO |
+| Requisitos  | requisitos  | Cadena  |  |  SI |
+| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO |
 
 ### Para Los Tipos que son Convenios
 
-| Label | Código | Tipo | Valor |
-| ------------- | ------------- |------------- |------------- |
-| Activo  | activo  | Select  | 0,1  |
-| Orden  | orden  | Número  | 0,1,2,3,..  |
-| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 |
-| Código Convenio  | codigo_convenio  | Cadena  |  |
+| Label | Código | Tipo | Valor | Requerido | 
+| ------------- | ------------- |------------- |------------- |------------- |
+| Activo  | activo  | True/False  | 0,1  |  NO |
+| Orden  | orden  | Número  | 0,1,2,3,..  |  SI |
+| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 | NO |
+| Código Convenio  | codigo_convenio  | Cadena  |  | NO |
 
 
 

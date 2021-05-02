@@ -71,25 +71,25 @@
 			</div>
 			<?php if(get_field('titulo')>''):?>
 				<div class="col-md-12">
-					Titulo: <?php echo get_field('titulo')?><p>
+				<strong>TÍtulo:</strong> <?php echo get_field('titulo')?><p>
 				</div>
 			<?php endif;?>
 			<?php if(get_field('perfil_egresado')>''):?>
 				<div class="col-md-12">
-					Perfil profesional: <?php echo get_field('perfil_egresado')?><p>
+					<strong>Perfil Profesional: </strong><?php echo get_field('perfil_egresado')?><p>
 				</div>
 			<?php endif;?>
 			
 			
-			<?php if(get_field('ambito_desempenio')>''):?>
+			<?php if(get_field('ambito_ocupacional')>''):?>
 				<div class="col-md-12">
-					Campo Ocupacional: <?php echo get_field('ambito_desempenio')?><p>
+					<strong>Campo Ocupacional: </strong><?php echo get_field('ambito_ocupacional')?><p>
 				</div>
 			<?php endif;?>
 			
 			<?php if(get_field('requisitos')>''):?>
 				<div class="col-md-12">
-					Requisitos de Ingreso: <?php echo get_field('requisitos')?><p>
+					<strong>Requisitos de Ingreso: </strong><?php echo get_field('requisitos')?><p>
 				</div>
 			<?php endif;?>
 			
