@@ -14,6 +14,7 @@ $bizlight_sections['bizlight-home-featured'] =
     array(
         'priority'       => 170,
         'title'          => __( 'Sección Destacado', 'bizlight' ),
+        'panel'          => 'keysist-home-config-options',
     );
 
 $bizlight_settings_controls['bizlight-home-destacado-title'] =

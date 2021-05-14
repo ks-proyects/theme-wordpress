@@ -21,7 +21,8 @@ $bizlight_customizer_defaults['keysist-whatsapp-mensaje'] = __( 'Quiero obtener 
 $bizlight_sections['keysist-home-contact-enable-setting'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Datos de Contacto', 'keysist' ),
+        'title'          => __( 'Ajuste de Contacto', 'keysist' ),
+        'panel'          => 'keysist-home-config-options',
     );
 
 $bizlight_settings_controls['keysist-home-contact-enable'] =
@@ -30,7 +31,7 @@ $bizlight_settings_controls['keysist-home-contact-enable'] =
             'default'              => $bizlight_customizer_defaults['keysist-home-contact-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Activo', 'keysist' ),
+            'label'                 =>  __( 'Mostrar', 'keysist' ),
             'section'               => 'keysist-home-contact-enable-setting',
             'type'                  => 'checkbox',
             'priority'              => 15,
@@ -143,7 +144,7 @@ $bizlight_settings_controls['keysist-correo'] =
             'default'              => $bizlight_customizer_defaults['keysist-correo']
         ),
         'control' => array(
-            'label'                 =>  __( 'Teléfono de Contacto', 'keysist' ),
+            'label'                 =>  __( 'Correo', 'keysist' ),
             'section'               => 'keysist-home-contact-enable-setting',
             'type'                  => 'text',
             'priority'              => 20,

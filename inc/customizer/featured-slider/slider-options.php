@@ -6,7 +6,7 @@ global $bizlight_repeated_settings_controls;
 global $bizlight_customizer_defaults;
 
 /*defaults values*/
-$bizlight_customizer_defaults['bizlight-fs-number']                 = 4;
+$bizlight_customizer_defaults['bizlight-fs-number']                 = 7;
 $bizlight_customizer_defaults['bizlight-fs-slider-mode']            = 'horizontal';
 $bizlight_customizer_defaults['bizlight-fs-enable-control']         = 1;
 $bizlight_customizer_defaults['bizlight-fs-enable-autoplay']        = 1;

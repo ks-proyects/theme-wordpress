@@ -15,7 +15,7 @@ if (!function_exists('keysist_home_about_array')) :
             'posts_per_page' => 3,
             'meta_query'     => array(
                 array(
-                  'key'        => 'activo',
+                  'key'        => 'Mostrar',
                   'compare'    => '=',
                   'value'      => 1
                 )

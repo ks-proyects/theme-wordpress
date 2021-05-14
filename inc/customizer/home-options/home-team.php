@@ -11,7 +11,8 @@ $bizlight_customizer_defaults['keysist-home-team-title'] = __('Conoce nuestro Eq
 $bizlight_sections['keysist-home-team-options'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Equipo de Trabajo', 'keysist' ),
+        'title'          => __( 'Ajuste Equipo', 'keysist' ),
+        'panel'          => 'keysist-home-config-options',
     );
 
 $bizlight_settings_controls['keysist-home-team-enable'] =
@@ -20,7 +21,7 @@ $bizlight_settings_controls['keysist-home-team-enable'] =
             'default'              => $bizlight_customizer_defaults['keysist-home-team-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Activo', 'keysist' ),
+            'label'                 =>  __( 'Mostrar', 'keysist' ),
             'section'               => 'keysist-home-team-options',
             'type'                  => 'checkbox',
             'priority'              => 15,

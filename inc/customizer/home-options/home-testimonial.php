@@ -13,6 +13,7 @@ $bizlight_sections['keysist-home-testimonial-enable-setting'] =
     array(
         'priority'       => 160,
         'title'          => __( 'Ajustes de Testimonios', 'keysist' ),
+        'panel'          => 'keysist-home-config-options',
     );
 
 $bizlight_settings_controls['keysist-home-testimonial-enable'] =
@@ -21,7 +22,7 @@ $bizlight_settings_controls['keysist-home-testimonial-enable'] =
             'default'              => $bizlight_customizer_defaults['keysist-home-testimonial-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Activo', 'keysist' ),
+            'label'                 =>  __( 'Mostrar', 'keysist' ),
             'section'               => 'keysist-home-testimonial-enable-setting',
             'type'                  => 'checkbox',
             'priority'              => 15,

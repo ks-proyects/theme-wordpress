@@ -16,6 +16,7 @@ $bizlight_sections['bizlight-home-blog-options'] =
     array(
         'priority'       => 175,
         'title'          => __( 'Sección Blog', 'bizlight' ),
+        'panel'          => 'keysist-home-config-options',
     );
 
 

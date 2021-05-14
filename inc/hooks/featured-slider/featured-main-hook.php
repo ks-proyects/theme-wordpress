@@ -17,10 +17,11 @@ if ( ! function_exists( 'bizlight_featured_slider_array' ) ) :
         $keysist_home_testimonial_args =    array(
             'post_type' => array('curso', 'taller', 'pregrado', 'postgrado','maestria','doctorado','diplomado'),
             'post_status' => array('publish'),
+            'posts_per_page' => $bizlight_feature_slider_number,
             'meta_query'	=> array(
                 'relation'		=> 'AND',
                 array(
-                    'key'	 	=> 'activo',
+                    'key'	 	=> 'Mostrar',
                     'value'	  	=> '1',
                     'compare' 	=> '=',
                 ),

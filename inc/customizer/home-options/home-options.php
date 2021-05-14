@@ -1,35 +1,8 @@
 <?php
+/*Seccio Configuracion*/
 
-
-/*About Section*/
-
-$keysist_customizer_caracteristicas_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-caracteristicas.php');
-require $keysist_customizer_caracteristicas_setting_file_path;
-
-/*Home featured Section*/
-$keysist_customizer_home_featured_file_path = keysist_file_directory('inc/customizer/home-options/home-aboutus.php');
-require $keysist_customizer_home_featured_file_path;
-
-/*Home blog Section*/
-$keysist_customizer_home_blog_file_path = keysist_file_directory('inc/customizer/home-options/home-blog.php');
-require $keysist_customizer_home_blog_file_path;
-
+$keysist_customizer_configuracion_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-configuracion.php');
+require $keysist_customizer_configuracion_setting_file_path;
 /*Home Admin Section*/
 $keysist_customizer_home_course_file_path = keysist_file_directory('inc/customizer/home-options/home-admin.php');
 require $keysist_customizer_home_course_file_path;
-
-/*Service Section*/
-$keysist_customizer_home_service_file_path = keysist_file_directory('inc/customizer/home-options/home-service.php');
-require $keysist_customizer_home_service_file_path;
-
-/*Home testimonials Section*/
-$keysist_customizer_home_testimonial_panel_file_path = keysist_file_directory('inc/customizer/home-options/home-testimonial.php');
-require $keysist_customizer_home_testimonial_panel_file_path;
-
-/*Home Contact Section*/
-$keysist_customizer_home_contact_panel_file_path = keysist_file_directory('inc/customizer/home-options/home-contact.php');
-require $keysist_customizer_home_contact_panel_file_path;
-
-/*Team Contact Section*/
-$keysist_customizer_home_team_panel_file_path = keysist_file_directory('inc/customizer/home-options/home-team.php');
-require $keysist_customizer_home_team_panel_file_path;
