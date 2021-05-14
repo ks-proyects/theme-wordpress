@@ -99,7 +99,7 @@ if ( ! function_exists( 'bizlight_footer' ) ) :
             <div class="site-info">
                 <a href="<?php echo esc_url( __( 'http://www.keysist.com/', 'keysist' ) ); ?>"><?php printf( esc_html__( 'Desarollado por %s', 'bizlight' ), 'Keysist' ); ?></a>
                 <span class="sep"> | </span>
-                <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bizlight' ), 'Keysist', '<a target="_new" href="http://evisionthemes.com/" rel="designer">eVisionThemes</a>' ); ?>
+                <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bizlight' ), 'Keysist', '<a target="_new" href="http://www.keysist.com/" rel="designer">KeySist</a>' ); ?>
             </div><!-- .site-info -->
 
         </footer><!-- #colophon -->
