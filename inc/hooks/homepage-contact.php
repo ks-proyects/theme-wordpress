@@ -16,8 +16,8 @@ if (!function_exists('keysist_home_contact')) :
             return null;
         }
             ?>
-            <section id ="contact" class="evision-wrapper block-section contact-about">
-                <p style="display:none;">contact</p>
+            <section id ="contactanos" class="evision-wrapper block-section contact-about">
+                <p style="display:none;">contactanos</p>
                 <div class="container">
                     <div class="row background-animated">
                         <div class="col-md-8 col-md-offset-2 evision-animate fadeInDown">

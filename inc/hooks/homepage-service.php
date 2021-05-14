@@ -89,9 +89,9 @@ if ( ! function_exists( 'keysist_home_service' ) ) :
             $bizlight_home_service_title = $bizlight_customizer_all_values['keysist-home-service-title'];
             $bizlight_home_service_contenido = $bizlight_customizer_all_values['keysist-home-service-content'];
             ?>
-            <section id="services" class="evision-wrapper block-section wrap-service">
+            <section id="servicios" class="evision-wrapper block-section wrap-service">
             
-                <p style="display:none;">services</p>
+                <p style="display:none;">servicios</p>
                 <div class="container">
             <?php if(!empty( $bizlight_home_service_title ) ){
                 ?>

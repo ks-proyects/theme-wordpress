@@ -1,5 +1,5 @@
 <?php
-if ( ! function_exists( 'bizlight_home_featured' ) ) :
+if ( ! function_exists( 'bizlight_home_aboutus' ) ) :
     /**
      * Featured Slider
      *
@@ -9,7 +9,7 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
      * @return null
      *
      */
-    function bizlight_home_featured() {
+    function bizlight_home_aboutus() {
         global $bizlight_customizer_all_values;
 
         $bizlight_home_featured_title = $bizlight_customizer_all_values['bizlight-home-destacado-title'];
@@ -27,8 +27,8 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
             $bizlight_background_class = 'bg-no-fix';
         }
         ?>
-        <section id="caracteristic" class="evision-wrapper block-section wrap-highlight <?php echo esc_attr($bizlight_background_class); ?>">
-            <p style="display:none;">caracteristic</p>
+        <section id="acercanosotros" class="evision-wrapper block-section wrap-highlight <?php echo esc_attr($bizlight_background_class); ?>">
+            <p style="display:none;">acercanosotros</p>
             <div class="container evision-animate fadeInUp">
                 <h2><?php echo esc_html( $bizlight_home_featured_title ); ?></h2>
                 <?php
@@ -47,4 +47,4 @@ if ( ! function_exists( 'bizlight_home_featured' ) ) :
         <?php
     }
 endif;
-add_action( 'homepage', 'bizlight_home_featured', 20 );
+add_action( 'homepage', 'bizlight_home_aboutus', 20 );

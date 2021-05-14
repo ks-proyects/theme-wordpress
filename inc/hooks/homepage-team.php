@@ -62,8 +62,8 @@ if (!function_exists('bizlight_home_team')) :
             $bizlight_home_team_title = $bizlight_customizer_all_values['keysist-home-team-title'];
             $bizlight_testimonial_arrays = keysist_home_team_array();
             ?>
-                <section id ="team" class="evision-wrapper block-section wrap-team"> 
-                    <p style="display:none;">team</p>
+                <section id ="equipo" class="evision-wrapper block-section wrap-team"> 
+                    <p style="display:none;">equipo</p>
                     <div class="container">
                         <h2 class="text-center evision-animate slideInDown"><?php echo esc_html( $bizlight_home_team_title );?></h2>
                         <h3 class="evision-animate slideOutUp"><?php echo esc_html( $bizlight_home_service_contenido );?></h3>

@@ -3,11 +3,11 @@
 
 /*About Section*/
 
-$keysist_customizer_about_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-about.php');
-require $keysist_customizer_about_setting_file_path;
+$keysist_customizer_caracteristicas_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-caracteristicas.php');
+require $keysist_customizer_caracteristicas_setting_file_path;
 
 /*Home featured Section*/
-$keysist_customizer_home_featured_file_path = keysist_file_directory('inc/customizer/home-options/home-featured.php');
+$keysist_customizer_home_featured_file_path = keysist_file_directory('inc/customizer/home-options/home-aboutus.php');
 require $keysist_customizer_home_featured_file_path;
 
 /*Home blog Section*/
