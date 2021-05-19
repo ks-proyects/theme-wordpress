@@ -12,7 +12,7 @@ $bizlight_customizer_defaults['keysist-home-testimonial-enable']           = 1;
 $bizlight_sections['keysist-home-testimonial-enable-setting'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajustes de Testimonios', 'keysist' ),
+        'title'          => __( 'Ajustes Sección de Testimonios', 'keysist' ),
         'panel'          => 'keysist-home-config-options',
     );
 

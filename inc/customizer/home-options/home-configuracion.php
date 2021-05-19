@@ -33,3 +33,4 @@ require $bizlight_customizer_home_testimonial_setting_file_path;
 $bizlight_customizer_home_blog_setting_file_path = keysist_file_directory('inc/customizer/home-options/home-blog.php');
 require $bizlight_customizer_home_blog_setting_file_path;
 
+

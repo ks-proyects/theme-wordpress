@@ -32,11 +32,31 @@ if (!function_exists('keysist_home_team_array')) :
         else:
             $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-title'] = __('Freddy Castillo','bizlight');
             $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-content'] = __("Freddy Castillo, Muy gustoso de formar parte de este equipo de trabajo especializandome en mi área de conocimiento.",'bizlight');
-            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/freddy.jpg';;
+            $bizlight_home_testimonial_contents_array[0]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/freddy.jpg';
     
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
             $bizlight_home_testimonial_contents_array[1]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/dayana.jpg';
+
+            $bizlight_home_testimonial_contents_array[2]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[2]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[2]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/dayana.jpg';
+
+            $bizlight_home_testimonial_contents_array[3]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[3]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[3]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/dayana.jpg';
+
+            $bizlight_home_testimonial_contents_array[4]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[4]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[4]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/freddy.jpg';
+           
+            $bizlight_home_testimonial_contents_array[5]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[5]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[5]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/dayana.jpg';
+
+            $bizlight_home_testimonial_contents_array[6]['bizlight-home-team-title'] = __('Dayana Cualchi','bizlight');
+            $bizlight_home_testimonial_contents_array[6]['bizlight-home-team-content'] = __("Dayana Cualchi, Es muy gratificante pertenecer a esta compañia que tiene tanta experiencia espero poder dar lo mejor de mis conocimientos yplasmarlos para que nuestros clientes se sientan a gusto.",'bizlight');
+            $bizlight_home_testimonial_contents_array[6]['bizlight-home-team-image'] = get_template_directory_uri().'/assets/img/freddy.jpg';
         endif;
         return $bizlight_home_testimonial_contents_array;
     }
@@ -60,7 +80,7 @@ if (!function_exists('bizlight_home_team')) :
                 return null;
             }
             $bizlight_home_team_title = $bizlight_customizer_all_values['keysist-home-team-title'];
-            $bizlight_testimonial_arrays = keysist_home_team_array();
+            $bizlight_home_service_contenido=$bizlight_customizer_all_values['keysist-home-team-content'];
             ?>
                 <section id ="equipo" class="evision-wrapper block-section wrap-team"> 
                     <p style="display:none;">equipo</p>
@@ -105,4 +125,4 @@ if (!function_exists('bizlight_home_team')) :
         <?php   
     }
 endif;
-add_action('homepage', 'bizlight_home_team', 50);
+add_action('homepage', 'bizlight_home_team', 40);

@@ -47,4 +47,4 @@ if ( ! function_exists( 'bizlight_home_aboutus' ) ) :
         <?php
     }
 endif;
-add_action( 'homepage', 'bizlight_home_aboutus', 20 );
+add_action( 'homepage', 'bizlight_home_aboutus', 50 );

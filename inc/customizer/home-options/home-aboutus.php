@@ -13,7 +13,7 @@ $bizlight_customizer_defaults['bizlight-home-featured-fix-bg-image'] = 1;
 $bizlight_sections['bizlight-home-featured'] =
     array(
         'priority'       => 170,
-        'title'          => __( 'Sección Destacado', 'bizlight' ),
+        'title'          => __( 'Ajustes Sección Acerca', 'bizlight' ),
         'panel'          => 'keysist-home-config-options',
     );
 

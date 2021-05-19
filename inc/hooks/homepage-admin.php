@@ -20,6 +20,7 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
             <p style="display:none;"><?php echo  $tipo;  ?></p>
             <div class="container">
                 <h2 class="evision-animate slideInDown"><?php echo esc_html( $titulo ); ?></h2>
+                <h3 class="evision-animate slideOutUp"><?php echo esc_html( $descripcion );?></h3>
                 <span class="title-divider"></span>
                 <div class="row block-row">
                     <div class="row-same-height overhidden">

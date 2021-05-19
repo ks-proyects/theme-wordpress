@@ -83,4 +83,4 @@ if ( ! function_exists( 'bizlight_home_blog' ) ) :
         <?php
     }
 endif;
-add_action( 'homepage', 'bizlight_home_blog', 20 );
+add_action( 'homepage', 'bizlight_home_blog', 60 );

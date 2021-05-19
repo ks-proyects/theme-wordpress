@@ -65,13 +65,24 @@ Paso 4. Crear Registros en cada uno de las entidades con los nuevos metadas
 ```sh
 Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia o el id de las secciones son las siguientes
 ```
-- Contactos -> "contact"
-- Equipo -> "team"
+- Inicio -> "inicio"
+- Sección Cursos -> "curso"
+- Sección Talleres -> "taller"
+- Sección Pretgrados -> "pregrado"
+- Sección Postgrados -> "postgrado"
+- Sección Maestrias -> "maestria"
+- Sección Doctorados -> "doctorado"
+- Sección Diplomados -> "diplomado"
+- Sección Convenios -> "convenio"
+
+- Contactos -> "contactanos"
+- Equipo -> "equipo"
 - Testimonios -> "testimonios"
-- Acerca de Nosotros -> "aboutus"
+- Acerca de Nosotros -> "acercanosotros"
 - Blogs -> "blogs"
-- Caracteristicas -> "caracteristic"
-- Servicios -> "services"
+- Caracteristicas -> "caracteristicas"
+- Servicios -> "servicios"
+
 
 ```sh
 Paso 6. Debemos crear una pagina y en la opción "Ajustes de portada" de la plantilla seleccionamos pagina estatica y en "Página de inicio" selecioanmos la pagina creada

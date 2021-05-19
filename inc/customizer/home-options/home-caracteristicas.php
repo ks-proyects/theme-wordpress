@@ -15,7 +15,7 @@ $bizlight_customizer_defaults['keysist-home-about-right-image'] = get_template_d
 $bizlight_sections['keysist-home-about-options'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajustes de Nosotros', 'keysist' ),
+        'title'          => __( 'Ajustes Sección de Caracteristicas', 'keysist' ),
          'panel'          => 'keysist-home-config-options',
     );
 
@@ -65,8 +65,8 @@ $bizlight_settings_controls['keysist-home-about-right-image'] =
             'default'              => $bizlight_customizer_defaults['keysist-home-about-right-image']
         ),
         'control' => array(
-            'label'                 =>  __( 'Right Site Image', 'bizlight' ),
-            'description'           =>  __( 'Recommended image size 480 * 540, If you remove image the default image will show', 'bizlight' ),
+            'label'                 =>  __( 'Imagen en la parte Derecha', 'bizlight' ),
+            'description'           =>  __( 'Recomendamos una iamgen con  480px * 540px, Si eliminas la iamgen se mostrar la iamgen por default', 'bizlight' ),
             'section'               => 'keysist-home-about-options',
             'type'                  => 'image',
             'priority'              => 20,

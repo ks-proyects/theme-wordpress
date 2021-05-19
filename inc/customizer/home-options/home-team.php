@@ -11,7 +11,7 @@ $bizlight_customizer_defaults['keysist-home-team-title'] = __('Conoce nuestro Eq
 $bizlight_sections['keysist-home-team-options'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajuste Equipo', 'keysist' ),
+        'title'          => __( 'Ajuste Sección de Equipo', 'keysist' ),
         'panel'          => 'keysist-home-config-options',
     );
 

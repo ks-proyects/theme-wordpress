@@ -21,7 +21,7 @@ $bizlight_customizer_defaults['keysist-whatsapp-mensaje'] = __( 'Quiero obtener 
 $bizlight_sections['keysist-home-contact-enable-setting'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajuste de Contacto', 'keysist' ),
+        'title'          => __( 'Ajuste Sección de Contacto', 'keysist' ),
         'panel'          => 'keysist-home-config-options',
     );
 

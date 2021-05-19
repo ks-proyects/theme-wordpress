@@ -14,7 +14,7 @@ $bizlight_customizer_defaults['keysist-home-service-content'] = __('Ofrecemos lo
 $bizlight_sections['keysist-home-service-options'] =
     array(
         'priority'       => 160,
-        'title'          => __( 'Ajustes de Servicios', 'keysist' ),
+        'title'          => __( 'Ajustes Sección de Servicios', 'keysist' ),
         'panel'          => 'keysist-home-config-options',
     );
 

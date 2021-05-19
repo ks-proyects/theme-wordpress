@@ -58,6 +58,9 @@ require $keysist_hooks_homepage_service_file_path;
 $keysist_hooks_homepage_testimonial_file_path = keysist_file_directory('inc/hooks/homepage-testimonial.php');
 require $keysist_hooks_homepage_testimonial_file_path;
 
+$keysist_hooks_homepage_convenio_file_path = keysist_file_directory('inc/hooks/homepage-convenios.php');
+require $keysist_hooks_homepage_convenio_file_path;
+
 $keysist_hooks_homepage_contact_file_path = keysist_file_directory('inc/hooks/homepage-contact.php');
 require $keysist_hooks_homepage_contact_file_path;
 

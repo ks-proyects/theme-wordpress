@@ -51,7 +51,7 @@ $bizlight_customizer_defaults['keysist-home-convenios-enable'] = 1;
 $bizlight_panels['keysist-home-admin-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de Administración', 'keysist'),
+        'title'          => __('Ajustes Sección de Administración', 'keysist'),
     );
 //curso
 $bizlight_sections['keysist-home-curso-options'] =
@@ -103,7 +103,7 @@ $bizlight_settings_controls['keysist-home-curso-enable'] =
 $bizlight_sections['keysist-home-taller-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de Taller', 'keysist'),
+        'title'          => __('Ajustes Sección de Taller', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-taller-title'] =
@@ -150,7 +150,7 @@ $bizlight_settings_controls['keysist-home-taller-enable'] =
 $bizlight_sections['keysist-home-pregrado-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de PreGrado', 'keysist'),
+        'title'          => __('Ajustes Sección de PreGrado', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-pregrado-title'] =
@@ -197,7 +197,7 @@ $bizlight_settings_controls['keysist-home-pregrado-enable'] =
 $bizlight_sections['keysist-home-postgrado-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de PostGrado', 'keysist'),
+        'title'          => __('Ajustes Sección de PostGrado', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-postgrado-title'] =
@@ -243,7 +243,7 @@ $bizlight_settings_controls['keysist-home-postgrado-enable'] =
 $bizlight_sections['keysist-home-maestria-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de Maestria', 'keysist'),
+        'title'          => __('Ajustes Sección de Maestria', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-maestria-title'] =
@@ -289,7 +289,7 @@ $bizlight_settings_controls['keysist-home-maestria-enable'] =
 $bizlight_sections['keysist-home-doctorado-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de Doctorado', 'keysist'),
+        'title'          => __('Ajustes Sección de Doctorado', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-doctorado-title'] =
@@ -335,7 +335,7 @@ $bizlight_settings_controls['keysist-home-doctorado-enable'] =
 $bizlight_sections['keysist-home-diplomado-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de Diplomado', 'keysist'),
+        'title'          => __('Ajustes Sección de Diplomado', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-diplomado-title'] =
@@ -381,7 +381,7 @@ $bizlight_settings_controls['keysist-home-diplomado-enable'] =
 $bizlight_sections['keysist-home-convenios-options'] =
     array(
         'priority'       => 160,
-        'title'          => __('Ajustes de convenios', 'keysist'),
+        'title'          => __('Ajustes Sección de Convenios', 'keysist'),
         'panel'          => 'keysist-home-admin-options',
     );
 $bizlight_settings_controls['keysist-home-convenios-title'] =

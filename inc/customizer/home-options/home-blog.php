@@ -15,7 +15,7 @@ $bizlight_customizer_defaults['bizlight-home-blogs-category'] = 0;
 $bizlight_sections['bizlight-home-blog-options'] =
     array(
         'priority'       => 175,
-        'title'          => __( 'Sección Blog', 'bizlight' ),
+        'title'          => __( 'Ajuste Sección de Blog', 'bizlight' ),
         'panel'          => 'keysist-home-config-options',
     );
 
