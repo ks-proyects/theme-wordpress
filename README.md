@@ -113,3 +113,7 @@ Configuramos la forma de mostrar el contenido de los blogs
 
 ### Sección Footer
 Permite Configurar la sección del Footer, para mostrar las redes sociales de debe de activar la opcion y luego crear un menu de tipo red social con los links respectivos
+
+## Links de Interes
+https://wpmailsmtp.com/contact-form-7-not-sending-emails/
+https://www.smarterasp.net/support/kb/a341/how-to-configure-smtp-authentication-in-wordpress-site-to-send-emails.aspx
