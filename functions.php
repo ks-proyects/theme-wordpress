@@ -7,7 +7,6 @@
  * @package Bizlight
  */
 /**
- * Get the path for the file ( to support child theme )
  *
  * @since Bizlight 1.0.0
  *
