@@ -29,7 +29,7 @@ if ( ! function_exists( 'bizlight_home_admin' ) ) :
                             'post_type' => $tipo,
                             'meta_query'     => array(
                                 array(
-                                  'key'        => 'Mostrar',
+                                  'key'        => 'mostrar',
                                   'compare'    => '=',
                                   'value'      => 1
                                 )

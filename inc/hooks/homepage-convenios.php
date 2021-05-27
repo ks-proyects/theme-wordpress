@@ -15,7 +15,7 @@ if (!function_exists('keysist_home_convenios_array')) :
             'post_type' => 'convenio',
             'meta_query'     => array(
                 array(
-                  'key'        => 'Mostrar',
+                  'key'        => 'mostrar',
                   'compare'    => '=',
                   'value'      => 1
                 )

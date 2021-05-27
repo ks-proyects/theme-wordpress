@@ -13,7 +13,17 @@ if (!function_exists('keysist_home_team_array')) :
 
         $keysist_home_testimonial_args =    array(
             'post_type' => 'personal',
-            'posts_per_page' => 4
+            'posts_per_page' => 4,
+            'meta_query'     => array(
+                array(
+                  'key'        => 'mostrar',
+                  'compare'    => '=',
+                  'value'      => 1
+                )
+            ),
+            'meta_key'       => 'orden',
+            'orderby'        => 'meta_value',
+            'order'          => 'ASC'
         );
         $keysist_home_testimonial_post_query = new WP_Query( $keysist_home_testimonial_args );
         $i=0;
