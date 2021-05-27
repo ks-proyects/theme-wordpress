@@ -21,12 +21,12 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ```
 ### Para Los Tipos Servicios, Caracteristicas, Testimonios y Equipo de Trabajo
 
-| Label | Código | Tipo | Valor | Requerido |
-| ------------- | ------------- |------------- |------------- |------------- |
-| Activo  | activo  | True/False  | 0,1  | NO |
-| Orden  | orden  | Número  | 0,1,2,3,..  | SI |
-| Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |
-| Sección Id  | id_seccion  | Cadena  | fa-desktop,fa-camera-retro | SI |
+| Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
+| ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
+| Activo  | activo  | True/False  |   | NO | True | Indica si este item se muestra o no en la página |
+| Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
+| Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |  fa-desktop | Debe ingresar el nombre del icono y lo puede encontrar en el siguiente link https://fontawesome.com/v4.7/icons/ |
+| Sección Id  | id_seccion  | Combo  | Revizar Sección Ids | SI |   | Indica a que sección se mueve la página cuando haga clic |
 
 > El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
@@ -75,6 +75,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 - Sección Diplomados -> "diplomado"
 - Sección Convenios -> "convenio"
 
+- Ninguno -> "#"
 - Contactos -> "contactanos"
 - Equipo -> "equipo"
 - Testimonios -> "testimonios"
