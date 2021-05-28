@@ -2722,7 +2722,7 @@ article.hentry .image-full {
 .evision-back-to-top {
     background: var(--main-bg-color) none repeat scroll 0 0;
     border-radius: 2px;
-    bottom: 15px;
+    bottom: 50px;
     color: #ffffff;
     display: inline-block;
     font-size: 28px;
@@ -4534,4 +4534,7 @@ iframe {
 }
 .section-info p{
     margin: 0 !important;
+}
+#recaptcha_area #recaptcha_response_field {
+    position: static !important;
 }
