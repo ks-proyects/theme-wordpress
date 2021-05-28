@@ -92,6 +92,7 @@ Paso 6. Debemos crear una pagina y en la opción "Ajustes de portada" de la plan
 ```sh
 Paso 7. Con el plugin "Contact Form 7" creamso el formulario apra envio de sugerencias
 ```
+
 # Secciones
 
 ## Identidad del sitio
