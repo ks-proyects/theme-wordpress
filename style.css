@@ -4536,6 +4536,5 @@ h1.main-title a {
     margin: 0 !important;
 }
 .grecaptcha-badge{
-    height: 89px !important;
-    bottom: 40px !important;
+    bottom: 7vh !important;
 }
