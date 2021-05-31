@@ -4143,7 +4143,7 @@ h1.main-title a {
 
 /**/
 
-iframe {
+.contact-about iframe {
     margin-top: 20px;
     margin-bottom: 30px;
     -moz-border-radius: 12px;
@@ -4157,7 +4157,7 @@ iframe {
 }
 
 @media screen and (max-width: 991px) {
-    iframe {
+    .contact-about iframe {
         width: 30em; height: 30em;
     } 
 }
