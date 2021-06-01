@@ -23,7 +23,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
 | ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
-| Mostrar  | mostrar  | True/False  |   | NO | True | Indica si este item se muestra o no en la página |
+| Mostrar  | mostrar  | True/False  |   | NO | True | Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |  fa-desktop | Debe ingresar el nombre del icono y lo puede encontrar en el siguiente link https://fontawesome.com/v4.7/icons/ |
 | Sección Id  | id_seccion  | Combo  | Revizar Sección Ids | SI |   | Indica a que sección se mueve la página cuando haga clic |
@@ -36,27 +36,26 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
 | ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
-| Mostrar  | mostrar  |  Boolean | True/False | NO | True | Indica si este item se muestra o no en la página |
+| Mostrar  | mostrar  |  Boolean | True/False | NO | True | Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
-| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este item se muestra o no en el banner de la página |
+| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este ítem se muestra o no en el banner de la página |
 | Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |  SI | días | Indica la forma de duración del curso |
-| Duración  | duracion  | Número  | minimo 1 |  SI | 1 | Indica el tiempo ha durara el cursos |
+| Duración  | duracion  | Número  | minimo 1 |  SI | 1 | Indica el tiempo que durara el curso |
 | Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI | Virtual | Indica la modalidad del curso |
-| Titulo  | titulo  | Cadena  |  |  SI | | Indica el titulo a obtener al finalizar el curso |
-| Campo Ocupacional  | ambito_ocupacional  | Cadena  |  |  NO | | Indica en campo ocupacional al finalziar el curso |
+| Titulo  | titulo  | Cadena  |  |  SI | | Indica el título a obtener al finalizar el curso |
+| Campo Ocupacional  | ambito_ocupacional  | Cadena  |  |  NO | | Indica en campo ocupacional al finalizar el curso |
 | Perfil Egresado  | perfil_egresado  | WysingEditor  |  |  NO | | Indica que perfil de ingresado al terminar el curso |
 | Requisitos  | requisitos  | Cadena  |  |  SI | | Indica los requisitos del estudiante para ingresar |
-| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Inngresa el codigo de los convenios |
+| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Ingresa el código de los convenios |
 
 ### Para Los Tipos que son Convenios
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
-| Mostrar  | mostrar  |  Boolean | True/False  |  NO |  |   |
+| Mostrar  | mostrar  |  Boolean | True/False  |  NO |  |  Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  |  SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
-| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este item se muestra o no en el banner de la página |
+| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este ítem se muestra o no en el banner de la página |
 | Código Convenio  | codigo_convenio  | Cadena  |  | NO | CON01, |  Código del Curso que debe ser único |
-
 
 
 ```sh
