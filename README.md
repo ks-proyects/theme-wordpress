@@ -22,7 +22,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ### Para Los Tipos Servicios, Caracteristicas, Testimonios y Equipo de Trabajo
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
-| ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
+| ------------- | ------------- |------------- |------------- |------------- | ------------- | -------------------------- |
 | Mostrar  | mostrar  | True/False  |   | NO | True | Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |  fa-desktop | Debe ingresar el nombre del icono y lo puede encontrar en el siguiente link https://fontawesome.com/v4.7/icons/ |
@@ -35,7 +35,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ### Para Los Tipos que son Cursos, Carreras entre otros
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
-| ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
+| ------------- | ------------- |------------- |------------- |------------- | ------------- | -------------------------- |
 | Mostrar  | mostrar  |  Boolean | True/False | NO | True | Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este ítem se muestra o no en el banner de la página |
@@ -51,7 +51,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 ### Para Los Tipos que son Convenios
 
 | Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |-------------------------- |
 | Mostrar  | mostrar  |  Boolean | True/False  |  NO |  |  Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  |  SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este ítem se muestra o no en el banner de la página |
