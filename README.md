@@ -34,28 +34,28 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 
 ### Para Los Tipos que son Cursos, Carreras entre otros
 
-| Label | Código | Tipo | Valor | Requerido | 
-| ------------- | ------------- |------------- |------------- |------------- |
-| Activo  | activo  | True/False  | 0,1  | NO |
-| Orden  | orden  | Número  | 0,1,2,3,..  | SI |
-| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO |
-| Duración  | duracion  | Número  | minimo 1 |  SI |
-| Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |  SI |
-| Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI |
-| Titulo  | titulo  | Cadena  |  |  SI |
-| Campo Ocupacional  | ambito_ocupacional  | Cadena  |  |  NO |
-| Perfil Egresado  | perfil_egresado  | Cadena  |  |  NO |
-| Requisitos  | requisitos  | Cadena  |  |  SI |
-| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO |
+| Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
+| ------------- | ------------- |------------- |------------- |------------- | ------------- | ------------- |
+| Mostrar  | mostrar  |  Boolean | True/False | NO | True | Indica si este item se muestra o no en la página |
+| Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
+| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este item se muestra o no en el banner de la página |
+| Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |  SI | días | Indica la forma de duración del curso |
+| Duración  | duracion  | Número  | minimo 1 |  SI | 1 | Indica el tiempo ha durara el cursos |
+| Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI | Virtual | Indica la modalidad del curso |
+| Titulo  | titulo  | Cadena  |  |  SI | | Indica el titulo a obtener al finalizar el curso |
+| Campo Ocupacional  | ambito_ocupacional  | Cadena  |  |  NO | | Indica en campo ocupacional al finalziar el curso |
+| Perfil Egresado  | perfil_egresado  | WysingEditor  |  |  NO | | Indica que perfil de ingresado al terminar el curso |
+| Requisitos  | requisitos  | Cadena  |  |  SI | | Indica los requisitos del estudiante para ingresar |
+| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Inngresa el codigo de los convenios |
 
 ### Para Los Tipos que son Convenios
 
-| Label | Código | Tipo | Valor | Requerido | 
-| ------------- | ------------- |------------- |------------- |------------- |
-| Activo  | activo  | True/False  | 0,1  |  NO |
-| Orden  | orden  | Número  | 0,1,2,3,..  |  SI |
-| Mostrar Inicio  | mostrar_inicio  | Select  | 0,1 | NO |
-| Código Convenio  | codigo_convenio  | Cadena  |  | NO |
+| Label | Código | Tipo | Valor | Requerido | Default |  Instrucciones | 
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
+| Mostrar  | mostrar  |  Boolean | True/False  |  NO |  |   |
+| Orden  | orden  | Número  | 0,1,2,3,..  |  SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
+| Mostrar Inicio  | True/False  | True/False  | 0,1 | NO | True | Indica si este item se muestra o no en el banner de la página |
+| Código Convenio  | codigo_convenio  | Cadena  |  | NO | CON01, |  Código del Curso que debe ser único |
 
 
 
