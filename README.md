@@ -40,13 +40,15 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Mostrar Inicio  | mostrar_inicio  | True/False  | 0,1 | NO | True | Indica si este ítem se muestra o no en el banner de la página |
 | Tipo Duración  | tipo_duracion  | Select  | horas,días,semanas,meses,años |  SI | días | Indica la forma de duración del curso |
-| Duración  | duracion  | Número  | minimo 1 |  SI | 1 | Indica el tiempo que durara el curso |
+| Inicia  | inicio  | DateTime  | Fecha |  SI | Fecha Actual | Indica la fecha de inicio del curso|
+| Titulo  | titulo  | Cadena  |  |  SI | | Indica el título a obtener al finalizar el curso |
 | Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI | Virtual | Indica la modalidad del curso |
 | Titulo  | titulo  | Cadena  |  |  SI | | Indica el título a obtener al finalizar el curso |
 | Campo Ocupacional  | ambito_ocupacional  | WysingEditor  |  |  NO | | Indica en campo ocupacional al finalizar el curso |
 | Perfil Egresado  | perfil_egresado  | WysingEditor  |  |  NO | | Indica que perfil de ingresado al terminar el curso |
 | Requisitos  | requisitos  | WysingEditor  |  |  SI | | Indica los requisitos del estudiante para ingresar |
 | Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Ingresa el código de los convenios |
+| Indicaciones  |   | Message  | La "Imagen Destacada" debe tener las dimensiones de 365px x 246px |  |   |  |
 
 ### Para Los Tipos que son Convenios
 
