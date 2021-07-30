@@ -26,7 +26,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 | Mostrar  | mostrar  | True/False  |   | NO | True | Indica si este ítem se muestra o no en la página |
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |  fa-desktop | Debe ingresar el nombre del icono y lo puede encontrar en el siguiente link https://fontawesome.com/v4.7/icons/ |
-| Sección Id  | id_seccion  | Combo  | Revizar Sección Ids | SI |   | Indica a que sección se mueve la página cuando haga clic |
+| Id Sección  | id_seccion  | Select  | Revizar Sección Ids | SI |   | Indica a que sección se mueve la página cuando haga clic |
 | Indicaciones  |   | Message  | En caso que el ítem necesite una imagen la puede cargar desde el botón "Imagen Destacada" cuyas dimensiones son 432px x 432px |  |   |  |
 
 > El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
@@ -43,11 +43,10 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 | Inicia  | inicio  | DateTime  | Fecha |  SI | Fecha Actual | Indica la fecha de inicio del curso|
 | Titulo  | titulo  | Cadena  |  |  SI | | Indica el título a obtener al finalizar el curso |
 | Modalidad  | modalidad  | Select  | Presencial, Distancia, Virtual |  SI | Virtual | Indica la modalidad del curso |
-| Titulo  | titulo  | Cadena  |  |  SI | | Indica el título a obtener al finalizar el curso |
-| Campo Ocupacional  | ambito_ocupacional  | WysingEditor  |  |  NO | | Indica en campo ocupacional al finalizar el curso |
+| Ambito Ocupacional  | ambito_ocupacional  | WysingEditor  |  |  NO | | Indica en campo ocupacional al finalizar el curso |
 | Perfil Egresado  | perfil_egresado  | WysingEditor  |  |  NO | | Indica que perfil de ingresado al terminar el curso |
 | Requisitos  | requisitos  | WysingEditor  |  |  SI | | Indica los requisitos del estudiante para ingresar |
-| Código Convenios  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Ingresa el código de los convenios |
+| Código Convenio  | codigo_convenio  | Cadena  | Separado por Comas |  NO | | Ingresa el código de los convenios |
 | Indicaciones  |   | Message  | La "Imagen Destacada" debe tener las dimensiones de 365px x 246px |  |   |  |
 
 ### Para Los Tipos que son Convenios
@@ -70,7 +69,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 - Inicio -> "inicio"
 - Sección Cursos -> "curso"
 - Sección Talleres -> "taller"
-- Sección Pretgrados -> "pregrado"
+- Sección Pregrados -> "pregrado"
 - Sección Postgrados -> "postgrado"
 - Sección Maestrias -> "maestria"
 - Sección Doctorados -> "doctorado"
