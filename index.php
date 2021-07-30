@@ -11,6 +11,7 @@
  *
  * @package Bizlight
  */
+if(!defined('ABSPATH')) died();
 
 get_header(); ?>
 

@@ -164,37 +164,59 @@ function bizlight_header() {
     ?>
      <!-- header and navigation option second - navigation right  -->
         <header id="masthead" class="site-header evision-nav-right navbar-fixed-top evision-animate slideInDown" role="banner">
-            <div class="container">
-                <?php if(is_front_page() && (!empty($bizlight_customizer_all_values['keysist-celular'])  || !empty($bizlight_customizer_all_values['keysist-correo']) || !empty($bizlight_customizer_all_values['keysist-googlemaps-link']))):?>
-                <div class="row desktop-header-info">
-                    <div class="col-xs-12 col-sm-12 col-md-12 rtl-fright site-info-header">
-                        <?php if(!empty($bizlight_customizer_all_values['keysist-celular'])): ?>    
-                            <span>
-                                <?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>
-                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>"><i class="fa fa-phone"></i></a>
-                                <a class="ml-2" href="https://api.whatsapp.com/send?phone=<?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>&text=<?php echo esc_html( $bizlight_customizer_all_values['keysist-whatsapp-mensaje'] );?>"><i class="fa fa-whatsapp"></i></a>
-                            </span>
-                        <?php endif;?>
-                        <?php if(!empty($bizlight_customizer_all_values['keysist-telefono'])): ?>    
-                            <span>
-                                <?php echo esc_html( $bizlight_customizer_all_values['keysist-telefono'] );?>
-                                <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['keysist-telefono'] );?>"><i class="fa fa-phone"></i></a>
-                            </span>
-                        <?php endif;?>
-                        <?php if(!empty($bizlight_customizer_all_values['keysist-correo'])): ?>   
-                            <span>
-                                <?php echo esc_html( $bizlight_customizer_all_values['keysist-correo'] );?>
-                                <a  href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['keysist-correo'] );?>"><i class="fa fa-send"></i></a>
-                            </span>
-                        <?php endif;?>
-                        <?php if(!empty($bizlight_customizer_all_values['keysist-googlemaps-link'])): ?>   
-                            <span>
-                                <a target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemaps-link'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemap-label'] );?><i class="fa fa-map-marker"></i></a>
-                            </span>
-                        <?php endif;?>
+           
+            <div class="container-fluid evision-animate slideInDown navbar-info">
+                <div class="container">
+                    <?php if(is_front_page() && (!empty($bizlight_customizer_all_values['keysist-celular'])  || !empty($bizlight_customizer_all_values['keysist-correo']) || !empty($bizlight_customizer_all_values['keysist-googlemaps-link']))):?>
+                    <div class="row desktop-header-info">
+                        <div class="col-xs-8 col-sm-8 col-md-8 rtl-fright site-info-header">
+                            <?php if(!empty($bizlight_customizer_all_values['keysist-celular'])): ?>    
+                                <span>
+                                    <a class="navbar-info-icon" href="tel:<?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>"><i class="fa fa-phone"></i></a>
+                                    <a class="navbar-info-icon" target="_new"  href="https://api.whatsapp.com/send?phone=<?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>&text=<?php echo esc_html( $bizlight_customizer_all_values['keysist-whatsapp-mensaje'] );?>"><i class="fa fa-whatsapp"></i></a>    
+                                    <span class="navbar-info-text"><?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?></span>                                
+                                </span>
+                            <?php endif;?>
+                            <?php if(!empty($bizlight_customizer_all_values['keysist-telefono'])): ?>    
+                                <span>
+                                <a class="navbar-info-icon" href="tel:<?php echo esc_html( $bizlight_customizer_all_values['keysist-telefono'] );?>"><i class="fa fa-phone"></i></a>    
+                                <span class="navbar-info-text"><?php echo esc_html( $bizlight_customizer_all_values['keysist-telefono'] );?></span>
+                                </span>
+                            <?php endif;?>
+                            <?php if(!empty($bizlight_customizer_all_values['keysist-correo'])): ?>   
+                                <span>
+                                <a  class="navbar-info-icon" href="mailto:<?php echo esc_html( $bizlight_customizer_all_values['keysist-correo'] );?>"><i class="fa fa-send"></i></a>    
+                                <span class="navbar-info-text"><?php echo esc_html( $bizlight_customizer_all_values['keysist-correo'] );?></span> 
+                                    
+                                </span>
+                            <?php endif;?>
+                            
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 rtl-fright site-info-header text-right">
+                            <?php if(!empty($bizlight_customizer_all_values['keysist-googlemaps-link'])): ?>   
+                                <span>
+                                    <a class="navbar-info-icon navbar-info-text" target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemaps-link'] );?>"><span class="navbar-info-text"><?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemap-label'] );?></span><i class="fa fa-map-marker"></i></a>
+                                </span>
+                            <?php endif;?>
+                            
+                        </div>
                     </div>
+                    <?php endif;?>
                 </div>
-                <?php endif;?>
+                <?php
+                if(  1 == $bizlight_customizer_all_values['bizlight-enable-social-icons']) {
+                    ?>
+                    <div class="container footer-social-container text-right site-social">
+                        <div class="social-group-nav social-icon-only evision-social-section ">
+                            <?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'primary-menu' ) ); ?>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-4 rtl-fright">
                         <?php if ( isset($bizlight_customizer_all_values['bizlight-logo']) && !empty($bizlight_customizer_all_values['bizlight-logo'])) :
@@ -246,7 +268,7 @@ function bizlight_header() {
                     <div class="col-xs-12 col-sm-9 col-md-8 rtl-fleft">
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
-                            <span class="navbar-text mob-header-info">
+                            <span class="navbar-brand mob-header-info">
                                 <?php if(!empty($bizlight_customizer_all_values['keysist-celular'])): ?>    
                                     <span>
                                         <a href="tel:<?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?>"><?php echo esc_html( $bizlight_customizer_all_values['keysist-celular'] );?><i class="fa fa-phone"></i></a>

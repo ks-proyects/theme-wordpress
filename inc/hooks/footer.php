@@ -73,17 +73,6 @@ if ( ! function_exists( 'bizlight_footer' ) ) :
              Footer section starts
     ****************************************** -->
         <footer id="colophon" class="evision-wrapper site-footer" role="contentinfo">
-            <?php
-            if(  1 == $bizlight_customizer_all_values['bizlight-enable-social-icons']) {
-                ?>
-                <div class="container footer-social-container">
-                    <div class="social-group-nav social-icon-only evision-social-section">
-                        <?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'primary-menu' ) ); ?>
-                    </div>
-                </div>
-            <?php
-            }
-            ?>
             <div class="col-xs-12 col-sm-12 col-md-12 rtl-fcenter">
                 <nav id="site-navigation" class="" role="navigation">
                     <?php wp_nav_menu( array( 'theme_location' => 'menu-inferior', 'menu_id' => 'footer-menu' ) ); ?>
