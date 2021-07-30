@@ -39,7 +39,7 @@ if ( ! function_exists( 'keysist_home_service_array' ) ) :
                     $keysist_home_service_static_array[$i]['keysist-home-service-icon'] = 'fa-desktop';
                 endif;
                 if(get_field('id_seccion')>''):
-                    $keysist_home_service_static_array[$i]['keysist-home-service-link'] = get_field('id_seccion'); 
+                    $keysist_home_service_static_array[$i]['keysist-home-service-link'] = '#'.get_field('id_seccion'); 
                 else:
                     $keysist_home_service_static_array[$i]['keysist-home-service-link'] = '#';
                 endif;
@@ -115,7 +115,7 @@ if ( ! function_exists( 'keysist_home_service' ) ) :
                                     ?>
                                     <div class="col-md-3 box-container evision-animate fadeInUp" <?php echo esc_attr( $data_wow_delay );?>>
                                         <div class="box-inner">
-                                            <a href="<?php echo esc_url( $bizlight_service_array['keysist-home-service-link'] );?>" title="<?php echo esc_attr( $bizlight_service_array['keysist-home-service-title'] ); ?>">
+                                            <a href="./<?php echo esc_url( $bizlight_service_array['keysist-home-service-link'] );?>" title="<?php echo esc_attr( $bizlight_service_array['keysist-home-service-title'] ); ?>">
                                                 <div class="icon-container">
                                                     <span><i class="fa <?php echo esc_attr( $bizlight_service_array['keysist-home-service-icon'] ); ?>"></i></span>
                                                 </div>
