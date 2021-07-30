@@ -69,7 +69,7 @@ Paso 5. Crear el menu con las secciones activas de la plantillas, la referencia 
 - Inicio -> "inicio"
 - Sección Cursos -> "curso"
 - Sección Talleres -> "taller"
-- Sección Pretgrados -> "pregrado"
+- Sección Pregrados -> "pregrado"
 - Sección Postgrados -> "postgrado"
 - Sección Maestrias -> "maestria"
 - Sección Doctorados -> "doctorado"
