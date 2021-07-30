@@ -919,17 +919,24 @@ body.home .page-inner-title {
 }
 
 .navbar-fixed-active {
-    transition: background-color 1.5s ease;
+    transition: all 1.5s ease;
     background: rgba(0, 0, 0, 0.95) !important;
+    margin-top: -3.4%;
 }
 
 .navbar-fixed-shadow {
-    transition: background-color 1.5s ease;
+    transition: all 1.5s ease;
     background: var(--second-bg-color) !important;
     background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
     background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
     background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+
+    background: rgb(255,255,255)  !important;
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
+background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1)  !important;
 }
 
 .site-branding,
@@ -1827,12 +1834,9 @@ body.home .page-inner-title {
 .site-info-header {
     margin: 0 auto;
     padding: 2px 0px 2px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
-.site-social{
-    margin: 0 auto;
-    font-size: 15px;
-}
+
 
 .site-info-header span {
     border-radius: 4px;
@@ -2620,6 +2624,10 @@ article.hentry .image-full {
 
 /*social icons styles*/
 
+.site-social{
+    margin: 0 auto;
+    font-size: 15px;
+}
 .evision-social-section ul {
     list-style: none;
     margin-bottom: 0;
@@ -2657,25 +2665,24 @@ article.hentry .image-full {
 }
 
 .evision-social-section a:hover {
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid var(--banner-text-color);
     color: #ffffff;
 }
-
+.evision-social-section a:before {
+    color: var(--banner-text-color) !important;
+}
 .evision-social-section a[href*="facebook.com"]:before {
     content: "\f09a";
 }
 .evision-social-section a[href*="www.instagram.com"]:before {
     content: "\f16d";
 }
-
 .evision-social-section a[href*="twitter.com"]:before {
     content: "\f099";
 }
-
 .evision-social-section a[href*="linkedin.com"]:before {
     content: "\f0e1";
 }
-
 .evision-social-section a[href*="youtube.com"]:before {
     content: "\f167";
 }
@@ -2908,14 +2915,22 @@ body.home .block-section {
 /*==================== eVision Nav Right Start====================*/
 .site-header.evision-nav-right{
     transition: background-color 1.5s ease;
-    background-color: var(--second-bg-color);
-    background: var(--second-bg-color) !important;
     position: absolute;
     width: 100%;
     z-index: 2;
     color: var(--color-titulos-hover);
     padding-bottom: 15px;
     text-align: left;
+
+
+
+
+background: rgb(255,255,255) !important;
+background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
+background: linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
+
 }
 .site-header.evision-nav-right:not(.navbar-fixed-active) {
     transition: background-color 1.5s ease;
@@ -2942,6 +2957,11 @@ body:not(.home) .site-header.evision-nav-right {
 .evision-nav-right .site-description {
     transition: color 1.5s ease;
     color: var(--main-bg-color);
+}
+.evision-nav-right.navbar-fixed-active .site-description {
+    transition: color 1.5s ease;
+    color: var(--main-bg-color);
+    font-weight: 700;
 }
 .evision-nav-right:not(.navbar-fixed-active) .site-description {
     color: var(--banner-text-color);
@@ -4538,12 +4558,14 @@ h1.main-title a {
 .grecaptcha-badge{
     bottom: 8vh !important;
 }
+/*Head location Info*/
 .navbar-info-show {
     transition: all  1.5s ease;
-    display: block;
+    opacity: 1;
 }
 .navbar-info-hide {
-    display: none;
+    transition: all  1.5s ease;
+    opacity: 0;
 }
 .navbar-info:not(.navbar-info-hide) {
     background: var(--banner-text-color) !important;

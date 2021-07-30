@@ -198,7 +198,6 @@ function bizlight_header() {
                                     <a class="navbar-info-icon navbar-info-text" target="_new" href="<?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemaps-link'] );?>"><span class="navbar-info-text"><?php echo esc_html( $bizlight_customizer_all_values['keysist-googlemap-label'] );?></span><i class="fa fa-map-marker"></i></a>
                                 </span>
                             <?php endif;?>
-                            
                         </div>
                     </div>
                     <?php endif;?>
