@@ -13,7 +13,6 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-
 /*======================================
 Bizlight - Table Of Content
 1. Normalize
@@ -77,14 +76,12 @@ Site Styling
 ========================================= 
 /* ====================================================== */
 
-
 /* 1 Normalize */
-
 
 /* --------------------------------------- */
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -105,14 +102,11 @@ html {
 body,
 html {
     height: 100%;
-    
 }
-
 
 body {
     margin: 0;
 }
-
 
 html {
     display: block;
@@ -124,7 +118,7 @@ input,
 select,
 textarea {
     color: var(--banner-link-color) i !important;
-    font: 400 15px/22px 'Raleway', sans-serif;
+    font: 400 15px/22px "Raleway", sans-serif;
     background-color: #f7f7f7;
     -webkit-font-smoothing: antialiased;
 }
@@ -183,18 +177,13 @@ template {
     display: none;
 }
 
-
 /* ====================================================== */
-
 
 /* 2 General Styles */
 
-
 /* --------------------------------------- */
 
-
 /* Links */
-
 
 /* --------------------------------------- */
 
@@ -209,14 +198,14 @@ input[type="submit"] {
 }
 
 a,
-a>p {
+a > p {
     color: #212121;
     text-decoration: none;
     background-color: transparent;
 }
 
 .logged-in.admin-bar .ab-top-menu a,
-.logged-in.admin-bar .ab-top-menu a>p {
+.logged-in.admin-bar .ab-top-menu a > p {
     color: inherit !important;
 }
 
@@ -229,9 +218,7 @@ a:focus {
     color: #23527c;
 }
 
-
 /* Typography */
-
 
 /* --------------------------------------- */
 
@@ -247,7 +234,7 @@ h5,
 h5 a,
 h6,
 h6 a {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     line-height: 1.3;
     color: #212121;
@@ -437,9 +424,7 @@ dd {
     }
 }
 
-
 /* Accessibility */
-
 
 /* --------------------------------------- */
 
@@ -474,9 +459,7 @@ dd {
     /* Above WP toolbar. */
 }
 
-
 /* Forms */
-
 
 /* --------------------------------------- */
 
@@ -512,7 +495,7 @@ textarea,
     line-height: normal;
     color: #666666;
     border: 1px solid #cccccc;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -581,9 +564,7 @@ select:focus {
     outline: none;
 }
 
-
 /* Placeholder */
-
 
 /* --------------------------------------- */
 
@@ -605,9 +586,7 @@ select:focus {
     color: #919191;
 }
 
-
 /* Button */
-
 
 /* --------------------------------------- */
 
@@ -622,7 +601,7 @@ a.button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     border: none;
     outline: none;
     overflow: visible;
@@ -727,7 +706,6 @@ input[type="submit"]:active:before,
     transform: scale(1);
 }
 
-
 button:hover a,
 a.button:hover {
     transition: color 1.5s ease;
@@ -736,7 +714,7 @@ a.button:hover {
 }
 
 button a,
-a.button{
+a.button {
     transition: color 1.5s ease;
     color: var(--second-bg-color) !important;
     display: inline-block;
@@ -759,9 +737,7 @@ input::-moz-focus-inner {
     }
 }
 
-
 /* Clearings */
-
 
 /* ----------------------------------------------- */
 
@@ -790,9 +766,7 @@ input::-moz-focus-inner {
     clear: both;
 }
 
-
 /* Table */
-
 
 /* ----------------------------------------------- */
 
@@ -856,7 +830,6 @@ dd a {
     text-decoration: underline;
 }
 
-
 /*thumb overlay*/
 
 .thumb-overlay {
@@ -866,18 +839,13 @@ dd a {
     width: 100%;
 }
 
-
 /* ====================================================== */
-
 
 /* 3 Header */
 
-
 /* --------------------------------------- */
 
-
 /* Header Top Bar */
-
 
 /* ----------------------------------------------- */
 
@@ -905,7 +873,7 @@ body.home .page-inner-title {
 .page-inner-title .taxonomy-description {
     padding-left: 15px;
     padding-right: 15px;
-    color: var(--main-bg-color)!important;
+    color: var(--main-bg-color) !important;
 }
 
 .wrap-header .nav-tabs {
@@ -927,16 +895,46 @@ body.home .page-inner-title {
 .navbar-fixed-shadow {
     transition: all 1.5s ease;
     background: var(--second-bg-color) !important;
-    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: -moz-linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
+    background: -webkit-linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
+    background: linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 
-    background: rgb(255,255,255)  !important;
-background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
-background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
-background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.6615021008403361) 77%, rgba(255,255,255,0) 100%)  !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1)  !important;
+    background: rgb(255, 255, 255) !important;
+    background: -moz-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.6615021008403361) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background: -webkit-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.6615021008403361) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.6615021008403361) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
 }
 
 .site-branding,
@@ -956,7 +954,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .evision-nav-right .menu {
     width: auto;
 }
-.evision-nav-right .site-title, 
+.evision-nav-right .site-title,
 .evision-nav-right .site-title a {
     transition: color 1.5s ease;
     margin-top: 8px;
@@ -966,12 +964,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     color: var(--main-bg-color) !important;
 }
 
-.evision-nav-right:not(.navbar-fixed-active) .site-title, 
+.evision-nav-right:not(.navbar-fixed-active) .site-title,
 .evision-nav-right:not(.navbar-fixed-active) .site-title a {
     transition: color 1.5s ease;
     color: var(--banner-text-color) !important;
 }
-
 
 .site-title a {
     display: block;
@@ -983,8 +980,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     color: var(--banner-text-color) !important;
     font-weight: 600;
 }
-
-
 
 .site-description {
     font-size: 14px;
@@ -1017,12 +1012,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     .site-branding,
     .menu {
         text-align: center;
+        color: var(--main-bg-color) !important;
     }
 }
 
-
 /* header-nav-bar */
-
 
 /* ----------------------------------------------- */
 
@@ -1070,13 +1064,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     position: relative;
 }
 
-
 .evision-nav-right:not(.navbar-fixed-active) .main-navigation a {
     color: var(--color-titulos-hover) !important;
     transition: color 1.5s ease;
     display: block;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 15px;
     padding: 17px 18px;
     position: relative;
@@ -1091,7 +1084,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     position: absolute;
     left: -999em;
     z-index: 99999;
-    background-color: #333333;
+    background-color: var(--main-bg-color);
     text-align: left;
 }
 
@@ -1133,33 +1126,33 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
 }
 
-.main-navigation ul li:hover>ul {
+.main-navigation ul li:hover > ul {
     left: auto;
 }
 
-.main-navigation ul ul li:hover>ul {
+.main-navigation ul ul li:hover > ul {
     left: -200px;
     width: 200px;
 }
 
-.main-navigation .current_page_item>a,
-.main-navigation .current-menu-item>a,
-.main-navigation .current_page_ancestor>a,
-.main-navigation li.active>a,
-.main-navigation li.active>a,
-.main-navigation li.active>a {
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation li.active > a,
+.main-navigation li.active > a,
+.main-navigation li.active > a {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     position: relative;
     color: #ffffff;
 }
 
-.main-navigation li:hover>a:after,
-.main-navigation .current_page_item>a:after,
-.main-navigation .current-menu-item>a:after,
-.main-navigation .current_page_ancestor>a:after,
-.main-navigation li.active>a:after,
-.main-navigation li.active>a:after,
-.main-navigation li.active>a:after,
+.main-navigation li:hover > a:after,
+.main-navigation .current_page_item > a:after,
+.main-navigation .current-menu-item > a:after,
+.main-navigation .current_page_ancestor > a:after,
+.main-navigation li.active > a:after,
+.main-navigation li.active > a:after,
+.main-navigation li.active > a:after,
 .main-navigation li.current_page_parent a:after {
     background: #ffffff none repeat scroll 0 0;
     bottom: 0;
@@ -1181,13 +1174,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 @media screen and (min-width: 992px) {
-    .main-navigation .current_page_item>a,
-    .main-navigation .current-menu-item>a,
-    .main-navigation .current_page_ancestor>a {
+    .main-navigation .current_page_item > a,
+    .main-navigation .current-menu-item > a,
+    .main-navigation .current_page_ancestor > a {
         color: #ffffff;
     }
 }
-
 
 /* Small menu. */
 
@@ -1218,7 +1210,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
         float: none;
         display: block;
         border-top: 1px solid var(--main-bg-color);
-
     }
     .main-navigation {
         background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -1309,12 +1300,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     }
 }
 
-
 /* ====================================================== */
 
-
 /* Sidebar */
-
 
 /* --------------------------------------- */
 
@@ -1410,7 +1398,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     color: var(--banner-link-hover-color) !important;
 }
 
-
 /* Make sure select elements fit in widgets. */
 
 .widget select {
@@ -1426,9 +1413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     }
 }
 
-
 /* Search widget */
-
 
 /* ------------------------------------ */
 
@@ -1477,9 +1462,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     padding: 15px 30px 27px;
 }
 
-
 /* widget_calendar */
-
 
 /* ------------------------------------ */
 
@@ -1519,9 +1502,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     color: #fff;
 }
 
-
 /* widget_categories */
-
 
 /* ------------------------------------ */
 
@@ -1532,9 +1513,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     padding-top: 0.4688em;
 }
 
-
 /* widget_recent_entries */
-
 
 /* ------------------------------------ */
 
@@ -1546,9 +1525,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     display: block;
 }
 
-
 /* widget_rss */
-
 
 /* ------------------------------------ */
 
@@ -1583,18 +1560,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     opacity: 0.8;
 }
 
-
 /* ====================================================== */
-
 
 /* Primary */
 
-
 /* --------------------------------------- */
 
-
 /* Aricles */
-
 
 /* ------------------------------------ */
 
@@ -1740,8 +1712,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .nav-links .nav-next a:hover,
 .nav-links .nav-next a:focus,
 .nav-links .nav-next a:active {
-    border-color: #DFB200;
-    color: #DFB200;
+    border-color: #dfb200;
+    color: #dfb200;
 }
 
 .nav-links .nav-next a {
@@ -1794,18 +1766,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     }
 }
 
-
 /* ====================================================== */
-
 
 /* Footer */
 
-
 /* --------------------------------------- */
 
-
 /* Site Info */
-
 
 /* --------------------------------------- */
 
@@ -1836,7 +1803,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     padding: 2px 0px 2px;
     font-size: 1.5rem;
 }
-
 
 .site-info-header span {
     border-radius: 4px;
@@ -1883,12 +1849,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
     }
 }
 
-
 /* ====================================================== */
 
-
 /* Content */
-
 
 /* --------------------------------------- */
 
@@ -1909,7 +1872,6 @@ body.home.blog .site-content {
     padding: 40px 15px 0;
 }
 
-
 /*right-sidebar start*/
 
 #primary,
@@ -1924,9 +1886,7 @@ body.evision-right-sidebar #secondary {
     width: 29%;
 }
 
-
 /*right-sidebar ends*/
-
 
 /*left-sidebar start*/
 
@@ -1940,9 +1900,7 @@ body.evision-left-sidebar #secondary {
     width: 29%;
 }
 
-
 /*left-sidebar ends*/
-
 
 /*no-sidebar start*/
 
@@ -1957,7 +1915,6 @@ body.error404 #primary {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /*no-sidebar ends*/
 
@@ -1985,7 +1942,6 @@ body.error404 #primary {
         float: none;
     }
 }
-
 
 /*post image position*/
 
@@ -2021,9 +1977,7 @@ article.hentry .image-full {
     }
 }
 
-
 /* Alignments */
-
 
 /* --------------------------------------- */
 
@@ -2046,9 +2000,7 @@ article.hentry .image-full {
     margin-right: auto;
 }
 
-
 /* Posts and Pages */
-
 
 /* --------------------------------------- */
 
@@ -2089,7 +2041,6 @@ article.hentry .image-full {
     color: var(--main-bg-color);
 }
 
-
 /*page links/pagination*/
 
 .page-links {
@@ -2100,7 +2051,7 @@ article.hentry .image-full {
 }
 
 .page-links a,
-.page-links>span {
+.page-links > span {
     border: 1px solid #ccc;
     display: inline-block;
     font-size: 15px;
@@ -2111,18 +2062,15 @@ article.hentry .image-full {
     width: 2em;
 }
 
-
 .page-links a:hover,
 .page-links a:focus,
-.page-links>span:hover,
-.page-links>span:focus {
-    border: 1px solid #41BFBF;
+.page-links > span:hover,
+.page-links > span:focus {
+    border: 1px solid #41bfbf;
     color: var(--main-bg-color);
 }
 
-
 /* Asides */
-
 
 /* --------------------------------------- */
 
@@ -2131,18 +2079,16 @@ article.hentry .image-full {
     display: none;
 }
 
-
 /* Comments */
-
 
 /* --------------------------------------- */
 
-.comment-list+.comment-respond {
+.comment-list + .comment-respond {
     border-top: 1px solid #eaeaea;
 }
 
-.comment-list+.comment-respond,
-.comment-navigation+.comment-respond {
+.comment-list + .comment-respond,
+.comment-navigation + .comment-respond {
     padding-top: 1.6em;
 }
 
@@ -2174,7 +2120,7 @@ article.hentry .image-full {
     margin: 0;
 }
 
-.comment-list .children>li {
+.comment-list .children > li {
     padding-left: 0.8em;
 }
 
@@ -2247,12 +2193,12 @@ article.hentry .image-full {
     margin: 0 0 1.6em 1.3333em;
 }
 
-.comment-content li>ul,
-.comment-content li>ol {
+.comment-content li > ul,
+.comment-content li > ol {
     margin-bottom: 0;
 }
 
-.comment-content> :last-child {
+.comment-content > :last-child {
     margin-bottom: 0;
 }
 
@@ -2322,7 +2268,7 @@ article.hentry .image-full {
     padding-top: 1.6em;
 }
 
-.comment-navigation+.no-comments {
+.comment-navigation + .no-comments {
     border-top: 0;
 }
 
@@ -2354,9 +2300,7 @@ article.hentry .image-full {
     display: block;
 }
 
-
 /* Pagination */
-
 
 /* --------------------------------------- */
 
@@ -2381,9 +2325,7 @@ article.hentry .image-full {
     color: var(--main-bg-color);
 }
 
-
 /* Posts and Pages */
-
 
 /* --------------------------------------- */
 
@@ -2391,15 +2333,11 @@ article.hentry .image-full {
     margin-bottom: 30px;
 }
 
-
 /* ====================================================== */
-
 
 /* Infinite scroll */
 
-
 /* --------------------------------------- */
-
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 
@@ -2412,19 +2350,15 @@ article.hentry .image-full {
     display: none;
 }
 
-
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 
 .infinity-end.neverending .site-footer {
     display: block;
 }
 
-
 /* ====================================================== */
 
-
 /* Media */
-
 
 /* --------------------------------------- */
 
@@ -2437,12 +2371,9 @@ article.hentry .image-full {
     padding: 0;
 }
 
-
 /* ====================================================== */
 
-
 /* Captions */
-
 
 /* --------------------------------------- */
 
@@ -2464,12 +2395,9 @@ article.hentry .image-full {
     margin: 0.8075em 0;
 }
 
-
 /* ====================================================== */
 
-
 /* Galleries */
-
 
 /* --------------------------------------- */
 
@@ -2539,18 +2467,13 @@ article.hentry .image-full {
     }
 }
 
-
 /* ====================================================== */
-
 
 /* 10 Global */
 
-
 /* --------------------------------------- */
 
-
 /* 10.1 Nullify Bootstrap columns padding */
-
 
 /* --------------------------------------- */
 
@@ -2591,9 +2514,7 @@ article.hentry .image-full {
     }
 }
 
-
 /* 10.2 columns of same height */
-
 
 /* --------------------------------------- */
 
@@ -2605,7 +2526,6 @@ article.hentry .image-full {
     height: 100%;
     vertical-align: middle;
 }
-
 
 /* vertical alignment styles */
 
@@ -2621,10 +2541,9 @@ article.hentry .image-full {
     vertical-align: bottom;
 }
 
-
 /*social icons styles*/
 
-.site-social{
+.site-social {
     margin: 0 auto;
     font-size: 15px;
 }
@@ -2651,7 +2570,7 @@ article.hentry .image-full {
     line-height: 42px;
     text-align: center;
     width: 42px;
-    background-color: #3E4444;
+    background-color: #3e4444;
     color: var(--banner-text-color) !important;
     display: inline-block;
     border: 1px solid var(--banner-text-color);
@@ -2688,7 +2607,7 @@ article.hentry .image-full {
 }
 
 .evision-social-section a:hover[href*="facebook.com"] {
-    background-color: #0a82ec;/*18aefe*/
+    background-color: #0a82ec; /*18aefe*/
 }
 
 .evision-social-section a:hover[href*="www.instagram.com"] {
@@ -2696,17 +2615,16 @@ article.hentry .image-full {
 }
 
 .evision-social-section a:hover[href*="twitter.com"] {
-    background-color: #01BBF6;
+    background-color: #01bbf6;
 }
 
 .evision-social-section a:hover[href*="linkedin.com"] {
-    background-color: #1484C3;
+    background-color: #1484c3;
 }
 
 .evision-social-section a:hover[href*="youtube.com"] {
-    background-color: #D62424;
+    background-color: #d62424;
 }
-
 
 /*social group in nav section*/
 
@@ -2725,7 +2643,6 @@ article.hentry .image-full {
     vertical-align: middle;
     width: 36px;
 }
-
 
 /*back-to-top section*/
 
@@ -2746,13 +2663,11 @@ article.hentry .image-full {
     color: #ffffff;
 }
 
-
 /*
 .evision-back-to-top:hover,
 .evision-back-to-top:focus {
   background: #656169 none repeat scroll 0 0;
 }*/
-
 
 /*overflow hidden*/
 
@@ -2760,18 +2675,13 @@ article.hentry .image-full {
     overflow: hidden;
 }
 
-
 /* ====================================================== */
-
 
 /* 11 Custom Pages */
 
-
 /* --------------------------------------- */
 
-
 /* Home page Style */
-
 
 /* --------------------------------------- */
 
@@ -2779,7 +2689,6 @@ article.hentry .image-full {
     float: left;
     width: 100%;
 }
-
 
 /*-------------------- block section -----------------*/
 
@@ -2792,7 +2701,6 @@ article.hentry .image-full {
 body.home .block-section {
     text-align: center;
 }
-
 
 /*-------------------- block section -----------------*/
 
@@ -2834,7 +2742,6 @@ body.home .block-section {
 .page-links #breadcrumb a:first-child {
     margin-left: 0;
 }
-
 
 /* ==================================*/
 
@@ -2905,15 +2812,13 @@ body.home .block-section {
 .wrap-breadcrumb a:hover,
 .wrap-breadcrumb a:focus,
 .wrap-breadcrumb a:active {
-    color: var(--banner-link-hover-color);;
+    color: var(--banner-link-hover-color);
 }
-
 
 /*-------------------- header section -----------------*/
 
-
 /*==================== eVision Nav Right Start====================*/
-.site-header.evision-nav-right{
+.site-header.evision-nav-right {
     transition: background-color 1.5s ease;
     position: absolute;
     width: 100%;
@@ -2922,21 +2827,47 @@ body.home .block-section {
     padding-bottom: 15px;
     text-align: left;
 
-
-
-
-background: rgb(255,255,255) !important;
-background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
-background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
-background: linear-gradient(180deg, rgba(255,255,255,1) 47%, rgba(255,255,255,0.7791491596638656) 77%, rgba(255,255,255,0) 100%) !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
-
+    background: var(--banner-text-color) !important;
+    background: -moz-linear-gradient(
+        180deg,
+        var(--banner-text-color) 47%,
+        var(--banner-text-color-50) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background: -webkit-linear-gradient(
+        180deg,
+        var(--banner-text-color) 47%,
+        var(--banner-text-color-50) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background: linear-gradient(
+        180deg,
+        var(--banner-text-color) 47%,
+        var(--banner-text-color-50) 77%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
 }
 .site-header.evision-nav-right:not(.navbar-fixed-active) {
     transition: background-color 1.5s ease;
-    background: -moz-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: -webkit-linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
-    background: linear-gradient(180deg, var(--second-bg-color) 0%, var(--second-bg-color-50) 44%, var(--second-bg-color-0) 100%) !important;
+    background: -moz-linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
+    background: -webkit-linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
+    background: linear-gradient(
+        180deg,
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
+    ) !important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 }
 
@@ -2952,7 +2883,7 @@ body:not(.home) .site-header.evision-nav-right {
 
 .evision-nav-right .site-title:hover,
 .evision-nav-right .site-title a:hover {
-    color: var(--main-bg-color) !important;;
+    color: var(--main-bg-color) !important;
 }
 .evision-nav-right .site-description {
     transition: color 1.5s ease;
@@ -3013,9 +2944,7 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*==================== eVision Nav Right Start====================*/
-
 
 /*-------------------- Slider section -----------------*/
 
@@ -3083,12 +3012,9 @@ body:not(.home) .site-header.evision-nav-right {
     width: 80%;
 }
 
-
 .evision-main-slider .slide-item .main-title {
     line-height: 1;
 }
-
-
 
 .evision-main-slider .slide-item .banner-con,
 .evision-main-slider .slide-item .button {
@@ -3273,7 +3199,6 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*-------------------- Service section -----------------*/
 
 .wrap-service.block-section {
@@ -3356,7 +3281,7 @@ body:not(.home) .site-header.evision-nav-right {
 .box-container h3 {
     margin-top: 0px;
     margin-bottom: 25px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .box-container .box-inner:hover h3,
@@ -3384,7 +3309,6 @@ body:not(.home) .site-header.evision-nav-right {
         -webkit-box-orient: vertical;
     }
 }
-
 
 /* Icon Wobble Vertical */
 
@@ -3487,7 +3411,6 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*-------------------- About section -----------------*/
 
 .wrap-about {
@@ -3569,7 +3492,6 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*-------------------- Highlight section -----------------*/
 
 .wrap-highlight {
@@ -3595,7 +3517,6 @@ body:not(.home) .site-header.evision-nav-right {
     background-attachment: fixed;
 }
 
-
 /*-------------------- Blog section -----------------*/
 
 .wrap-blog {
@@ -3611,7 +3532,7 @@ body:not(.home) .site-header.evision-nav-right {
     overflow: hidden;
 }
 
-.single-thumb-image>img {
+.single-thumb-image > img {
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -ms-transition: all 0.5s ease 0s;
@@ -3655,7 +3576,7 @@ body:not(.home) .site-header.evision-nav-right {
     transition: all 0.5s ease 0s;
 }
 
-.single-thumb-image:hover>img {
+.single-thumb-image:hover > img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -3724,7 +3645,6 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*-------------------- Testimonial section -----------------*/
 
 .wrap-testimonial {
@@ -3767,11 +3687,10 @@ body:not(.home) .site-header.evision-nav-right {
     border-radius: 100%;
 }
 
-
 /*-------------------- Contact section -----------------*/
 
 .wrap-contact {
-    background-color: #3E4444;
+    background-color: #3e4444;
     color: #ffffff;
     padding-bottom: 0;
 }
@@ -3859,11 +3778,10 @@ body:not(.home) .site-header.evision-nav-right {
     }
 }
 
-
 /*-------------------- Footer section -----------------*/
 
 .site-footer {
-    background-color: #3E4444;
+    background-color: #3e4444;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -3884,9 +3802,7 @@ body:not(.home) .site-header.evision-nav-right {
     color: #ffffff !important;
 }
 
-
 /*----------------------------------------------------*/
-
 
 /*-------------------- Contact Page -----------------*/
 
@@ -3958,7 +3874,6 @@ body:not(.home) .site-header.evision-nav-right {
         margin-top: 40px;
     }
 }
-
 
 /*WooCommerce Compatible*/
 
@@ -4051,7 +3966,6 @@ body:not(.home) .site-header.evision-nav-right {
     height: 37px;
 }
 
-
 /*BBpress Compatible*/
 
 .wp-editor-container input[type="button"] {
@@ -4069,7 +3983,6 @@ body:not(.home) .site-header.evision-nav-right {
     visibility: hidden;
 }
 
-
 /*   breadcrumb fixing    */
 
 ul.trail-items {
@@ -4083,10 +3996,7 @@ ul.trail-items li {
     margin-right: 15px;
 }
 
-
-
 /*   breadcrumb fixing    */
-
 
 /*nav fixing */
 
@@ -4102,14 +4012,13 @@ ul.sub-menu:before {
     position: absolute;
     top: -19px;
     font-size: 50px;
-    color: #333;
+    color: var(--main-bg-color);
     left: 12px;
 }
 
 ul.sub-menu ul.sub-menu:before {
     content: " ";
 }
-
 
 /*additional slider css*/
 
@@ -4178,8 +4087,9 @@ h1.main-title a {
 
 @media screen and (max-width: 991px) {
     .contact-about iframe {
-        width: 30em; height: 30em;
-    } 
+        width: 30em;
+        height: 30em;
+    }
 }
 
 /*-------------------- Team section -----------------*/
@@ -4233,13 +4143,12 @@ h1.main-title a {
     z-index: 2;
 }
 
-.wrap-team  .box-content {
+.wrap-team .box-content {
     margin-top: -33px;
     padding: 80px 20px 20px;
     position: relative;
     z-index: 1;
 }
-
 
 .box-container .box-inner:hover .icon-container i,
 .box-container .box-content,
@@ -4290,17 +4199,16 @@ h1.main-title a {
 }
 
 @media screen and (min-width: 991px) {
-    .service-content{
+    .service-content {
         height: 16em;
     }
-    .service-content-text p{
+    .service-content-text p {
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;  
+        -webkit-box-orient: vertical;
     }
 }
-
 
 /* Icon Wobble Vertical */
 
@@ -4415,7 +4323,7 @@ h1.main-title a {
     border-radius: 6px;
 }
 
-.seccion-admin-content>img {
+.seccion-admin-content > img {
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -ms-transition: all 0.5s ease 0s;
@@ -4446,7 +4354,7 @@ h1.main-title a {
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
-.seccion-admin-content:hover .fondo{
+.seccion-admin-content:hover .fondo {
     background-color: var(--main-bg-color-50);
 }
 
@@ -4458,10 +4366,9 @@ h1.main-title a {
     -ms-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    
 }
 
-.seccion-admin-content:hover>img {
+.seccion-admin-content:hover > img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -4473,7 +4380,6 @@ h1.main-title a {
 .seccion-admin:hover .info {
     bottom: 0;
 }
-
 
 .seccion-admin-content .info a {
     display: inline-block;
@@ -4502,11 +4408,11 @@ h1.main-title a {
 }
 
 .seccion-admin-content h3 {
-    color: var( --color-titulos-hover) !important;
+    color: var(--color-titulos-hover) !important;
     font-weight: 600;
 }
 
-.seccion-admin-content p{
+.seccion-admin-content p {
     color: var(--color-titulos-hover) !important;
 }
 
@@ -4528,49 +4434,55 @@ h1.main-title a {
 }
 /*End Admin*/
 /*Animacion*/
-.background-animated{
-    background: linear-gradient(-45deg, var(--main-bg-color), var(--second-bg-color), var(--banner-text-color), var(--banner-link-color));
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+.background-animated {
+    background: linear-gradient(
+        -45deg,
+        var(--main-bg-color),
+        var(--second-bg-color),
+        var(--banner-text-color),
+        var(--banner-link-color)
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
-.panel-radius{
+.panel-radius {
     border-radius: 5px;
     padding: 15px;
 }
-.section-info{
+.section-info {
     margin-bottom: 15px;
 }
-.section-info p{
+.section-info p {
     margin: 0 !important;
 }
-.grecaptcha-badge{
+.grecaptcha-badge {
     bottom: 8vh !important;
 }
 /*Head location Info*/
 .navbar-info-show {
-    transition: all  1.5s ease;
+    transition: all 1.5s ease;
     opacity: 1;
 }
 .navbar-info-hide {
-    transition: all  1.5s ease;
+    transition: all 1.5s ease;
     opacity: 0;
 }
 .navbar-info:not(.navbar-info-hide) {
     background: var(--banner-text-color) !important;
 }
-.navbar-info-text{
+.navbar-info-text {
     color: var(--banner-link-color) !important;
     font-weight: bold;
 }
@@ -4583,7 +4495,7 @@ h1.main-title a {
     transition-timing-function: ease-out;
 }
 
-.navbar-info-icon:hover  i {
+.navbar-info-icon:hover i {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }

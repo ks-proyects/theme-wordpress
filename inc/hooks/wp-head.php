@@ -38,6 +38,8 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
                 --second-bg-color-5: <?php echo esc_attr( $bizlight_secondary_color );?>1f;
                 --second-bg-color-0: <?php echo esc_attr( $bizlight_secondary_color );?>00;
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
+                --banner-text-color-50: <?php echo esc_attr( $bizlight_banner_text_color );?>75;
+                --banner-text-color-100: <?php echo esc_attr( $bizlight_banner_text_color );?>000;
                 --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;
                 --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_color );?>94;
                 --color-titulos: <?php echo esc_attr( $bizlight_h1_h6_color );?>94;
