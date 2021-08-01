@@ -147,7 +147,7 @@ function bizlight_scripts() {
 	global $bizlight_customizer_all_values;
 
 	/*Bootstrap css*/
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/css/bootstrap.css', array(), '3.3.4' );/*added*/
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrapn/css/bootstrap.css', array(), '3.3.4' );/*added*/
 
 	/*google font*/
 	$bizlight_font_family_h1_h6 = $bizlight_customizer_all_values['bizlight-font-family-h1-h6'];
@@ -162,9 +162,10 @@ function bizlight_scripts() {
 	}
 	wp_enqueue_style( 'bizlight-googleapis-other-font-family', '//fonts.googleapis.com/css?family=Raleway', array(), '' );/*added*/
 	/*Font-Awesome-master*/
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/Font-Awesome/css/font-awesome.css', array(), '4.4.0' );/*added*/
+	//wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/Font-Awesome/css/font-awesome.css', array(), '4.4.0' );/*added*/
 	//wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/fontawesome/css/all.css', array(), '5.12.0' );/*added*/
-	
+	wp_register_script( 'fontawesome', 'https://use.fontawesome.com/742b4e64fb.js', null, null, true );
+	wp_enqueue_script('fontawesome');
 	/*animate css*/
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/frameworks/wow/css/animate.min.css', array(), '3.4.0' );/*added*/
 	wp_enqueue_script('wow', get_template_directory_uri() . '/assets/frameworks/wow/js/wow.min.js', array('jquery'), '1.1.2', 1);
@@ -174,7 +175,7 @@ function bizlight_scripts() {
 
     /*jquery start*/
 	wp_enqueue_script('jquery-easing', get_template_directory_uri() . '/assets/frameworks/jquery.easing/jquery.easing.js', array('jquery'), '0.3.6', 1);
-	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/js/bootstrap.min.js', array('jquery'), '3.3.5', 1);
+	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrapn/js/bootstrap.min.js', array('jquery'), '3.3.5', 1);
 
 	/*cycle2 slider*/
 	wp_enqueue_script( 'cycle2-script', get_template_directory_uri() . '/assets/frameworks/cycle2/js/jquery.cycle2.js', array( 'jquery' ), '2.1.6' );
@@ -198,6 +199,8 @@ function bizlight_scripts() {
 
 	wp_enqueue_script( 'respond', get_template_directory_uri() . '/assets/frameworks/respond/respond.min.js', array(), '1.4.2' );
 	wp_script_add_data( 'respond', 'conditional', 'lt IE 9' );
+
+	
 }
 add_action( 'wp_enqueue_scripts', 'bizlight_scripts' );
 
