@@ -27,7 +27,7 @@ Paso 3. Con el plugin "Advanced Custom Fields" crear atributos dinamicos para la
 | Orden  | orden  | Número  | 0,1,2,3,..  | SI | 1 | Este dato permite ordenar en la página el 1 siempre se muestra primero |
 | Icono  | icono  | Cadena  | fa-desktop,fa-camera-retro | SI |  fa-desktop | Debe ingresar el nombre del icono y lo puede encontrar en el siguiente link https://fontawesome.com/v4.7/icons/ |
 | Id Sección  | id_seccion  | Select  | Revizar Sección Ids | SI |   | Indica a que sección se mueve la página cuando haga clic |
-| Indicaciones  |   | Message  | En caso que el ítem necesite una imagen la puede cargar desde el botón "Imagen Destacada" cuyas dimensiones son 432px x 432px |  |   |  |
+| Indicaciones  |   | Message  | En caso que el ítem necesite una imagen la puede cargar desde el botón "Imagen Destacada" cuyas dimensiones: convenios 325px, 325px, equipo 384px 384px , servicio 480px 538px |  |   |  |
 
 > El nombre de los iconos los peude encontrar ene l siguiente link [FontAsome 4.7.0](https://fontawesome.com/v4.7.0/icons/)
 
