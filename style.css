@@ -969,18 +969,18 @@ body.home .page-inner-title {
 .evision-nav-right:not(.navbar-fixed-active) .site-title,
 .evision-nav-right:not(.navbar-fixed-active) .site-title a {
     transition: color 1.5s ease;
-    color: var(--banner-text-color) !important;
+    color: var(--main-bg-color) !important;
 }
 
 .site-title a {
     display: block;
 }
 .site-title a:hover {
-    color: var(--banner-text-color) !important;
+    color: var(--main-bg-color) !important;
 }
 .evision-nav-right:not(.navbar-fixed-active) .site-title a:hover {
-    color: var(--banner-text-color) !important;
-    font-weight: 600;
+    color: var(--main-bg-color) !important;
+    font-weight: 700;
 }
 
 .site-description {

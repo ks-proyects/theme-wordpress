@@ -68,6 +68,12 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             .site-description a{
                 font-family: '<?php echo esc_attr( $bizlight_font_family_site_identity ); ?>'!important;
             }
+            .evision-main-slider .slide-item .main-title a:hover,
+            .evision-main-slider .slide-item .main-title a:focus,
+            .evision-main-slider .slide-item .main-title a:active{
+                  color: <?php echo esc_attr( $bizlight_banner_text_color );?> !important; /*#212121*/
+                  font-weight: 900;
+            }
             /*Title font family*/
             h1, h1 a,
             h1.site-title,
@@ -93,6 +99,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             .box-container .box-inner a:hover{
                 color: <?php echo esc_attr( $bizlight_link_color );?> !important; /*#212121*/
             }
+            
             <?php
             }
           /*Link color*/
@@ -158,10 +165,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
               .nav-links .nav-next a:active,
               .page-links a:hover,
               .page-links a:focus,
-              .page-links a:active,
-              .evision-main-slider .slide-item .main-title a:hover,
-              .evision-main-slider .slide-item .main-title a:focus,
-              .evision-main-slider .slide-item .main-title a:active{
+              .page-links a:active{
                   color: <?php echo esc_attr( $bizlight_link_color );?> !important; /*#212121*/
 
               }
