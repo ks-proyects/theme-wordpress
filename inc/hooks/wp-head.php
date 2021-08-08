@@ -72,7 +72,7 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             .evision-main-slider .slide-item .main-title a:focus,
             .evision-main-slider .slide-item .main-title a:active{
                   color: <?php echo esc_attr( $bizlight_banner_text_color );?> !important; /*#212121*/
-                  font-weight: 900;
+                  font-weight: 600;
             }
             /*Title font family*/
             h1, h1 a,

@@ -3205,11 +3205,11 @@ body:not(.home) .site-header.evision-nav-right {
 /*-------------------- Service section -----------------*/
 
 .wrap-service.block-section {
-    background-color: var(--banner-text-color);
-    background: var(--banner-text-color);
-    background: -moz-linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
-    background: -webkit-linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
-    background: linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
+    background-color: var(--second-bg-color);
+    background: var(--second-bg-color);
+    background: -moz-linear-gradient(90deg, var(--color-fondo) 0%, var(--second-bg-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-fondo) 0%, var(--second-bg-color) 100%);
+    background: linear-gradient(90deg, var(--color-fondo) 0%, var(--second-bg-color) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d7ff00",GradientType=1);
 
     padding-top: 35px;
@@ -4522,6 +4522,9 @@ h1.main-title a {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+}
+.site-header:not(.site-header-front) .shape-top {
+    top: 0vh !important;
 }
 @media screen and (max-width: 767px) {
     .shape-top {
