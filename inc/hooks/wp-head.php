@@ -12,8 +12,12 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
         $bizlight_font_family_site_identity     = $bizlight_google_fonts[$bizlight_customizer_all_values['bizlight-font-family-site-identity']];
         $bizlight_font_family_h1_h6             = $bizlight_google_fonts[$bizlight_customizer_all_values['bizlight-font-family-h1-h6']];
         /*Color options */
+        $bizlight_color_fondo                = $bizlight_customizer_all_values['keysist-color-fondo'];
         $bizlight_primary_color                 = $bizlight_customizer_all_values['keysist-color-principal'];
         $bizlight_secondary_color               = $bizlight_customizer_all_values['keysist-color-secundario'];
+        $keysist_color_boton_texto               = $bizlight_customizer_all_values['keysist-color-boton-texto'];
+
+  
         $bizlight_h1_h6_color                   = $bizlight_customizer_all_values['keysist-color-titulos'];
         $bizlight_link_color                    = $bizlight_customizer_all_values['keysist-color-link'];
         $bizlight_banner_text_color             = $bizlight_customizer_all_values['bizlight-banner-text-color'];
@@ -30,14 +34,19 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             if( !empty($bizlight_primary_color) && !empty($bizlight_secondary_color)){
             ?>
             :root{
+                --color-fondo: <?php echo esc_attr( $bizlight_color_fondo );?>;
                 --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
                 --main-bg-color-90: <?php echo esc_attr( $bizlight_primary_color );?>ed;
                 --main-bg-color-50: <?php echo esc_attr( $bizlight_primary_color );?>66;
                 --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
+                --boton-color-hover: <?php echo esc_attr( $keysist_color_boton_texto );?>;
+                --boton-color: <?php echo esc_attr( $keysist_color_boton_texto );?>;
+                
                 --second-bg-color-50: <?php echo esc_attr( $bizlight_secondary_color );?>73;
                 --second-bg-color-5: <?php echo esc_attr( $bizlight_secondary_color );?>1f;
                 --second-bg-color-0: <?php echo esc_attr( $bizlight_secondary_color );?>00;
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
+                --banner-text-color-40: <?php echo esc_attr( $bizlight_banner_text_color );?>66;
                 --banner-text-color-50: <?php echo esc_attr( $bizlight_banner_text_color );?>75;
                 --banner-text-color-100: <?php echo esc_attr( $bizlight_banner_text_color );?>000;
                 --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;

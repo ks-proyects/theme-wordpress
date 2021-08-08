@@ -716,7 +716,7 @@ a.button:hover {
 button a,
 a.button {
     transition: color 1.5s ease;
-    color: var(--second-bg-color) !important;
+    color: var(--boton-color) !important;
     display: inline-block;
 }
 
@@ -740,7 +740,9 @@ input::-moz-focus-inner {
 /* Clearings */
 
 /* ----------------------------------------------- */
-
+.site-footer svg{
+    display: inherit;
+}
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -2849,6 +2851,7 @@ body.home .block-section {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
 }
 .site-header.evision-nav-right:not(.navbar-fixed-active) {
+    height: 29vh;
     transition: background-color 1.5s ease;
     background: -moz-linear-gradient(
         180deg,
@@ -3203,8 +3206,17 @@ body:not(.home) .site-header.evision-nav-right {
 
 .wrap-service.block-section {
     background-color: var(--banner-text-color);
+    background: var(--banner-text-color);
+    background: -moz-linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
+    background: linear-gradient(90deg, var(--color-fondo) 0%, var(--banner-text-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d7ff00",GradientType=1);
+
     padding-top: 35px;
     padding-bottom: 0;
+}
+.wrap-service.block-section svg{
+    display: inherit;
 }
 
 .title-divider {
@@ -3414,7 +3426,7 @@ body:not(.home) .site-header.evision-nav-right {
 /*-------------------- About section -----------------*/
 
 .wrap-about {
-    background-color: #f8f8f9;
+    background-color: var(--color-fondo);
     padding-bottom: 60px;
 }
 
@@ -3450,7 +3462,7 @@ body:not(.home) .site-header.evision-nav-right {
 .icon-section i {
     background-color: var(--main-bg-color);
     border-radius: 100px;
-    color: #ffffff;
+    color: var(--boton-color);
     display: inline-block;
     font-size: 24px;
     height: 60px;
@@ -3520,7 +3532,7 @@ body:not(.home) .site-header.evision-nav-right {
 /*-------------------- Blog section -----------------*/
 
 .wrap-blog {
-    background-color: #fff;
+    background-color: var(--color-fondo);
 }
 
 .single-thumb-inner {
@@ -3784,7 +3796,7 @@ body:not(.home) .site-header.evision-nav-right {
     background-color: #3e4444;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .footer-social-container {
@@ -4066,7 +4078,7 @@ h1.main-title a {
 /*-------------------- Contact section -----------------*/
 
 .contact-about {
-    background-color: #f8f8f9;
+    background-color: var(--color-fondo);
     padding-bottom: 60px;
 }
 
@@ -4479,8 +4491,11 @@ h1.main-title a {
     transition: all 1.5s ease;
     opacity: 0;
 }
+.navbar-info svg{
+    display: inherit;
+}
 .navbar-info:not(.navbar-info-hide) {
-    background: var(--banner-text-color) !important;
+    background: var(--boton-color) !important;
 }
 .navbar-info-text {
     color: var(--banner-link-color) !important;
@@ -4498,4 +4513,72 @@ h1.main-title a {
 .navbar-info-icon:hover i {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+/*Shape Topp*/
+.shape-top {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+@media screen and (max-width: 767px) {
+    .shape-top {
+        top: 0vh !important;
+    }
+}
+
+.shape-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+    transform: rotateY(180deg);
+}
+
+.shape-top .shape-fill {
+    fill: var(--color-fondo);
+}
+/*Shape Footer*/
+.shape-footer-bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-footer-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 106px;
+    transform: rotateY(180deg);
+}
+
+.shape-footer-bottom .shape-fill {
+    fill: var(--main-bg-color);
+}
+/*Estilo Shaper Servicios*/
+.shape-service {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-service svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
+}
+
+.shape-service .shape-fill {
+    fill: var(--color-fondo);
 }
