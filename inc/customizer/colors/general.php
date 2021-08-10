@@ -61,7 +61,7 @@ $bizlight_settings_controls['keysist-color-fondo'] = array(
     ),
     'control' => array(
         'label'                 =>  esc_html__('Color Fondo', 'bizlight'),
-        'description'           =>  __('Fondo de Página', 'bizlight'),
+        'description'           =>  __('Fondo de Página,Fondo Social', 'bizlight'),
         'section'               => 'colors',
         'type'                  => 'color',
         'priority'              => 11,
@@ -97,7 +97,7 @@ $bizlight_settings_controls['keysist-color-secundario'] = array(
     ),
     'control' => array(
         'label'                 =>  esc_html__('Color Secundario', 'bizlight'),
-        'description'           =>  __('Botones Hover,Fondo Titulos', 'bizlight'),
+        'description'           =>  __('Color Degradado,Boton Banner Hover, Color del Menú', 'bizlight'),
         'section'               => 'colors',
         'type'                  => 'color',
         'priority'              => 14,
@@ -142,7 +142,7 @@ $bizlight_settings_controls['bizlight-banner-text-color'] =
         ),
         'control' => array(
             'label'                 =>  __('Color de Texto del Banner', 'bizlight'),
-            'description'           =>  __('Color del Texto de la sección del banner/carroucel', 'bizlight'),
+            'description'           =>  __('Color del Texto de la sección del banner/carroucel, Color de Letra de Titulo,Color de Letra de Subtitulo, Color de Letra del Menu', 'bizlight'),
             'section'               => 'colors',
             'type'                  => 'color',
             'priority'              => 17,

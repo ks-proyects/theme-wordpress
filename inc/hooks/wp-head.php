@@ -35,23 +35,25 @@ if( ! function_exists( 'bizlight_wp_head' ) ) :
             ?>
             :root{
                 --color-fondo: <?php echo esc_attr( $bizlight_color_fondo );?>;
-                --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
-                --main-bg-color-90: <?php echo esc_attr( $bizlight_primary_color );?>ed;
-                --main-bg-color-50: <?php echo esc_attr( $bizlight_primary_color );?>66;
-                --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
-                --boton-color-hover: <?php echo esc_attr( $keysist_color_boton_texto );?>;
                 --boton-color: <?php echo esc_attr( $keysist_color_boton_texto );?>;
-                
+
+                --second-bg-color: <?php echo esc_attr( $bizlight_secondary_color );?>;
                 --second-bg-color-50: <?php echo esc_attr( $bizlight_secondary_color );?>73;
                 --second-bg-color-5: <?php echo esc_attr( $bizlight_secondary_color );?>1f;
                 --second-bg-color-0: <?php echo esc_attr( $bizlight_secondary_color );?>00;
+
                 --banner-text-color: <?php echo esc_attr( $bizlight_banner_text_color );?>;
-                --banner-text-color-40: <?php echo esc_attr( $bizlight_banner_text_color );?>66;
-                --banner-text-color-50: <?php echo esc_attr( $bizlight_banner_text_color );?>75;
-                --banner-text-color-100: <?php echo esc_attr( $bizlight_banner_text_color );?>000;
+                --banner-text-color-hover: <?php echo esc_attr( $bizlight_banner_text_color );?>;
+                --banner-text-color-normal: <?php echo esc_attr( $bizlight_banner_text_color );?>94;
+
+
+                --main-bg-color: <?php echo esc_attr( $bizlight_primary_color );?>;
+                --main-bg-color-90: <?php echo esc_attr( $bizlight_primary_color );?>ed;
+                --main-bg-color-50: <?php echo esc_attr( $bizlight_primary_color );?>66;
+                
+                
                 --banner-link-color: <?php echo esc_attr( $bizlight_link_color );?>;
                 --banner-link-hover-color: <?php echo esc_attr( $bizlight_link_color );?>94;
-                --color-titulos: <?php echo esc_attr( $bizlight_h1_h6_color );?>94;
                 --color-titulos-hover: <?php echo esc_attr( $bizlight_h1_h6_color );?>;
                 --fondo-footer-color: <?php echo esc_attr( $$bizlight_footer_fondo_color );?>;
                 --footer-link-color: <?php echo esc_attr( $bizlight_footer_text_color );?>94;

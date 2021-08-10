@@ -56,6 +56,7 @@ if ( ! function_exists( 'bizlight_check_header_style' ) ) :
 			.site-description {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
+				
 			}
 		<?php
 		// If the user has set a custom color for the text use that.
@@ -63,7 +64,16 @@ if ( ! function_exists( 'bizlight_check_header_style' ) ) :
 			?>
 			.site-title a,
 			.site-description {
-				color: #<?php echo esc_attr( $header_text_color ); ?>;
+				color: #<?php echo esc_attr( $bizlight_banner_text_color ); ?>;
+				text-shadow: 0 0 5px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 10px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 15px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 20px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 30px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 40px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 55px #<?php echo esc_attr( $bizlight_secondary_color ); ?>, 
+    0 0 75px #<?php echo esc_attr( $bizlight_secondary_color ); ?>;
+    }
 			}
 		<?php endif; ?>
 		</style>

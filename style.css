@@ -117,7 +117,7 @@ button,
 input,
 select,
 textarea {
-    color: var(--banner-link-color) i !important;
+    color: var(--banner-link-color) !important;
     font: 400 15px/22px "Raleway", sans-serif;
     background-color: #f7f7f7;
     -webkit-font-smoothing: antialiased;
@@ -606,7 +606,7 @@ input[type="submit"]:focus {
     outline: none;
     overflow: visible;
     background: var(--main-bg-color);
-    color: #ffffff;
+    color: var(--boton-color) !important;
     font-size: 13px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -709,7 +709,7 @@ input[type="submit"]:active:before,
 button:hover a,
 a.button:hover {
     transition: color 1.5s ease;
-    color: var(--main-bg-color) !important;
+    color: var(--boton-color) !important;
     display: inline-block;
 }
 
@@ -875,7 +875,7 @@ body.home .page-inner-title {
 .page-inner-title .taxonomy-description {
     padding-left: 15px;
     padding-right: 15px;
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color-normal) !important;
 }
 
 .wrap-header .nav-tabs {
@@ -891,7 +891,7 @@ body.home .page-inner-title {
 .navbar-fixed-active {
     transition: all 1.5s ease;
     background: rgba(0, 0, 0, 0.95) !important;
-    margin-top: -3.4%;
+    margin-top: -25px;
 }
 
 .navbar-fixed-shadow {
@@ -963,13 +963,30 @@ body.home .page-inner-title {
     font-size: 22px;
     text-transform: inherit;
     font-weight: 500;
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color)  !important;
+    text-shadow: 0 0 5px var(--second-bg-color), 
+    0 0 10px var(--second-bg-color), 
+    0 0 15px var(--second-bg-color), 
+    0 0 20px var(--second-bg-color), 
+    0 0 30px var(--second-bg-color), 
+    0 0 40px var(--second-bg-color), 
+    0 0 55px var(--second-bg-color), 
+    0 0 75px var(--second-bg-color);
 }
 
 .evision-nav-right:not(.navbar-fixed-active) .site-title,
 .evision-nav-right:not(.navbar-fixed-active) .site-title a {
     transition: color 1.5s ease;
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color);
+    transition: color 1.5s ease;
+    text-shadow: 0 0 5px var(--second-bg-color), 
+    0 0 10px var(--second-bg-color), 
+    0 0 15px var(--second-bg-color), 
+    0 0 20px var(--second-bg-color), 
+    0 0 30px var(--second-bg-color), 
+    0 0 40px var(--second-bg-color), 
+    0 0 55px var(--second-bg-color), 
+    0 0 75px var(--second-bg-color);
 }
 
 .site-title a {
@@ -979,7 +996,16 @@ body.home .page-inner-title {
     color: var(--main-bg-color) !important;
 }
 .evision-nav-right:not(.navbar-fixed-active) .site-title a:hover {
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color);
+    transition: color 1.5s ease;
+    text-shadow: 0 0 5px var(--second-bg-color), 
+    0 0 10px var(--second-bg-color), 
+    0 0 15px var(--second-bg-color), 
+    0 0 20px var(--second-bg-color), 
+    0 0 30px var(--second-bg-color), 
+    0 0 40px var(--second-bg-color), 
+    0 0 55px var(--second-bg-color), 
+    0 0 75px var(--second-bg-color);
     font-weight: 700;
 }
 
@@ -1014,7 +1040,7 @@ body.home .page-inner-title {
     .site-branding,
     .menu {
         text-align: center;
-        color: var(--main-bg-color) !important;
+        color: var(--banner-text-color) !important;
     }
 }
 
@@ -1067,7 +1093,7 @@ body.home .page-inner-title {
 }
 
 .evision-nav-right:not(.navbar-fixed-active) .main-navigation a {
-    color: var(--color-titulos-hover) !important;
+    
     transition: color 1.5s ease;
     display: block;
     text-decoration: none;
@@ -1077,8 +1103,16 @@ body.home .page-inner-title {
     position: relative;
 }
 .evision-nav-right .main-navigation a {
-    color: var(--main-bg-color) !important;
     transition: color 1.5s ease;
+    color: var(--banner-text-color)  !important;
+    text-shadow: 0 0 5px var(--second-bg-color), 
+    0 0 10px var(--second-bg-color), 
+    0 0 15px var(--second-bg-color), 
+    0 0 20px var(--second-bg-color), 
+    0 0 30px var(--second-bg-color), 
+    0 0 40px var(--second-bg-color), 
+    0 0 55px var(--second-bg-color), 
+    0 0 75px var(--second-bg-color);
 }
 
 .main-navigation ul ul {
@@ -1086,7 +1120,7 @@ body.home .page-inner-title {
     position: absolute;
     left: -999em;
     z-index: 99999;
-    background-color: var(--main-bg-color);
+    background-color: var(--second-bg-color) !important;
     text-align: left;
 }
 
@@ -1108,7 +1142,8 @@ body.home .page-inner-title {
 .evision-nav-right .main-navigation li a:focus,
 .evision-nav-right .main-navigation li a:active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color) !important;
+    
     transition: color 1.5s ease;
     font-weight: 600;
 }
@@ -1117,7 +1152,7 @@ body.home .page-inner-title {
 .evision-nav-right:not(.navbar-fixed-active) .main-navigation li a:focus,
 .evision-nav-right:not(.navbar-fixed-active) .main-navigation li a:active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: var(--color-titulos-hover) !important;
+    color: var(--banner-text-color) !important;
     transition: color 1.5s ease;
     font-weight: 600;
 }
@@ -1211,13 +1246,13 @@ body.home .page-inner-title {
     .main-navigation li {
         float: none;
         display: block;
-        border-top: 1px solid var(--main-bg-color);
+        border-top: 1px solid var(--boton-color);
     }
     .main-navigation {
-        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: none repeat scroll 0 0 var(--second-bg-color);
     }
     .main-navigation.toggled .nav-menu {
-        background: none repeat scroll 0 0 #333333;
+        background: none repeat scroll 0 0 var(--second-bg-color);
     }
     .main-navigation ul ul:before {
         border-left: 10px solid rgba(0, 0, 0, 0);
@@ -1444,7 +1479,7 @@ body.home .page-inner-title {
     border: medium none;
     border-radius: 0;
     box-shadow: none;
-    color: var(--color-titulos-hover) !important;
+    color: var(--boton-color) !important;
     display: inline-block;
     height: 22px;
     padding: 15px 30px 27px;
@@ -2708,18 +2743,14 @@ body.home .block-section {
 
 #breadcrumb {
     background-color: var(--second-bg-color);
-    color: var(--main-bg-color);
+    color: var(--banner-text-color) !important;
     font-size: 13px;
 }
 
-#breadcrumb a {
-    color: var(--main-bg-color) !important;
-}
 
 #breadcrumb a:hover,
 #breadcrumb a:focus,
 #breadcrumb a:active {
-    color: var(--main-bg-color) !important;
     font-weight: 600;
 }
 
@@ -2808,13 +2839,13 @@ body.home .block-section {
 }
 
 .wrap-breadcrumb a {
-    color: var(--banner-link-color);
+    color: var(--banner-text-color-normal) !important;
 }
 
 .wrap-breadcrumb a:hover,
 .wrap-breadcrumb a:focus,
 .wrap-breadcrumb a:active {
-    color: var(--banner-link-hover-color);
+    color: var(--banner-text-color-hover) !important;
 }
 
 /*-------------------- header section -----------------*/
@@ -2829,24 +2860,24 @@ body.home .block-section {
     padding-bottom: 15px;
     text-align: left;
 
-    background: var(--banner-text-color) !important;
+    background: var(--second-bg-color) !important;
     background: -moz-linear-gradient(
         180deg,
-        var(--banner-text-color) 47%,
-        var(--banner-text-color-50) 77%,
-        rgba(255, 255, 255, 0) 100%
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
     ) !important;
     background: -webkit-linear-gradient(
         180deg,
-        var(--banner-text-color) 47%,
-        var(--banner-text-color-50) 77%,
-        rgba(255, 255, 255, 0) 100%
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
     ) !important;
     background: linear-gradient(
         180deg,
-        var(--banner-text-color) 47%,
-        var(--banner-text-color-50) 77%,
-        rgba(255, 255, 255, 0) 100%
+        var(--second-bg-color) 0%,
+        var(--second-bg-color-50) 44%,
+        var(--second-bg-color-0) 100%
     ) !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1) !important;
 }
@@ -2886,19 +2917,26 @@ body:not(.home) .site-header.evision-nav-right {
 
 .evision-nav-right .site-title:hover,
 .evision-nav-right .site-title a:hover {
-    color: var(--main-bg-color) !important;
+    color: var(--banner-text-color) !important;
 }
 .evision-nav-right .site-description {
     transition: color 1.5s ease;
-    color: var(--main-bg-color);
+    color: var(--banner-text-color);
+    text-shadow: 0 0 5px var(--second-bg-color), 
+    0 0 10px var(--second-bg-color), 
+    0 0 15px var(--second-bg-color), 
+    0 0 20px var(--second-bg-color), 
+    0 0 30px var(--second-bg-color), 
+    0 0 40px var(--second-bg-color), 
+    0 0 55px var(--second-bg-color), 
+    0 0 75px var(--second-bg-color);
+    
 }
 .evision-nav-right.navbar-fixed-active .site-description {
     transition: color 1.5s ease;
-    color: var(--main-bg-color);
     font-weight: 700;
 }
 .evision-nav-right:not(.navbar-fixed-active) .site-description {
-    color: var(--banner-text-color);
     transition: color 1.5s ease;
 }
 
@@ -3205,7 +3243,6 @@ body:not(.home) .site-header.evision-nav-right {
 /*-------------------- Service section -----------------*/
 
 .wrap-service.block-section {
-    background-color: var(--second-bg-color);
     background: var(--second-bg-color);
     background: -moz-linear-gradient(90deg, var(--color-fondo) 0%, var(--second-bg-color) 100%);
     background: -webkit-linear-gradient(90deg, var(--color-fondo) 0%, var(--second-bg-color) 100%);
@@ -3462,7 +3499,7 @@ body:not(.home) .site-header.evision-nav-right {
 .icon-section i {
     background-color: var(--main-bg-color);
     border-radius: 100px;
-    color: var(--boton-color);
+    color: var(--boton-color) !important;
     display: inline-block;
     font-size: 24px;
     height: 60px;
@@ -4024,7 +4061,7 @@ ul.sub-menu:before {
     position: absolute;
     top: -19px;
     font-size: 50px;
-    color: var(--main-bg-color);
+    color: var(--second-bg-color);
     left: 12px;
 }
 
@@ -4495,7 +4532,7 @@ h1.main-title a {
     display: inherit;
 }
 .navbar-info:not(.navbar-info-hide) {
-    background: var(--boton-color) !important;
+    background: var(--color-fondo) !important;
 }
 .navbar-info-text {
     color: var(--banner-link-color) !important;
