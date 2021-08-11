@@ -891,7 +891,6 @@ body.home .page-inner-title {
 .navbar-fixed-active {
     transition: all 1.5s ease;
     background: rgba(0, 0, 0, 0.95) !important;
-    margin-top: -25px;
 }
 
 .navbar-fixed-shadow {
@@ -1093,16 +1092,18 @@ body.home .page-inner-title {
 }
 
 .evision-nav-right:not(.navbar-fixed-active) .main-navigation a {
-    
     transition: color 1.5s ease;
     display: block;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     padding: 17px 18px;
     position: relative;
 }
 .evision-nav-right .main-navigation a {
+    padding: 17px 18px;
+    display: block;
+    position: relative;
     transition: color 1.5s ease;
     color: var(--banner-text-color)  !important;
     text-shadow: 0 0 5px var(--second-bg-color), 
@@ -2515,20 +2516,16 @@ article.hentry .image-full {
 /* --------------------------------------- */
 
 .mob-header-info {
-    margin: 0;
-    background: var(--main-bg-color) !important;
+    display: none;
+    
 }
 
-.mob-header-info span {
-    padding-right: 0.3rem;
-}
 
-.mob-header-info a {
-    padding: 0rem !important;
-    display: grid !important;
-}
 
 .desktop-header-info {
+    display: none;
+}
+.desktop-social {
     display: none;
 }
 
@@ -2543,12 +2540,36 @@ article.hentry .image-full {
         padding-left: 0px;
         padding-right: 0px;
     }
-    .mob-header-info {
-        display: none;
-    }
+    
     .desktop-header-info {
         display: block;
     }
+    .desktop-social{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mob-header-info {
+        margin: 0;
+        background: var(--main-bg-color) !important;
+    }
+    .mob-header-info span {
+        padding-right: 0.3rem;
+    }
+    .mob-header-info a {
+        padding: 0rem !important;
+        display: grid !important;
+    }
+    .toggled .mob-header-info {
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .toggled .mob-header-info span {
+        width: -webkit-fill-available;
+    }
+    
 }
 
 /* 10.2 columns of same height */
@@ -3037,7 +3058,7 @@ body:not(.home) .site-header.evision-nav-right {
 }
 
 .evision-main-slider .slide-item .container-fluid .container {
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 9%;
 }
 
@@ -4079,18 +4100,9 @@ h1.main-title a {
     max-width: 25%;
 }
 
-.mob-header-info {
-    display: none;
-}
 
-.toggled .mob-header-info {
-    display: inline-flex;
-    width: 100%;
-}
 
-.toggled .mob-header-info span {
-    width: -webkit-fill-available;
-}
+
 
 #footer-menu {
     padding: 0;
@@ -4457,12 +4469,12 @@ h1.main-title a {
 }
 
 .seccion-admin-content h3 {
-    color: var(--color-titulos-hover) !important;
+    color: var(--boton-color) !important;
     font-weight: 600;
 }
 
 .seccion-admin-content p {
-    color: var(--color-titulos-hover) !important;
+    color: var(--boton-color) !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -4527,6 +4539,7 @@ h1.main-title a {
 .navbar-info-hide {
     transition: all 1.5s ease;
     opacity: 0;
+    display:none;
 }
 .navbar-info svg{
     display: inherit;
@@ -4554,19 +4567,10 @@ h1.main-title a {
 /*Shape Topp*/
 .shape-top {
     position: absolute;
-    top: 4vh;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
-.site-header:not(.site-header-front) .shape-top {
-    top: 0vh !important;
-}
-@media screen and (max-width: 767px) {
-    .shape-top {
-        top: 0vh !important;
-    }
 }
 
 .shape-top svg {
