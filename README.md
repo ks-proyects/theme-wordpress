@@ -120,3 +120,4 @@ Permite Configurar la sección del Footer, para mostrar las redes sociales de de
 ## Links de Interes
 - https://wpmailsmtp.com/contact-form-7-not-sending-emails/
 - https://www.smarterasp.net/support/kb/a341/how-to-configure-smtp-authentication-in-wordpress-site-to-send-emails.aspx
+- https://www.hostinger.es/tutoriales/seo-en-wordpress#1-Instalar-un-plugin-SEO-de-WordPress
